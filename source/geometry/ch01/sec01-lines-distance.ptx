@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-lines-distance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Lines and Distance</title>
+
+  <p>
+    <term>Line</term><fn>Line is undefined.</fn> is short for straight line.
+    Take a fixed <term>plane</term><fn>Undefined term</fn>, once and for all,
+    and consider just lines that lie in it. The plane and the lines are
+    <term>sets</term><fn>Undefined term</fn> of <term>points</term><fn>Undefined term</fn>.
+    Each line is a <term>subset</term> of the plane, i.e. each element of a line is a point
+    of the plane. Each line is endless, extending forever in both directions. Each line has
+    infinitely-many points. The points on a line can be taken to be ordered along the line
+    in a natural way. As a consequence, given any three distinct points on a line, exactly
+    one of them lies <term>between</term> the other two. Points that are not on a given line
+    can be said to be on one or other <term>side</term> of the line. The sides of a line are
+    sometimes referred to as <term>half-planes</term>.
+  </p>
+
+  <convention xml:id="conv-point-line-notation">
+    <title>Notation</title>
+    <p>
+      We denote points by roman capital letters <m>A</m>, <m>B</m>, <m>C</m>, etc.,
+      and lines by lower-case roman letters <m>l</m>, <m>m</m>, <m>n</m>, etc.
+    </p>
+  </convention>
+
+  <p>Axioms are statements we will accept as true.<fn>An <term>axiom</term> is a statement
+  accepted without proof, as a basis for argument. A <term>theorem</term> is a statement
+  deduced from the axioms by logical argument.</fn></p>
+
+  <axiom xml:id="ax-two-points">
+    <title>Two Points Axiom</title>
+    <statement>
+      <p>
+        There is exactly one line through any two given points.
+        (We denote the line through <m>A</m> and <m>B</m> by <m>AB</m>.)
+      </p>
+    </statement>
+  </axiom>
+
+  <definition xml:id="def-line-segment">
+    <statement>
+      <p>
+        The line <term>segment</term> <m>[AB]</m> is the part of the line <m>AB</m> between
+        <m>A</m> and <m>B</m> (including the endpoints). The point <m>A</m> divides the line
+        <m>AB</m> into two pieces, called <term>rays</term>. The point <m>A</m> lies between
+        all points of one ray and all points of the other. We denote the ray that starts at
+        <m>A</m> and passes through <m>B</m> by <m>[AB</m>. Rays are sometimes referred to
+        as <term>half-lines</term>.
+      </p>
+      <p>Three points usually determine three different lines.</p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-collinear">
+    <statement>
+      <p>
+        If three or more points lie on a single line, we say they are <term>collinear</term>.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-triangle">
+    <statement>
+      <p>
+        Let <m>A</m>, <m>B</m> and <m>C</m> be points that are not collinear. The
+        <term>triangle</term> <m>\triangle ABC</m> is the piece of the plane enclosed by
+        the three line segments <m>[AB]</m>, <m>[BC]</m> and <m>[CA]</m>. The segments
+        are called its <term>sides</term>, and the points are called its
+        <term>vertices</term> (singular <term>vertex</term>).
+      </p>
+    </statement>
+  </definition>
+
+  <subsection xml:id="subsec-length-distance">
+    <title>Length and Distance</title>
+
+    <p>
+      We denote the set of all real numbers<fn>Undefined term</fn> by <m>\mathbb{R}</m>.
+    </p>
+
+    <definition xml:id="def-distance">
+      <statement>
+        <p>
+          We denote the <term>distance</term><fn>Undefined term</fn> between the points
+          <m>A</m> and <m>B</m> by <m>|AB|</m>. We define the <term>length</term> of the
+          segment <m>[AB]</m> to be <m>|AB|</m>.
+        </p>
+        <p>
+          We often denote the lengths of the three sides of a triangle by <m>a</m>, <m>b</m>,
+          and <m>c</m>. The usual thing for a triangle <m>\triangle ABC</m> is to take
+          <m>a = |BC|</m>, i.e. the length of the side opposite the vertex <m>A</m>, and
+          similarly <m>b = |CA|</m> and <m>c = |AB|</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <axiom xml:id="ax-ruler">
+      <title>Ruler Axiom</title>
+      <statement>
+        <p>The distance between points has the following properties:</p>
+        <ol>
+          <li><p>the distance <m>|AB|</m> is never negative;</p></li>
+          <li><p><m>|AB| = |BA|</m>;</p></li>
+          <li><p>if <m>C</m> lies on <m>AB</m>, between <m>A</m> and <m>B</m>, then
+            <m>|AB| = |AC| + |CB|</m>;</p></li>
+          <li><p>(marking off a distance) given any ray from <m>A</m>, and given any real
+            number <m>k \geq 0</m>, there is a unique point <m>B</m> on the ray whose
+            distance from <m>A</m> is <m>k</m>.</p></li>
+        </ol>
+      </statement>
+    </axiom>
+
+  </subsection>
+
+</section>
