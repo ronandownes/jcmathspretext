@@ -94,4 +94,79 @@
     </statement>
   </definition>
 
+  <exercises xml:id="exs-angles">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-angles-null">
+      <statement>
+        <p>An angle has arms that coincide with one another and its inside is the empty set.
+        What type of angle is it?</p>
+      </statement>
+      <hint>
+        <p>Review the definitions of the five types of angle.</p>
+      </hint>
+      <answer>
+        <p>A null angle.</p>
+      </answer>
+      <solution>
+        <p>By definition, a null angle is one whose arms coincide with one another and
+        whose inside is the empty set. This matches the description exactly.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-angles-vertex-arms">
+      <statement>
+        <p>For the angle <m>\angle BAC</m>, identify the vertex and the two arms.</p>
+      </statement>
+      <hint>
+        <p>The vertex is the unique point associated with the angle — the common starting
+        point of the two rays.</p>
+      </hint>
+      <answer>
+        <p>Vertex: <m>A</m>. Arms: <m>[AB</m> and <m>[AC</m>.</p>
+      </answer>
+      <solution>
+        <p>The angle <m>\angle BAC</m> has vertex <m>A</m>. The two arms are the rays
+        <m>[AB</m> and <m>[AC</m>, both starting at <m>A</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-angles-convex">
+      <statement>
+        <p>Is a line segment <m>[AB]</m> a convex set? Explain your answer.</p>
+      </statement>
+      <hint>
+        <p>Pick any two points on the segment. Does the segment connecting them stay
+        inside <m>[AB]</m>?</p>
+      </hint>
+      <answer>
+        <p>Yes, a line segment is a convex set.</p>
+      </answer>
+      <solution>
+        <p>A set is convex if it contains the whole segment connecting any two of its
+        points. If we pick any two points on <m>[AB]</m>, the segment between them lies
+        entirely within <m>[AB]</m>. So <m>[AB]</m> is a convex set.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-angles-ordinary-vs-straight">
+      <statement>
+        <p>What is the key difference between an ordinary angle and a straight angle?</p>
+      </statement>
+      <hint>
+        <p>Think about the position of the arms in each case.</p>
+      </hint>
+      <answer>
+        <p>In an ordinary angle the arms are not on one line; in a straight angle the
+        arms are the two halves of one line.</p>
+      </answer>
+      <solution>
+        <p>An ordinary angle has arms that are not on one line, and its inside is a convex
+        set. A straight angle has arms that form the two halves of a single line (pointing
+        in opposite directions), and its inside is one of the sides of that line.</p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
 </section>
