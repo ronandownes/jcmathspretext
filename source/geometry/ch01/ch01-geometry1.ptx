@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-geometry1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Geometry 1</title>
+
+  <xi:include href="sec01-lines-distance.ptx" />
+
+</chapter>
