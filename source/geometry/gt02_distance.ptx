@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-distance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Distance</title>
+
+  <p>
+    We denote the set of all real numbers<fn>Undefined term</fn> by <m>\mathbb{R}</m>.
+  </p>
+
+  <definition xml:id="def-distance">
+    <statement>
+      <p>
+        We denote the <term>distance</term><fn>Undefined term</fn> between the points
+        <m>A</m> and <m>B</m> by <m>|AB|</m>. We define the <term>length</term> of the
+        segment <m>[AB]</m> to be <m>|AB|</m>.
+      </p>
+      <p>
+        We often denote the lengths of the three sides of a triangle by <m>a</m>, <m>b</m>,
+        and <m>c</m>. The usual thing for a triangle <m>\triangle ABC</m> is to take
+        <m>a = |BC|</m>, i.e. the length of the side opposite the vertex <m>A</m>, and
+        similarly <m>b = |CA|</m> and <m>c = |AB|</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <axiom xml:id="ax-ruler">
+    <title>Ruler Axiom</title>
+    <statement>
+      <p>The distance between points has the following properties:</p>
+      <ol>
+        <li><p>the distance <m>|AB|</m> is never negative;</p></li>
+        <li><p><m>|AB| = |BA|</m>;</p></li>
+        <li><p>if <m>C</m> lies on <m>AB</m>, between <m>A</m> and <m>B</m>, then
+          <m>|AB| = |AC| + |CB|</m>;</p></li>
+        <li><p>(marking off a distance) given any ray from <m>A</m>, and given any real
+          number <m>k \geq 0</m>, there is a unique point <m>B</m> on the ray whose
+          distance from <m>A</m> is <m>k</m>.</p></li>
+      </ol>
+    </statement>
+  </axiom>
+
+</section>
