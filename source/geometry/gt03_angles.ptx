@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-angles" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Angles</title>
+
+  <definition xml:id="def-convex">
+    <statement>
+      <p>
+        A subset of the plane is <term>convex</term> if it contains the whole segment
+        that connects any two of its points.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    For example, one side of any line is a convex set, and triangles are convex sets.
+  </p>
+
+  <p>
+    We do not define the term angle formally. Instead we say: There are things called
+    <term>angles</term>. To each angle is associated:
+    <ol>
+      <li><p>a unique point <m>A</m>, called its <term>vertex</term>;</p></li>
+      <li><p>two rays <m>[AB</m> and <m>[AC</m>, both starting at the vertex, and called
+        the <term>arms</term> of the angle;</p></li>
+      <li><p>a piece of the plane called the <term>inside</term> of the angle.</p></li>
+    </ol>
+  </p>
+
+  <p>
+    An angle is either a null angle, an ordinary angle, a straight angle, a reflex angle
+    or a full angle. Unless otherwise specified, you may take it that any angle we talk
+    about is an ordinary angle.
+  </p>
+
+  <definition xml:id="def-null-angle">
+    <statement>
+      <p>
+        An angle is a <term>null angle</term> if its arms coincide with one another and
+        its inside is the empty set.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-ordinary-angle">
+    <statement>
+      <p>
+        An angle is an <term>ordinary angle</term> if its arms are not on one line, and
+        its inside is a convex set.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-straight-angle">
+    <statement>
+      <p>
+        An angle is a <term>straight angle</term> if its arms are the two halves of one
+        line, and its inside is one of the sides of that line.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-reflex-angle">
+    <statement>
+      <p>
+        An angle is a <term>reflex angle</term> if its arms are not on one line, and its
+        inside is not a convex set.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-full-angle">
+    <statement>
+      <p>
+        An angle is a <term>full angle</term> if its arms coincide with one another and
+        its inside is the rest of the plane.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-angle-notation">
+    <statement>
+      <p>
+        Suppose that <m>A</m>, <m>B</m>, and <m>C</m> are three noncollinear points. We
+        denote the (ordinary) angle with arms <m>[AB</m> and <m>[AC</m> by
+        <m>\angle BAC</m> (and also by <m>\angle CAB</m>). We shall also use the notation
+        <m>\angle BAC</m> to refer to straight angles, where <m>A</m>, <m>B</m>, <m>C</m>
+        are collinear, and <m>A</m> lies between <m>B</m> and <m>C</m> (either side could
+        be the inside of this angle).
+      </p>
+      <p>
+        Sometimes we want to refer to an angle without naming points, and in that case we
+        use lower-case Greek letters, <m>\alpha, \beta, \gamma</m>, etc.
+      </p>
+    </statement>
+  </definition>
+
+</section>

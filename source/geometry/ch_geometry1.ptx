@@ -4,5 +4,6 @@
 
   <xi:include href="gt01_lines.ptx" />
   <xi:include href="gt02_distance.ptx" />
+  <xi:include href="gt03_angles.ptx" />
 
 </chapter>

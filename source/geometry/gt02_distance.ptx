@@ -38,4 +38,14 @@
     </statement>
   </axiom>
 
+  <definition xml:id="def-midpoint">
+    <statement>
+      <p>
+        The <term>midpoint</term> of the segment <m>[AB]</m> is the point <m>M</m> of the
+        segment with<fn>Students may notice that the first equality implies the second.</fn>
+        <me>|AM| = |MB| = \frac{|AB|}{2}.</me>
+      </p>
+    </statement>
+  </definition>
+
 </section>
