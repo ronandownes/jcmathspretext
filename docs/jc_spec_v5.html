@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Maths - Mr Downes Maths</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; }
+        .topbar { background: #e8e8e8; padding: 12px 20px; border-bottom: 3px solid transparent; border-image: linear-gradient(90deg, #22c55e, #3b82f6, #ef4444, #1a1a1a) 1; position: relative; }
+        .topbar-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .brand { display: flex; align-items: center; gap: 8px; }
+        .brand-text { font-weight: 700; font-size: 1.15em; color: #1a1a1a; }
+        .tagline { color: #555; font-size: 0.9em; }
+        .mark { display: flex; gap: 4px; }
+        .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot.green { background: #22c55e; }
+        .dot.blue { background: #3b82f6; }
+        .dot.red { background: #ef4444; }
+        .dot.black { background: #1a1a1a; }
+        .level-badge { background: #8b5cf6; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85em; font-weight: 600; }
+        .main { flex: 1; max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        .slide { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 30px; min-height: 480px; }
+        .slide-header { text-align: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #eee; }
+        .slide-header h2 { font-size: 1.3em; color: #333; }
+        .slide-header .subtitle { font-size: 0.9em; color: #666; margin-top: 4px; }
+        .slide-header.selected-header { border-bottom-color: #00a6a0; }
+        .slide-header.selected-header h2 { color: #00a6a0; }
+        .lo-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; margin-bottom: 10px; background: #fafafa; border-radius: 8px; border: 1px solid #eee; transition: all 0.3s; }
+        .lo-item:hover { background: #f0f0f0; }
+        .lo-item.ticked { background: #e8f5f5; border-color: #00a6a0; }
+        .lo-item input[type="checkbox"] { width: 18px; height: 18px; margin-top: 2px; accent-color: #00a6a0; cursor: pointer; flex-shrink: 0; }
+        .lo-item .code { background: #e0e0e0; color: #444; padding: 2px 8px; border-radius: 10px; font-size: 0.75em; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+        .lo-item.ticked .code { background: #00a6a0; color: white; }
+        .lo-item .content { flex: 1; }
+        .lo-item .text { font-size: 0.95em; line-height: 1.4; color: #333; }
+        .lo-item .hl-tag { background: #3b82f6; color: white; padding: 1px 5px; border-radius: 4px; font-size: 0.65em; font-weight: 600; margin-left: 6px; }
+        .lo-item .official { display: none; margin-top: 6px; padding-top: 6px; border-top: 1px dashed #ddd; font-size: 0.8em; color: #888; font-style: italic; }
+        body.show-official .lo-item .official { display: block; }
+        .lo-item.presentation { padding: 14px 16px; margin-bottom: 12px; border: 2px solid #eee; }
+        .lo-item.presentation .text { font-size: 1.05em; }
+        .lo-item.upcoming { color: #bbb; border-color: #eee; background: #fcfcfc; }
+        .lo-item.upcoming .code { background: #e8e8e8; color: #aaa; }
+        .lo-item.upcoming .text { color: #bbb; }
+        .lo-item.current { background: #e8f5f5; border-color: #00a6a0; box-shadow: 0 0 0 3px rgba(0,166,160,0.2); }
+        .lo-item.current .code { background: #00a6a0; color: white; }
+        .lo-item.revealed { background: #fafafa; border-color: #ddd; }
+        .lo-item.revealed .code { background: #666; color: white; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding: 15px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); flex-wrap: wrap; gap: 10px; }
+        .nav-left, .nav-center, .nav-right { display: flex; align-items: center; gap: 8px; }
+        .btn { background: #00a6a0; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.95em; transition: all 0.2s; }
+        .btn:hover { background: #00b8b0; }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .btn.secondary { background: #e0e0e0; color: #444; }
+        .btn.secondary:hover { background: #d0d0d0; }
+        .btn.small { padding: 6px 12px; font-size: 0.8em; }
+        .page-info { font-size: 1em; color: #666; font-weight: 600; min-width: 80px; text-align: center; }
+        .toggle-label { display: flex; align-items: center; gap: 6px; font-size: 0.85em; color: #666; cursor: pointer; }
+        .toggle-label input { accent-color: #00a6a0; width: 16px; height: 16px; }
+        .clipboard-bar { margin-top: 15px; padding: 12px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+        .clipboard-bar .label { font-weight: 600; color: #00a6a0; font-size: 0.9em; }
+        .clipboard-bar .ticked-codes { flex: 1; font-size: 0.85em; color: #555; min-width: 100px; }
+        .clipboard-bar .ticked-codes span { display: inline-block; background: #00a6a0; color: white; padding: 2px 8px; border-radius: 10px; margin: 2px 4px 2px 0; font-size: 0.85em; }
+        .clipboard-bar .actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .mode-indicator { background: #666; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.8em; font-weight: 600; }
+        .burger { width: 28px; height: 24px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; padding: 2px; }
+        .burger span { display: block; height: 3px; background: #444; border-radius: 2px; transition: all 0.3s; }
+        .burger:hover span { background: #00a6a0; }
+        .strand-menu { display: none; position: absolute; top: 100%; left: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); z-index: 1000; min-width: 280px; overflow: hidden; }
+        .strand-menu.open { display: block; }
+        .strand-menu-item { padding: 12px 16px; cursor: pointer; border-bottom: 1px solid #eee; transition: background 0.2s; display: flex; align-items: center; gap: 10px; }
+        .strand-menu-item:last-child { border-bottom: none; }
+        .strand-menu-item:hover { background: #f0f0f0; }
+        .strand-menu-item.active { background: #e8f5f5; color: #00a6a0; font-weight: 600; }
+        .strand-menu-item .strand-num { background: #00a6a0; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; font-weight: 600; }
+        .copy-all-bar { margin-top: 10px; padding: 8px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 8px; }
+        .copy-all-bar .label { font-weight: 600; color: #666; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+                <span class="mark"><span class="dot green"></span><span class="dot blue"></span><span class="dot red"></span><span class="dot black"></span></span>
+                <span class="brand-text">Mr Downes Maths</span>
+                <span class="tagline">— Learning Made as Simple as Possible</span>
+            </div>
+            <label class="toggle-label"><input type="checkbox" id="officialToggle" onchange="document.body.classList.toggle('show-official', this.checked)">Show official wording</label>
+            <span class="level-badge">Junior Cycle</span>
+        </div>
+        <div class="strand-menu" id="strandMenu"></div>
+    </header>
+    <div class="main">
+        <div class="slide" id="slide"></div>
+        <div class="nav-bar">
+            <div class="nav-left"><button class="btn secondary" id="prevBtn" onclick="prevSlide()">◀ Back</button></div>
+            <div class="nav-center"><span class="mode-indicator" id="modeIndicator">Browse</span><span class="page-info" id="pageInfo">1 / 1</span></div>
+            <div class="nav-right"><button class="btn secondary" id="nextBtn" onclick="nextSlide()">Next ▶</button></div>
+        </div>
+        <div class="clipboard-bar">
+            <span class="label">📋 Selected:</span>
+            <div class="ticked-codes" id="tickedCodes">None</div>
+            <div class="actions">
+                <button class="btn" id="presentBtn" onclick="goToPresentation()">Present Selected</button>
+                <button class="btn secondary" onclick="copyTicked()">Copy Selected</button>
+            </div>
+        </div>
+        <div class="copy-all-bar">
+            <span class="label">Copy Entire Spec:</span>
+            <button class="btn small" onclick="copyAll('friendly')">📋 Friendly</button>
+            <button class="btn small secondary" onclick="copyAll('official')">📋 Official</button>
+        </div>
+    </div>
+    <script>
+        const slides = [
+            // UNIFYING STRAND (2 slides)
+            { title: 'Unifying Strand', subtitle: 'Problem Solving & Reasoning', strand: 'U', items: [
+                { code: 'U.1', text: 'Explain what a problem is asking and talk about possible approaches', official: 'discuss a problem and explore different approaches, explaining their reasoning' },
+                { code: 'U.2', text: 'Represent a problem or situation mathematically', official: 'represent a problem mathematically, making use of appropriate concepts, operations, and representations' },
+                { code: 'U.3', text: 'Select appropriate methods for a task', official: 'select appropriate methods and procedures to accomplish a given task' },
+                { code: 'U.4', text: 'Use estimation to predict or check results', official: 'use the results of computation or estimation to predict and verify outcomes' },
+                { code: 'U.5', text: 'Evaluate solutions and compare methods', official: 'evaluate solutions and compare different methods' },
+                { code: 'U.6', text: 'Identify patterns and test predictions', official: 'identify patterns in data, and make predictions and test them' }
+            ]},
+            { title: 'Unifying Strand', subtitle: 'Communication & Connections', strand: 'U', items: [
+                { code: 'U.7', text: 'Justify conclusions using evidence', official: 'justify conclusions using evidence and sound arguments' },
+                { code: 'U.8', text: 'Communicate mathematical thinking clearly', official: 'communicate mathematics effectively, verbally and in writing' },
+                { code: 'U.9', text: 'Make connections within maths and with real life', official: 'make connections both within mathematics and between mathematics and the real world' },
+                { code: 'U.10', text: 'Interpret results in context of the original problem', official: 'interpret results in the context of the original problem' },
+                { code: 'U.11', text: 'See the relevance of maths to everyday life', official: 'see the relevance of mathematics to their everyday lives' }
+            ]},
+
+            // STRAND 1: NUMBER (4 slides)
+            { title: 'Strand 1: Number', subtitle: 'Number Systems & Operations', strand: '1', items: [
+                { code: 'N.1', text: 'Understand natural numbers ℕ, integers ℤ, and rationals ℚ', official: 'investigate the representation of numbers and arithmetic operations' },
+                { code: 'N.2', text: 'Represent numbers on a number line', official: 'represent the operations of addition, subtraction, multiplication, and division in N, Z, and Q using models including the number line' },
+                { code: 'N.3', text: 'Find factors, multiples, and prime numbers', official: 'investigate the properties of arithmetic: commutative, associative, and distributive' },
+                { code: 'N.4', text: 'Express numbers as products of prime factors', official: 'express numbers in terms of their prime factors' },
+                { code: 'N.5', text: 'Apply order of operations (BIMDAS) including brackets', official: 'appreciate the order of operations, including brackets' },
+                { code: 'N.6', text: 'Use commutative, associative, and distributive laws', official: 'investigate the properties of arithmetic: commutative, associative, and distributive' }
+            ]},
+            { title: 'Strand 1: Number', subtitle: 'Fractions, Decimals & Percentages', strand: '1', items: [
+                { code: 'N.7', text: 'Perform operations with positive and negative numbers', official: 'investigate models such as the number line to illustrate operations in Z' },
+                { code: 'N.8', text: 'Work with fractions, decimals, and percentages interchangeably', official: 'use the equivalence of fractions, decimals, and percentages to compare proportions' },
+                { code: 'N.9', text: 'Solve problems involving ratio and proportion', official: 'consolidate the idea of a relationship between ratio and proportion' },
+                { code: 'N.10', text: 'Calculate percentages, percentage increase and decrease', official: 'solve problems involving percentage' },
+                { code: 'N.11', text: 'Solve problems involving profit, loss, discount, VAT', official: 'solve problems that involve finding profit or loss, discount, VAT' },
+                { code: 'N.12', text: 'Calculate simple and compound interest', official: 'solve problems involving compound interest', hl: true }
+            ]},
+            { title: 'Strand 1: Number', subtitle: 'Indices, Standard Form & Estimation', strand: '1', items: [
+                { code: 'N.13', text: 'Use index notation and rules: aᵐ × aⁿ = aᵐ⁺ⁿ', official: 'use and apply the rules of indices' },
+                { code: 'N.14', text: 'Understand a⁰ = 1 and negative indices', official: 'use and apply the rules of indices' },
+                { code: 'N.15', text: 'Express numbers in standard form (a × 10ⁿ)', official: 'express non-zero positive rational numbers in the form a × 10ⁿ' },
+                { code: 'N.16', text: 'Perform calculations with numbers in standard form', official: 'perform arithmetic operations on numbers in standard form' },
+                { code: 'N.17', text: 'Round numbers to the required degree of accuracy', official: 'present numerical answers to the degree of accuracy specified' },
+                { code: 'N.18', text: 'Make estimates and check if answers are reasonable', official: 'make and justify estimates and approximations of calculations' }
+            ]},
+            { title: 'Strand 1: Number', subtitle: 'Measurement, Area & Volume', strand: '1', items: [
+                { code: 'N.19', text: 'Calculate percentage error', official: 'calculate percentage error', hl: true },
+                { code: 'N.20', text: 'Use appropriate units and convert between them', official: 'calculate, interpret, and apply units of measure and time' },
+                { code: 'N.21', text: 'Find perimeter and area of rectangles, triangles, circles', official: 'find the perimeter and area of plane figures' },
+                { code: 'N.22', text: 'Find area of composite shapes', official: 'find the area of figures made from combinations of shapes' },
+                { code: 'N.23', text: 'Find volume and surface area of 3D solids', official: 'find the volume and surface area of rectangular solids, cylinders, and spheres' },
+                { code: 'N.24', text: 'Draw and interpret scale diagrams', official: 'draw and interpret scaled diagrams' }
+            ]},
+
+            // STRAND 2: GEOMETRY & TRIGONOMETRY (4 slides)
+            { title: 'Strand 2: Geometry & Trigonometry', subtitle: 'Constructions & Angle Properties', strand: '2', items: [
+                { code: 'GT.1', text: 'Construct a line segment of given length', official: 'perform the constructions specified in the syllabus' },
+                { code: 'GT.2', text: 'Bisect an angle using a compass', official: 'perform the constructions specified in the syllabus' },
+                { code: 'GT.3', text: 'Construct the perpendicular bisector of a segment', official: 'perform the constructions specified in the syllabus' },
+                { code: 'GT.4', text: 'Construct a line perpendicular to a given line, passing through a point', official: 'perform the constructions specified in the syllabus' },
+                { code: 'GT.5', text: 'Calculate angles at a point, on a straight line, vertically opposite', official: 'investigate angle properties' },
+                { code: 'GT.6', text: 'Use angle sum in triangles (180°) and quadrilaterals (360°)', official: 'investigate angle properties of triangles and quadrilaterals' }
+            ]},
+            { title: 'Strand 2: Geometry & Trigonometry', subtitle: 'Triangles & Theorems', strand: '2', items: [
+                { code: 'GT.7', text: 'Find angles formed by parallel lines cut by a transversal', official: 'investigate transversals and parallel lines' },
+                { code: 'GT.8', text: 'Recognise properties of isosceles and equilateral triangles', official: 'investigate properties of triangles' },
+                { code: 'GT.9', text: 'Use Pythagoras\' theorem to find missing sides', official: 'investigate the theorem of Pythagoras and its applications', hl: true },
+                { code: 'GT.10', text: 'Use the converse of Pythagoras\' theorem', official: 'investigate the converse of the theorem of Pythagoras', hl: true },
+                { code: 'GT.11', text: 'Investigate and apply circle theorems', official: 'investigate theorems about angles in circles', hl: true },
+                { code: 'GT.12', text: 'Use the terms: theorem, proof, axiom, corollary', official: 'use the following terms: theorem, proof, axiom, corollary, converse', hl: true }
+            ]},
+            { title: 'Strand 2: Geometry & Trigonometry', subtitle: 'Coordinate Geometry & Trigonometry', strand: '2', items: [
+                { code: 'GT.13', text: 'Plot points on the coordinate plane', official: 'use co-ordinate geometry techniques' },
+                { code: 'GT.14', text: 'Find the midpoint of a line segment', official: 'find the midpoint of a line segment' },
+                { code: 'GT.15', text: 'Calculate the distance between two points', official: 'calculate the distance between two points' },
+                { code: 'GT.16', text: 'Find the slope of a line and interpret it', official: 'calculate and interpret slope' },
+                { code: 'GT.17', text: 'Use sin, cos, tan to find sides and angles in right-angled triangles', official: 'use trigonometric ratios to solve right-angled triangle problems' },
+                { code: 'GT.18', text: 'Solve real-world problems using trigonometry', official: 'apply trigonometric ratios to real-world contexts' }
+            ]},
+            { title: 'Strand 2: Geometry & Trigonometry', subtitle: 'Area & Transformations', strand: '2', items: [
+                { code: 'GT.19', text: 'Find area of a triangle using ½ab sin C', official: 'find the area of a triangle using ½ab sin C', hl: true },
+                { code: 'GT.20', text: 'Recognise and perform translations, reflections, rotations', official: 'recognise and perform transformations' },
+                { code: 'GT.21', text: 'Locate axes of symmetry in shapes', official: 'locate axes of symmetry in simple shapes' },
+                { code: 'GT.22', text: 'Investigate enlargements with scale factor k', official: 'investigate enlargements' },
+                { code: 'GT.23', text: 'Understand how enlargement affects area', official: 'investigate enlargements and their effect on area' }
+            ]},
+
+            // STRAND 3: ALGEBRA & FUNCTIONS (5 slides)
+            { title: 'Strand 3: Algebra & Functions', subtitle: 'Expressions & Expanding', strand: '3', items: [
+                { code: 'AF.1', text: 'Use letters to represent variables and unknowns', official: 'use letter symbols for numeric quantities' },
+                { code: 'AF.2', text: 'Evaluate expressions given the value of variables', official: 'evaluate expressions given the value of the variables' },
+                { code: 'AF.3', text: 'Simplify expressions by collecting like terms', official: 'simplify expressions' },
+                { code: 'AF.4', text: 'Expand brackets: a(b + c) = ab + ac', official: 'expand and simplify expressions' },
+                { code: 'AF.5', text: 'Expand (x + a)(x + b)', official: 'expand products of binomials' },
+                { code: 'AF.6', text: 'Factorise by taking out common factors', official: 'factorise expressions' }
+            ]},
+            { title: 'Strand 3: Algebra & Functions', subtitle: 'Factorising & Equations', strand: '3', items: [
+                { code: 'AF.7', text: 'Factorise quadratic expressions', official: 'factorise expressions of order 2', hl: true },
+                { code: 'AF.8', text: 'Rearrange formulae to change the subject', official: 'rearrange formulae' },
+                { code: 'AF.9', text: 'Solve linear equations: ax + b = c', official: 'solve first-degree equations in one variable' },
+                { code: 'AF.10', text: 'Solve equations with unknowns on both sides', official: 'solve first-degree equations with the unknown on both sides' },
+                { code: 'AF.11', text: 'Solve equations involving brackets and fractions', official: 'solve equations involving brackets and fractions' },
+                { code: 'AF.12', text: 'Form and solve equations from word problems', official: 'solve problems involving setting up and solving linear equations' }
+            ]},
+            { title: 'Strand 3: Algebra & Functions', subtitle: 'Simultaneous, Quadratic & Inequalities', strand: '3', items: [
+                { code: 'AF.13', text: 'Solve simultaneous equations graphically and algebraically', official: 'solve simultaneous linear equations with two unknowns' },
+                { code: 'AF.14', text: 'Solve quadratic equations by factorising', official: 'solve quadratic equations by factorising', hl: true },
+                { code: 'AF.15', text: 'Solve quadratic equations using the formula', official: 'solve quadratic equations using the quadratic formula', hl: true },
+                { code: 'AF.16', text: 'Solve linear inequalities and show solutions on a number line', official: 'solve linear inequalities' },
+                { code: 'AF.17', text: 'Continue and describe linear patterns', official: 'investigate patterns and relationships' },
+                { code: 'AF.18', text: 'Find the nth term of an arithmetic sequence', official: 'find the general term of an arithmetic sequence' }
+            ]},
+            { title: 'Strand 3: Algebra & Functions', subtitle: 'Sequences & Functions', strand: '3', items: [
+                { code: 'AF.19', text: 'Recognise quadratic and geometric sequences', official: 'recognise quadratic and geometric sequences', hl: true },
+                { code: 'AF.20', text: 'Understand a function as a rule: each input gives exactly one output', official: 'recognise that a function assigns a unique output to a given input' },
+                { code: 'AF.21', text: 'Use function notation f(x)', official: 'use function notation' },
+                { code: 'AF.22', text: 'Represent functions using tables, mappings, and graphs', official: 'represent functions in different ways' },
+                { code: 'AF.23', text: 'Find outputs given inputs, and vice versa', official: 'determine inputs and outputs of functions' },
+                { code: 'AF.24', text: 'Plot and interpret linear graphs y = mx + c', official: 'graph linear functions' }
+            ]},
+            { title: 'Strand 3: Algebra & Functions', subtitle: 'Graphing & Real-World Applications', strand: '3', items: [
+                { code: 'AF.25', text: 'Interpret slope as rate of change, and y-intercept as starting value', official: 'interpret the slope and y-intercept of linear functions' },
+                { code: 'AF.26', text: 'Plot quadratic functions and identify vertex, axis of symmetry, roots', official: 'graph quadratic functions', hl: true },
+                { code: 'AF.27', text: 'Use graphs to solve equations f(x) = g(x)', official: 'use graphical methods to solve equations' },
+                { code: 'AF.28', text: 'Interpret graphs representing real-world situations', official: 'interpret graphs in real-world contexts' },
+                { code: 'AF.29', text: 'Match graphs to stories and vice versa', official: 'connect graphs and real-world phenomena' },
+                { code: 'AF.30', text: 'Describe both quantity and rate of change from a graph', official: 'describe quantity and rate of change from graphs' }
+            ]},
+
+            // STRAND 4: STATISTICS & PROBABILITY (4 slides)
+            { title: 'Strand 4: Statistics & Probability', subtitle: 'Probability Basics', strand: '4', items: [
+                { code: 'SP.1', text: 'List outcomes of an experiment systematically', official: 'list all possible outcomes of an experiment' },
+                { code: 'SP.2', text: 'Recognise that probability is on a scale from 0 to 1', official: 'recognise that probability is a measure on a scale of 0-1' },
+                { code: 'SP.3', text: 'Estimate probabilities from experimental data', official: 'estimate probabilities from experimental data' },
+                { code: 'SP.4', text: 'Link probability to long-run relative frequency', official: 'associate probability with long-run relative frequency' },
+                { code: 'SP.5', text: 'Calculate probability: favourable outcomes ÷ total outcomes', official: 'apply the principle that probability = favourable outcomes / total outcomes' },
+                { code: 'SP.6', text: 'Find probability with coins, dice, spinners, cards', official: 'calculate probabilities in practical contexts' }
+            ]},
+            { title: 'Strand 4: Statistics & Probability', subtitle: 'Combined Events & Data Collection', strand: '4', items: [
+                { code: 'SP.7', text: 'Construct sample spaces for two independent events', official: 'construct sample spaces for two independent events', hl: true },
+                { code: 'SP.8', text: 'Find the probability of combined events', official: 'find the probability of combined events', hl: true },
+                { code: 'SP.9', text: 'Formulate a statistical question', official: 'formulate one or more questions that can be answered with data' },
+                { code: 'SP.10', text: 'Plan and collect data (Simple Random Sample)', official: 'select a sample (Simple Random Sample)' },
+                { code: 'SP.11', text: 'Recognise the importance of avoiding bias in sampling', official: 'recognise the importance of representativeness so as to avoid biased samples' },
+                { code: 'SP.12', text: 'Generate or source data, including from the internet', official: 'generate data, or source data from other sources including the internet' }
+            ]},
+            { title: 'Strand 4: Statistics & Probability', subtitle: 'Representing Data', strand: '4', items: [
+                { code: 'SP.13', text: 'Select appropriate graphical displays for data', official: 'select appropriate methods to represent and describe the sample' },
+                { code: 'SP.14', text: 'Use bar charts, pie charts, line plots, histograms, stem-and-leaf plots', official: 'use pie charts, bar charts, line plots, histograms, stem and leaf plots' },
+                { code: 'SP.15', text: 'Calculate and interpret mean, median, mode', official: 'use mean, median, and mode to describe central tendency' },
+                { code: 'SP.16', text: 'Use range as a measure of spread', official: 'use range to describe variability' },
+                { code: 'SP.17', text: 'Interpret graphical summaries of data', official: 'interpret graphical summaries of data' }
+            ]},
+            { title: 'Strand 4: Statistics & Probability', subtitle: 'Interpreting & Analysing Data', strand: '4', items: [
+                { code: 'SP.18', text: 'Evaluate how effectively different displays represent data', official: 'evaluate the effectiveness of different displays' },
+                { code: 'SP.19', text: 'Recognise how sampling variability affects conclusions', official: 'recognise how sampling variability influences the use of sample information' },
+                { code: 'SP.20', text: 'Discuss misconceptions and misuses of statistics', official: 'recognise misconceptions and misuses of statistics' }
+            ]}
+        ];
+
+        const strands = [
+            { id: 'U', name: 'Unifying Strand', startSlide: 0 },
+            { id: '1', name: 'Strand 1: Number', startSlide: 2 },
+            { id: '2', name: 'Strand 2: Geometry & Trigonometry', startSlide: 6 },
+            { id: '3', name: 'Strand 3: Algebra & Functions', startSlide: 10 },
+            { id: '4', name: 'Strand 4: Statistics & Probability', startSlide: 15 }
+        ];
+
+        let currentSlide = 0;
+        let ticked = {};
+        let mode = 'browse';
+        let presentationSlides = [];
+        let revealIndex = 0;
+        let menuOpen = false;
+
+        function toggleMenu() {
+            menuOpen = !menuOpen;
+            document.getElementById('strandMenu').classList.toggle('open', menuOpen);
+            if (menuOpen) buildStrandMenu();
+        }
+
+        function buildStrandMenu() {
+            const menu = document.getElementById('strandMenu');
+            const currentStrand = slides[currentSlide]?.strand;
+            menu.innerHTML = strands.map(s => `
+                <div class="strand-menu-item ${s.id === currentStrand ? 'active' : ''}" onclick="jumpToStrand('${s.id}')">
+                    <span class="strand-num">${s.id}</span>
+                    <span>${s.name}</span>
+                </div>
+            `).join('');
+        }
+
+        function jumpToStrand(strandId) {
+            const strand = strands.find(s => s.id === strandId);
+            if (strand) { currentSlide = strand.startSlide; renderSlide(); }
+            toggleMenu();
+        }
+
+        document.addEventListener('click', (e) => {
+            if (menuOpen && !e.target.closest('.burger') && !e.target.closest('.strand-menu')) toggleMenu();
+        });
+
+        function getAllItems() {
+            const items = [];
+            for (const slide of slides) {
+                for (const item of slide.items) {
+                    items.push(item);
+                }
+            }
+            return items;
+        }
+
+        function copyAll(type) {
+            const items = getAllItems();
+            const text = items.map(item => `${item.code}: ${type === 'friendly' ? item.text : item.official}`).join('\n');
+            navigator.clipboard.writeText(text);
+        }
+
+        function getSelectedItems() {
+            const codes = Object.keys(ticked);
+            const items = [];
+            for (const slide of slides) {
+                for (const item of slide.items) {
+                    if (codes.includes(item.code)) items.push(item);
+                }
+            }
+            return items;
+        }
+
+        function buildPresentationSlides() {
+            const items = getSelectedItems();
+            presentationSlides = [];
+            for (let i = 0; i < items.length; i += 5) {
+                presentationSlides.push(items.slice(i, i + 5));
+            }
+            return presentationSlides;
+        }
+
+        function renderSlide() {
+            const container = document.getElementById('slide');
+            const modeIndicator = document.getElementById('modeIndicator');
+            
+            if (mode === 'browse') {
+                modeIndicator.textContent = 'Browse';
+                const slide = slides[currentSlide];
+                container.innerHTML = `
+                    <div class="slide-header">
+                        <h2>${slide.title}</h2>
+                        <div class="subtitle">${slide.subtitle}</div>
+                    </div>
+                    ${slide.items.map(item => `
+                        <label class="lo-item ${ticked[item.code] ? 'ticked' : ''}">
+                            <input type="checkbox" ${ticked[item.code] ? 'checked' : ''} onchange="toggleTick('${item.code}')">
+                            <span class="code">${item.code}</span>
+                            <div class="content">
+                                <span class="text">${item.text}${item.hl ? '<span class="hl-tag">HL</span>' : ''}</span>
+                                <div class="official">${item.official}</div>
+                            </div>
+                        </label>
+                    `).join('')}
+                `;
+                document.getElementById('pageInfo').textContent = `${currentSlide + 1} / ${slides.length}`;
+                document.getElementById('prevBtn').disabled = currentSlide === 0;
+                document.getElementById('nextBtn').disabled = currentSlide === slides.length - 1;
+                document.getElementById('presentBtn').textContent = 'Present Selected';
+            } else {
+                modeIndicator.textContent = 'Present';
+                if (presentationSlides.length === 0) {
+                    container.innerHTML = `<div class="slide-header selected-header"><h2>📋 Selected Learning Outcomes</h2><div class="subtitle">No items selected</div></div><p style="text-align:center;color:#999;padding:40px;">Go back to Browse mode and tick some items first.</p>`;
+                    document.getElementById('pageInfo').textContent = '0 / 0';
+                    return;
+                }
+                const pageItems = presentationSlides[currentSlide];
+                const globalStartIndex = currentSlide * 5;
+                container.innerHTML = `
+                    <div class="slide-header selected-header">
+                        <h2>📋 Selected Learning Outcomes</h2>
+                        <div class="subtitle">Page ${currentSlide + 1} of ${presentationSlides.length} • Use Next to reveal</div>
+                    </div>
+                    ${pageItems.map((item, i) => {
+                        const globalIndex = globalStartIndex + i;
+                        let stateClass = 'upcoming';
+                        if (globalIndex < revealIndex) stateClass = 'revealed';
+                        else if (globalIndex === revealIndex) stateClass = 'current';
+                        return `<div class="lo-item presentation ${stateClass}"><span class="code">${item.code}</span><div class="content"><span class="text">${item.text}${item.hl ? '<span class="hl-tag">HL</span>' : ''}</span><div class="official">${item.official}</div></div></div>`;
+                    }).join('')}
+                `;
+                const totalItems = getSelectedItems().length;
+                document.getElementById('pageInfo').textContent = `${Math.min(revealIndex + 1, totalItems)} / ${totalItems}`;
+                document.getElementById('prevBtn').disabled = revealIndex === 0;
+                document.getElementById('nextBtn').disabled = revealIndex >= totalItems;
+                document.getElementById('presentBtn').textContent = '← Back to Browse';
+            }
+            updateTickedDisplay();
+        }
+
+        function toggleTick(code) {
+            if (ticked[code]) delete ticked[code];
+            else { for (const slide of slides) { const item = slide.items.find(i => i.code === code); if (item) { ticked[code] = item.text; break; } } }
+            renderSlide();
+        }
+
+        function updateTickedDisplay() {
+            const codes = Object.keys(ticked);
+            document.getElementById('tickedCodes').innerHTML = codes.length === 0 ? 'None' : codes.map(c => `<span>${c}</span>`).join('');
+        }
+
+        function prevSlide() {
+            if (mode === 'browse') { if (currentSlide > 0) { currentSlide--; renderSlide(); } }
+            else { if (revealIndex > 0) { revealIndex--; currentSlide = Math.floor(revealIndex / 5); renderSlide(); } }
+        }
+
+        function nextSlide() {
+            if (mode === 'browse') { if (currentSlide < slides.length - 1) { currentSlide++; renderSlide(); } }
+            else { const totalItems = getSelectedItems().length; if (revealIndex < totalItems) { revealIndex++; currentSlide = Math.floor(revealIndex / 5); if (currentSlide >= presentationSlides.length) currentSlide = presentationSlides.length - 1; renderSlide(); } }
+        }
+
+        function goToPresentation() {
+            if (mode === 'browse') { mode = 'present'; buildPresentationSlides(); currentSlide = 0; revealIndex = 0; }
+            else { mode = 'browse'; currentSlide = 0; }
+            renderSlide();
+        }
+
+        function copyTicked() {
+            const codes = Object.keys(ticked);
+            if (codes.length === 0) return;
+            const text = codes.map(code => `${code}: ${ticked[code]}`).join('\n');
+            navigator.clipboard.writeText(text);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); nextSlide(); }
+            else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prevSlide(); }
+        });
+
+        renderSlide();
+    </script>
+</body>
+</html>
