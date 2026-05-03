@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-degrees" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Degrees</title>
+
+  <convention xml:id="conv-degree-notation">
+    <title>Notation</title>
+    <p>
+      We denote the number of <term>degrees</term> in an angle <m>\angle BAC</m> or
+      <m>\alpha</m> by the symbol <m>|\angle BAC|</m>, or <m>|\alpha|</m>, as the
+      case may be.
+    </p>
+  </convention>
+
+  <axiom xml:id="ax-protractor">
+    <title>Protractor Axiom</title>
+    <statement>
+      <p>
+        The number of degrees in an angle (also known as its
+        <term>degree-measure</term>) is always a number between
+        <m>0^\circ</m> and <m>360^\circ</m>. The number of degrees of an ordinary
+        angle is less than <m>180^\circ</m>. It has these properties:
+      </p>
+      <ol>
+        <li><p>A straight angle has <m>180^\circ</m>.</p></li>
+        <li>
+          <p>
+            Given a ray <m>[AB</m>, and a number <m>d</m> between <m>0</m> and
+            <m>180</m>, there is exactly one ray from <m>A</m> on each side of the
+            line <m>AB</m> that makes an (ordinary) angle having <m>d</m> degrees
+            with the ray <m>[AB</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>D</m> is a point inside an angle <m>\angle BAC</m>, then
+            <me>|\angle BAC| = |\angle BAD| + |\angle DAC|.</me>
+          </p>
+        </li>
+      </ol>
+      <p>
+        Null angles are assigned <m>0^\circ</m>, full angles <m>360^\circ</m>, and
+        reflex angles have more than <m>180^\circ</m>. If <m>A</m>, <m>B</m>, and
+        <m>C</m> are noncollinear points, then the reflex angle outside the angle
+        <m>\angle BAC</m> measures <m>360^\circ - |\angle BAC|</m>.
+      </p>
+    </statement>
+  </axiom>
+
+  <definition xml:id="def-angle-bisector">
+    <statement>
+      <p>
+        The ray <m>[AD</m> is the <term>bisector</term> of the angle
+        <m>\angle BAC</m> if
+        <me>|\angle BAD| = |\angle DAC| = \frac{|\angle BAC|}{2}.</me>
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-right-angle">
+    <statement>
+      <p>A <term>right angle</term> is an angle of exactly <m>90^\circ</m>.</p>
+    </statement>
+  </definition>
+
+  <figure xml:id="fig-right-angle">
+    <caption>A right angle at <m>A</m>, marked with a small square</caption>
+    <image width="40%">
+      <description>Two rays meeting at a right angle, marked with a small square at the vertex</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[-latex, thick] (0,0) -- (3,0) node[right] {$B$};
+          \draw[-latex, thick] (0,0) -- (0,2.5) node[above] {$C$};
+          \draw (0.3,0) -- (0.3,0.3) -- (0,0.3);
+          \filldraw (0,0) circle (2pt) node[below left] {$A$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <exercises xml:id="exs-degrees">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-deg-straight">
+      <statement>
+        <p>How many degrees are in a straight angle?</p>
+      </statement>
+      <hint>
+        <p>See the <xref ref="ax-protractor"/>.</p>
+      </hint>
+      <answer>
+        <p><m>180^\circ</m>.</p>
+      </answer>
+      <solution>
+        <p>By the Protractor Axiom, a straight angle has <m>180^\circ</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-deg-bisector">
+      <statement>
+        <p>
+          An angle <m>\angle BAC</m> has <m>70^\circ</m>. The ray <m>[AD</m>
+          bisects it. Find <m>|\angle BAD|</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>The bisector divides the angle into two equal halves.</p>
+      </hint>
+      <answer>
+        <p><m>35^\circ</m>.</p>
+      </answer>
+      <solution>
+        <p>
+          By the definition of angle bisector,
+          <m>|\angle BAD| = \frac{|\angle BAC|}{2} = \frac{70^\circ}{2} = 35^\circ</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-deg-reflex">
+      <statement>
+        <p>
+          An ordinary angle <m>\angle BAC</m> has <m>110^\circ</m>. What is the
+          measure of the reflex angle outside it?
+        </p>
+      </statement>
+      <hint>
+        <p>The ordinary angle and its reflex angle together make a full angle.</p>
+      </hint>
+      <answer>
+        <p><m>250^\circ</m>.</p>
+      </answer>
+      <solution>
+        <p>
+          The reflex angle measures <m>360^\circ - 110^\circ = 250^\circ</m>.
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
+</section>
