@@ -8,6 +8,8 @@
 
     <xi:include href="./frontmatter.ptx" />
 
+    <xi:include href="./introduction.ptx" />
+
     <xi:include href="./geometry/ch_geometry1.ptx" />
 
     <xi:include href="./backmatter.ptx" />
