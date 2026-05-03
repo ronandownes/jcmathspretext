@@ -96,9 +96,9 @@
         <p>Points <m>P</m>, <m>Q</m>, and <m>R</m> all lie on the line <m>m</m>.
         Are they collinear?</p>
       </statement>
-      <hint>
-        <p>Look up the definition of collinear.</p>
-      </hint>
+<hint>
+  <p>See <xref ref="def-collinear"/>.</p>
+</hint>
       <answer>
         <p>Yes.</p>
       </answer>
