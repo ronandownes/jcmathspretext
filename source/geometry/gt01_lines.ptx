@@ -72,6 +72,63 @@
     </statement>
   </definition>
 
+  <figure xml:id="fig-line">
+    <caption>A line through points <m>A</m> and <m>B</m>, extending forever in both directions</caption>
+    <image width="70%">
+      <description>A straight line with arrows on both ends passing through labelled points A and B</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[latex-latex, thick] (-1.5,0) -- (4.5,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (3,0) circle (2pt) node[below] {$B$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <figure xml:id="fig-segment">
+    <caption>The line segment <m>[AB]</m> has two endpoints</caption>
+    <image width="55%">
+      <description>A line segment with endpoints A and B</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (3,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (3,0) circle (2pt) node[below] {$B$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <figure xml:id="fig-ray">
+    <caption>The ray <m>[AB</m> starts at <m>A</m> and extends forever through <m>B</m></caption>
+    <image width="60%">
+      <description>A ray starting at A, passing through B, with an arrow continuing to the right</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[-latex, thick] (0,0) -- (4,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (2,0) circle (2pt) node[below] {$B$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <figure xml:id="fig-triangle">
+    <caption>Triangle <m>\triangle ABC</m> with sides <m>[AB]</m>, <m>[BC]</m>, <m>[CA]</m></caption>
+    <image width="45%">
+      <description>A triangle with vertices A at bottom left, B at bottom right, C at top</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (3,0) -- (1.5,2.5) -- cycle;
+          \filldraw (0,0)   circle (2pt) node[below left]  {$A$};
+          \filldraw (3,0)   circle (2pt) node[below right] {$B$};
+          \filldraw (1.5,2.5) circle (2pt) node[above]    {$C$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
   <exercises xml:id="exs-lines">
     <title>Exercises</title>
 
