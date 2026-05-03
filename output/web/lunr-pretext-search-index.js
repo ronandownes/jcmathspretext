@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Lines",
-  "body": " Lines   Line Line is undefined. is short for straight line. Take a fixed plane Undefined term , once and for all, and consider just lines that lie in it. The plane and the lines are sets Undefined term of points Undefined term . Each line is a subset of the plane, i.e. each element of a line is a point of the plane. Each line is endless, extending forever in both directions. Each line has infinitely-many points. The points on a line can be taken to be ordered along the line in a natural way. As a consequence, given any three distinct points on a line, exactly one of them lies between the other two. Points that are not on a given line can be said to be on one or other side of the line. The sides of a line are sometimes referred to as half-planes .   Notation  We denote points by roman capital letters , , , etc., and lines by lower-case roman letters , , , etc.   Axioms are statements we will accept as true. An axiom is a statement accepted without proof, as a basis for argument. A theorem is a statement deduced from the axioms by logical argument.   Two Points Axiom   There is exactly one line through any two given points. (We denote the line through and by .)      The line segment  is the part of the line between and (including the endpoints). The point divides the line into two pieces, called rays . The point lies between all points of one ray and all points of the other. We denote the ray that starts at and passes through by . Rays are sometimes referred to as half-lines .  Three points usually determine three different lines.      If three or more points lie on a single line, we say they are collinear .      Let , and be points that are not collinear. The triangle  is the piece of the plane enclosed by the three line segments , and . The segments are called its sides , and the points are called its vertices (singular vertex ).     Exercises    How many straight lines can be drawn through two given points and ?    Think about the Two Points Axiom.    Exactly one.    By the Two Points Axiom, there is exactly one line through any two given points. So there is exactly one line through and .      Points , , and all lie on the line . Are they collinear?    See .    Yes.    Three or more points are collinear if they all lie on a single line. Since , , and all lie on line , they are collinear.      Explain the difference between the line segment and the ray .    Think about which one has two endpoints, which has one, and which continues forever.    The segment is the finite part of line between and . The ray starts at and continues forever through and beyond .    The line segment is the part of line between and , including both endpoints. It has a definite finite length . The ray starts at point and passes through , continuing forever in that direction. A ray has one starting point but no endpoint.      Triangle has vertices , , and . Name its three sides.    Each side is a line segment connecting two of the three vertices.    The three sides are , , and .    By definition, triangle is enclosed by the three line segments , , and . These segments are its three sides.     "
+  "body": " Lines   Line Line is undefined. is short for straight line. Take a fixed plane Undefined term , once and for all, and consider just lines that lie in it. The plane and the lines are sets Undefined term of points Undefined term . Each line is a subset of the plane, i.e. each element of a line is a point of the plane. Each line is endless, extending forever in both directions. Each line has infinitely-many points. The points on a line can be taken to be ordered along the line in a natural way. As a consequence, given any three distinct points on a line, exactly one of them lies between the other two. Points that are not on a given line can be said to be on one or other side of the line. The sides of a line are sometimes referred to as half-planes .   Notation  We denote points by roman capital letters , , , etc., and lines by lower-case roman letters , , , etc.   Axioms are statements we will accept as true. An axiom is a statement accepted without proof, as a basis for argument. A theorem is a statement deduced from the axioms by logical argument.   Two Points Axiom   There is exactly one line through any two given points. (We denote the line through and by .)      The line segment  is the part of the line between and (including the endpoints). The point divides the line into two pieces, called rays . The point lies between all points of one ray and all points of the other. We denote the ray that starts at and passes through by . Rays are sometimes referred to as half-lines .  Three points usually determine three different lines.      If three or more points lie on a single line, we say they are collinear .      Let , and be points that are not collinear. The triangle  is the piece of the plane enclosed by the three line segments , and . The segments are called its sides , and the points are called its vertices (singular vertex ).     A line through points and , extending forever in both directions   A straight line with arrows on both ends passing through labelled points A and B      The line segment has two endpoints   A line segment with endpoints A and B      The ray starts at and extends forever through   A ray starting at A, passing through B, with an arrow continuing to the right      Triangle with sides , ,   A triangle with vertices A at bottom left, B at bottom right, C at top      Exercises    How many straight lines can be drawn through two given points and ?    Think about the Two Points Axiom.    Exactly one.    By the Two Points Axiom, there is exactly one line through any two given points. So there is exactly one line through and .      Points , , and all lie on the line . Are they collinear?    See .    Yes.    Three or more points are collinear if they all lie on a single line. Since , , and all lie on line , they are collinear.      Explain the difference between the line segment and the ray .    Think about which one has two endpoints, which has one, and which continues forever.    The segment is the finite part of line between and . The ray starts at and continues forever through and beyond .    The line segment is the part of line between and , including both endpoints. It has a definite finite length . The ray starts at point and passes through , continuing forever in that direction. A ray has one starting point but no endpoint.      Triangle has vertices , , and . Name its three sides.    Each side is a line segment connecting two of the three vertices.    The three sides are , , and .    By definition, triangle is enclosed by the three line segments , , and . These segments are its three sides.     "
 },
 {
   "id": "sec-lines-2",
@@ -80,6 +80,42 @@ var ptx_lunr_docs = [
   "number": "1.1.5",
   "title": "",
   "body": "  Let , and be points that are not collinear. The triangle  is the piece of the plane enclosed by the three line segments , and . The segments are called its sides , and the points are called its vertices (singular vertex ).   "
+},
+{
+  "id": "fig-line",
+  "level": "2",
+  "url": "sec-lines.html#fig-line",
+  "type": "Figure",
+  "number": "1.1.6",
+  "title": "",
+  "body": " A line through points and , extending forever in both directions   A straight line with arrows on both ends passing through labelled points A and B    "
+},
+{
+  "id": "fig-segment",
+  "level": "2",
+  "url": "sec-lines.html#fig-segment",
+  "type": "Figure",
+  "number": "1.1.7",
+  "title": "",
+  "body": " The line segment has two endpoints   A line segment with endpoints A and B    "
+},
+{
+  "id": "fig-ray",
+  "level": "2",
+  "url": "sec-lines.html#fig-ray",
+  "type": "Figure",
+  "number": "1.1.8",
+  "title": "",
+  "body": " The ray starts at and extends forever through   A ray starting at A, passing through B, with an arrow continuing to the right    "
+},
+{
+  "id": "fig-triangle",
+  "level": "2",
+  "url": "sec-lines.html#fig-triangle",
+  "type": "Figure",
+  "number": "1.1.9",
+  "title": "",
+  "body": " Triangle with sides , ,   A triangle with vertices A at bottom left, B at bottom right, C at top    "
 },
 {
   "id": "ex-lines-axiom",
