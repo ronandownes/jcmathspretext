@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-coordinate-geometry" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Coordinate Geometry</title>
+
+  <introduction>
+    <p>
+      Coordinate geometry connects algebra and geometry by placing shapes on a grid.
+      Every point is described by an ordered pair <m>(x, y)</m>, and we can calculate distances, midpoints, and slopes algebraically.
+    </p>
+  </introduction>
+
+  <xi:include href="gt07_coordinates.ptx" />
+  <xi:include href="gt08_midpoint-distance.ptx" />
+  <xi:include href="gt09_slope.ptx" />
+
+</chapter>

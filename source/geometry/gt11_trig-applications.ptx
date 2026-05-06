@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-trig-applications">
+  <title>Trigonometry Applications</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-18" /> — Real-world trigonometry</li>
+      <li><xref ref="lo-u-6" /> — Connections to the real world</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Trigonometry is used to find heights and distances that are impossible to measure directly.
+    Key vocabulary: the <term>angle of elevation</term> is measured upward from the horizontal; the <term>angle of depression</term> is measured downward.
+  </p>
+
+  <exercises xml:id="exs-trig-applications">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-angle-elevation">
+      <statement>
+        <p>
+          From a point 50 m away from the base of a vertical tower, the angle of elevation of the top is 40°.
+          Find the height of the tower. Give your answer correct to 1 decimal place.
+        </p>
+      </statement>
+      <hint><p>Draw a right-angled triangle. The horizontal distance is the adjacent side and the height is the opposite side.</p></hint>
+      <answer><p>42.0 m</p></answer>
+      <solution><p><m>\tan 40° = \dfrac{h}{50}</m>, so <m>h = 50 \tan 40° \approx 42.0</m> m.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-angle-depression">
+      <statement>
+        <p>
+          From the top of a cliff 80 m high, the angle of depression to a boat is 25°.
+          How far is the boat from the base of the cliff? Give your answer to the nearest metre.
+        </p>
+      </statement>
+      <answer><p>172 m</p></answer>
+      <solution><p>The angle of depression equals the angle of elevation from the boat (alternate angles). <m>\tan 25° = \dfrac{80}{d}</m>, so <m>d = \dfrac{80}{\tan 25°} \approx 172</m> m.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

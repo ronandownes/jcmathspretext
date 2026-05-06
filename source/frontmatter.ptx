@@ -3,7 +3,7 @@
 <!-- first chapter. Fill in and comment/uncomment to see how this -->
 <!-- works. -->
 
-<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
   <bibinfo>
   
     <author>
@@ -29,5 +29,8 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
+
+  <xi:include href="./introduction.ptx" />
+
 </frontmatter>
 

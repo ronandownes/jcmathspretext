@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-algebra-equations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Equations</title>
+
+  <introduction>
+    <p>
+      An equation states that two expressions are equal. Solving an equation means finding the value(s) of the unknown that make the equation true.
+      This chapter covers linear equations, simultaneous equations, and quadratic equations.
+    </p>
+  </introduction>
+
+  <xi:include href="af04_linear-equations.ptx" />
+  <xi:include href="af05_simultaneous.ptx" />
+  <xi:include href="af06_quadratic-equations.ptx" />
+
+</chapter>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sp-graphs-charts">
+  <title>Graphical Displays</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-sp-13" /> — Choose appropriate displays</li>
+      <li><xref ref="lo-sp-14" /> — Draw statistical graphs</li>
+      <li><xref ref="lo-sp-17" /> — Interpret graphical summaries</li>
+      <li><xref ref="lo-sp-18" /> — Evaluate displays</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Choosing the right display depends on the type of data and the story you want to tell:
+  </p>
+  <ul>
+    <li><term>Bar chart</term>: categorical or discrete data — compare frequencies</li>
+    <li><term>Pie chart</term>: proportions of a whole</li>
+    <li><term>Line plot (dot plot)</term>: small data sets — individual values</li>
+    <li><term>Histogram</term>: continuous data grouped into intervals</li>
+    <li><term>Stem-and-leaf plot</term>: shows shape of distribution and preserves individual values</li>
+  </ul>
+  <p>
+    Evaluate a display critically: Does it start the axis at zero? Are the intervals equal? Could it mislead?
+  </p>
+
+  <exercises xml:id="exs-graphs-charts">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-choose-display">
+      <statement><p>For each situation, state the most appropriate type of display: (a) the monthly rainfall in Galway over one year; (b) the favourite sports of 30 students; (c) the heights of 50 students measured to the nearest centimetre.</p></statement>
+      <answer><p>(a) Line graph (shows trend over time). (b) Bar chart or pie chart. (c) Histogram.</p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-stem-leaf">
+      <statement>
+        <p>Draw a stem-and-leaf plot for the following test scores: 45, 52, 67, 71, 45, 58, 63, 79, 55, 68.</p>
+      </statement>
+      <answer>
+        <p>Stems 4–7; leaf values as appropriate. The plot should be ordered within each stem.</p>
+      </answer>
+    </exercise>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-expanding">
+  <title>Expanding Brackets</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-4" /> — Expand brackets</li>
+      <li><xref ref="lo-af-5" /> — Expand binomials</li>
+      <li><xref ref="lo-af-8" /> — Rearrange formulae</li>
+    </ul>
+  </objectives>
+
+  <p>
+    To expand a single bracket: multiply every term inside by the term outside.
+    <me>a(b + c) = ab + ac</me>
+  </p>
+  <p>
+    To expand two brackets (FOIL: First, Outer, Inner, Last):
+    <me>(x + a)(x + b) = x^2 + bx + ax + ab = x^2 + (a+b)x + ab</me>
+  </p>
+  <p>
+    Special cases worth memorising:
+  </p>
+  <ul>
+    <li><m>(x + a)^2 = x^2 + 2ax + a^2</m></li>
+    <li><m>(x - a)^2 = x^2 - 2ax + a^2</m></li>
+    <li><m>(x + a)(x - a) = x^2 - a^2</m> (difference of two squares)</li>
+  </ul>
+
+  <exercises xml:id="exs-expanding">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-expand-single">
+      <statement><p>Expand and simplify: <m>3(2x - 5) + 4(x + 1)</m></p></statement>
+      <answer><p><m>10x - 11</m></p></answer>
+      <solution><p><m>6x - 15 + 4x + 4 = 10x - 11</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-expand-binomials">
+      <statement><p>Expand: <m>(x + 5)(x - 3)</m></p></statement>
+      <answer><p><m>x^2 + 2x - 15</m></p></answer>
+      <solution><p><m>x^2 - 3x + 5x - 15 = x^2 + 2x - 15</m></p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

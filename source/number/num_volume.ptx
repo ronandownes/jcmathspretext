@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-volume">
+  <title>Volume and Surface Area</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-23" /> — Volume and surface area of 3D solids</li>
+    </ul>
+  </objectives>
+
+  <p>Volume measures the amount of space inside a 3D solid. Surface area is the total area of all its faces.</p>
+
+  <ul>
+    <li>Rectangular solid (cuboid): Volume <m>= lwh</m>, Surface area <m>= 2(lw + lh + wh)</m></li>
+    <li>Cylinder: Volume <m>= \pi r^2 h</m>, Surface area <m>= 2\pi r^2 + 2\pi r h</m></li>
+    <li>Sphere: Volume <m>= \frac{4}{3}\pi r^3</m>, Surface area <m>= 4\pi r^2</m></li>
+  </ul>
+
+  <exercises xml:id="exs-volume">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-cuboid-volume">
+      <statement><p>Find the volume of a cuboid with length 8 cm, width 5 cm, and height 3 cm.</p></statement>
+      <answer><p>120 cm³</p></answer>
+      <solution><p><m>V = 8 \times 5 \times 3 = 120</m> cm³</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-cylinder-volume">
+      <statement><p>Find the volume of a cylinder with radius 4 cm and height 10 cm. Give your answer in terms of <m>\pi</m>.</p></statement>
+      <answer><p><m>160\pi</m> cm³</p></answer>
+      <solution><p><m>V = \pi r^2 h = \pi \times 16 \times 10 = 160\pi</m> cm³</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

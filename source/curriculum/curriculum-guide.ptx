@@ -4,144 +4,714 @@
 
   <introduction>
     <p>
-      This section shows all the learning outcomes for Junior Cycle Mathematics.
-      Throughout the book, you'll see coloured badges linking to outcomes.
-      Click any badge to see what it means and where else it appears.
+      All Junior Cycle Mathematics learning outcomes are listed here.
+      Throughout the book, coloured badges link back to these outcomes.
+      Click any badge to see what it means in plain language alongside the official wording.
     </p>
     <p>
-      As you work through sections, track which outcomes you've mastered.
-      This helps you see your progress across the entire subject.
+      HL items are Higher Level only. OL items appear on both Ordinary and Higher Level.
     </p>
   </introduction>
 
+  <!-- ============================================================ -->
   <!-- UNIFYING STRAND -->
-  <chapter xml:id="unifying-outcomes">
+  <!-- ============================================================ -->
+  <chapter xml:id="lo-unifying">
     <title>Unifying Strand</title>
     <introduction>
-      <p>
-        These outcomes apply across all strands.
-        They are about how you think mathematically, solve problems, and communicate ideas.
-      </p>
+      <p>These outcomes apply across all four content strands. They describe how you think, reason, and communicate mathematically.</p>
     </introduction>
 
     <section xml:id="lo-u-1">
-      <title>U.1: Understand Concepts and Procedures</title>
-      <p><strong>What this means:</strong> Know and understand the key ideas and methods in each strand of mathematics.</p>
-      <p><strong>Official wording:</strong> Recall and demonstrate understanding of the fundamental concepts and procedures that underpin each strand.</p>
+      <title>U.1: Explore Approaches</title>
+      <p><strong>What this means:</strong> Talk about a problem and explore different ways of solving it, explaining your thinking.</p>
+      <p><strong>Official wording:</strong> Discuss a problem and explore different approaches, explaining their reasoning.</p>
     </section>
 
     <section xml:id="lo-u-2">
-      <title>U.2: Apply Procedures</title>
-      <p><strong>What this means:</strong> Use the methods and procedures from each strand accurately, effectively, and in the right way.</p>
-      <p><strong>Official wording:</strong> Apply the procedures associated with each strand accurately, effectively, and appropriately.</p>
+      <title>U.2: Represent Mathematically</title>
+      <p><strong>What this means:</strong> Turn a real situation into mathematics using the right concepts, operations, and representations.</p>
+      <p><strong>Official wording:</strong> Represent a problem mathematically, making use of appropriate concepts, operations, and representations.</p>
     </section>
 
     <section xml:id="lo-u-3">
-      <title>U.3: Understand Equality</title>
-      <p><strong>What this means:</strong> Understand that equality means two mathematical expressions have the same value.</p>
-      <p><strong>Official wording:</strong> Recognise that equality is a relationship in which two mathematical expressions have the same value.</p>
+      <title>U.3: Select Methods</title>
+      <p><strong>What this means:</strong> Choose the right methods and procedures for a given task.</p>
+      <p><strong>Official wording:</strong> Select appropriate methods and procedures to accomplish a given task.</p>
     </section>
 
     <section xml:id="lo-u-4">
-      <title>U.4: Multiple Representations</title>
-      <p><strong>What this means:</strong> Show a mathematical idea using numbers, algebra, graphs, pictures, or words. Then compare and analyse these different ways.</p>
-      <p><strong>Official wording:</strong> Represent a mathematical situation in a variety of different ways, including: numerically, algebraically, graphically, physically, in words; and interpret, analyse, and compare such representations.</p>
+      <title>U.4: Estimate and Verify</title>
+      <p><strong>What this means:</strong> Use estimation to predict results and then check whether your answer is reasonable.</p>
+      <p><strong>Official wording:</strong> Use the results of computation or estimation to predict and verify outcomes.</p>
     </section>
 
     <section xml:id="lo-u-5">
-      <title>U.5: Connections Within and Between Strands</title>
-      <p><strong>What this means:</strong> See how ideas within one strand connect to each other, and how different strands connect to each other.</p>
-      <p><strong>Official wording:</strong> Make connections within and between strands.</p>
+      <title>U.5: Evaluate Solutions</title>
+      <p><strong>What this means:</strong> Look at your answer critically — does it make sense? Compare different methods.</p>
+      <p><strong>Official wording:</strong> Evaluate solutions and compare different methods.</p>
     </section>
 
     <section xml:id="lo-u-6">
-      <title>U.6: Connections to the Real World</title>
-      <p><strong>What this means:</strong> See how mathematics connects to real situations and the world around you.</p>
-      <p><strong>Official wording:</strong> Make connections between mathematics and the real world.</p>
+      <title>U.6: Find Patterns</title>
+      <p><strong>What this means:</strong> Spot patterns in data and make predictions. Then test your predictions.</p>
+      <p><strong>Official wording:</strong> Identify patterns in data, and make predictions and test them.</p>
     </section>
 
     <section xml:id="lo-u-7">
-      <title>U.7: Understand the Problem</title>
-      <p><strong>What this means:</strong> Understand what a problem is asking. If needed, turn the situation into mathematical language.</p>
-      <p><strong>Official wording:</strong> Make sense of a given problem, and if necessary mathematise a situation.</p>
+      <title>U.7: Justify Conclusions</title>
+      <p><strong>What this means:</strong> Back up your conclusions with evidence and clear arguments.</p>
+      <p><strong>Official wording:</strong> Justify conclusions using evidence and sound arguments.</p>
     </section>
 
     <section xml:id="lo-u-8">
-      <title>U.8: Solve the Problem</title>
-      <p><strong>What this means:</strong> Use what you know to solve the problem. Break it into smaller parts if needed, or simplify it sensibly.</p>
-      <p><strong>Official wording:</strong> Apply knowledge and skills to solve a problem, including decomposing it into manageable parts and/or simplifying it using appropriate assumptions.</p>
+      <title>U.8: Communicate Mathematics</title>
+      <p><strong>What this means:</strong> Express your mathematical thinking clearly, both in speech and in writing.</p>
+      <p><strong>Official wording:</strong> Communicate mathematics effectively, verbally and in writing.</p>
     </section>
 
     <section xml:id="lo-u-9">
-      <title>U.9: Interpret Solutions</title>
-      <p><strong>What this means:</strong> Take your answer and explain what it means in the context of the original problem.</p>
-      <p><strong>Official wording:</strong> Interpret solutions to a problem in terms of the original question.</p>
+      <title>U.9: Make Connections</title>
+      <p><strong>What this means:</strong> Link ideas within mathematics and connect mathematics to real-world situations.</p>
+      <p><strong>Official wording:</strong> Make connections both within mathematics and between mathematics and the real world.</p>
     </section>
 
     <section xml:id="lo-u-10">
-      <title>U.10: Evaluate Solutions</title>
-      <p><strong>What this means:</strong> Look at your answer. Does it make sense? Are there other ways to solve it? What are the limits?</p>
-      <p><strong>Official wording:</strong> Evaluate different possible solutions to a problem, including evaluating the reasonableness of the solutions, and exploring possible improvements and/or limitations of the solutions.</p>
+      <title>U.10: Interpret Results</title>
+      <p><strong>What this means:</strong> Take your mathematical answer and explain what it means in the original context.</p>
+      <p><strong>Official wording:</strong> Interpret results in the context of the original problem.</p>
     </section>
 
     <section xml:id="lo-u-11">
-      <title>U.11: Find Patterns</title>
-      <p><strong>What this means:</strong> Look at specific examples and find a general pattern or rule. Then test it.</p>
-      <p><strong>Official wording:</strong> Generate general mathematical statements or conjectures based on specific instances.</p>
-    </section>
-
-    <section xml:id="lo-u-12">
-      <title>U.12: Build Arguments</title>
-      <p><strong>What this means:</strong> Build mathematical arguments and proofs using facts you already know.</p>
-      <p><strong>Official wording:</strong> Generate and evaluate mathematical arguments and proofs.</p>
-    </section>
-
-    <section xml:id="lo-u-13">
-      <title>U.13: Explain Your Thinking</title>
-      <p><strong>What this means:</strong> Explain your reasoning clearly. Use the correct mathematical words and symbols.</p>
-      <p><strong>Official wording:</strong> Communicate mathematics effectively: justify reasoning, interpret results, explain conclusions, and use the language and notation of mathematics to express mathematical ideas precisely.</p>
+      <title>U.11: Relevance of Mathematics</title>
+      <p><strong>What this means:</strong> Recognise how mathematics shows up in everyday life.</p>
+      <p><strong>Official wording:</strong> See the relevance of mathematics to their everyday lives.</p>
     </section>
 
   </chapter>
 
-  <!-- NUMBER STRAND OUTCOMES -->
-  <chapter xml:id="number-outcomes">
+  <!-- ============================================================ -->
+  <!-- NUMBER STRAND -->
+  <!-- ============================================================ -->
+  <chapter xml:id="lo-number">
     <title>Number Strand</title>
+    <introduction>
+      <p>Number outcomes cover natural numbers, integers, rationals, operations, estimation, indices, measurement, and finance.</p>
+    </introduction>
 
-    <section xml:id="lo-n-1-a">
-      <title>N.1(a): Represent Operations</title>
-      <p><strong>What this means:</strong> Use number lines, pictures, and grouping to show addition, subtraction, multiplication, and division with natural numbers, integers, and fractions.</p>
-      <p><strong>Official wording:</strong> Represent the operations of addition, subtraction, multiplication, and division in ℕ, ℤ, and ℚ using models including the number line, decomposition, and accumulating groups of equal size.</p>
-    </section>
-
-    <section xml:id="lo-n-1-b">
-      <title>N.1(b): Perform Operations and Understand Properties</title>
-      <p><strong>What this means:</strong> Add, subtract, multiply, and divide. Understand why the commutative, associative, and distributive properties work.</p>
-      <p><strong>Official wording:</strong> Perform operations of addition, subtraction, multiplication, and division and understand the relationship between these operations and the properties: commutative, associative and distributive.</p>
-    </section>
-
-    <section xml:id="lo-n-1-c">
-      <title>N.1(c): Index Form and Powers</title>
-      <p><strong>What this means:</strong> Understand and use index notation. Apply the rules of indices (powers) flexibly.</p>
-      <p><strong>Official wording:</strong> Explore numbers written in index form, including using and applying generalisations such as <m>a^p \times a^q = a^{p+q}</m>.</p>
-    </section>
-
-    <section xml:id="lo-n-1-d">
-      <title>N.1(d): Factors, Multiples, Primes</title>
-      <p><strong>What this means:</strong> Find factors and multiples. Identify prime numbers. Find the highest common factor and lowest common multiple.</p>
-      <p><strong>Official wording:</strong> Calculate and interpret factors (including the highest common factor), multiples (including the lowest common multiple), and prime numbers.</p>
+    <section xml:id="lo-n-1">
+      <title>N.1: Number Systems</title>
+      <p><strong>What this means:</strong> Understand natural numbers <m>\mathbb{N}</m>, integers <m>\mathbb{Z}</m>, and rational numbers <m>\mathbb{Q}</m>.</p>
+      <p><strong>Official wording:</strong> Investigate the representation of numbers and arithmetic operations.</p>
     </section>
 
     <section xml:id="lo-n-2">
-      <title>N.2: Fractions, Decimals, Percentages</title>
-      <p><strong>What this means:</strong> Convert fluently between fractions, decimals, and percentages. Understand and use ratio and proportion. Solve money problems.</p>
-      <p><strong>Official wording:</strong> Investigate equivalent representations of rational numbers and use ratio and proportion in solving problems.</p>
+      <title>N.2: Number Line</title>
+      <p><strong>What this means:</strong> Place and read numbers on a number line, including integers and fractions.</p>
+      <p><strong>Official wording:</strong> Represent the operations of addition, subtraction, multiplication, and division in ℕ, ℤ, and ℚ using models including the number line.</p>
     </section>
 
     <section xml:id="lo-n-3">
-      <title>N.3: Patterns and Sequences</title>
-      <p><strong>What this means:</strong> Find patterns in numbers. Describe them using tables and graphs. Continue sequences.</p>
-      <p><strong>Official wording:</strong> Analyse numerical patterns in different ways, including making tables and graphs, and continue such patterns.</p>
+      <title>N.3: Factors, Multiples, Primes</title>
+      <p><strong>What this means:</strong> Find factors and multiples of numbers. Identify prime numbers. Find HCF and LCM.</p>
+      <p><strong>Official wording:</strong> Investigate the properties of arithmetic: commutative, associative, and distributive.</p>
+    </section>
+
+    <section xml:id="lo-n-4">
+      <title>N.4: Prime Factorisation</title>
+      <p><strong>What this means:</strong> Break any whole number down into its prime factors. Use factor trees and index notation.</p>
+      <p><strong>Official wording:</strong> Express numbers in terms of their prime factors.</p>
+    </section>
+
+    <section xml:id="lo-n-5">
+      <title>N.5: Order of Operations</title>
+      <p><strong>What this means:</strong> Apply BIMDAS correctly — Brackets, Indices, Multiplication/Division, Addition/Subtraction.</p>
+      <p><strong>Official wording:</strong> Appreciate the order of operations, including brackets.</p>
+    </section>
+
+    <section xml:id="lo-n-6">
+      <title>N.6: Properties of Arithmetic</title>
+      <p><strong>What this means:</strong> Use the commutative, associative, and distributive laws to simplify calculations.</p>
+      <p><strong>Official wording:</strong> Investigate the properties of arithmetic: commutative, associative, and distributive.</p>
+    </section>
+
+    <section xml:id="lo-n-7">
+      <title>N.7: Integers</title>
+      <p><strong>What this means:</strong> Add, subtract, multiply, and divide positive and negative numbers confidently.</p>
+      <p><strong>Official wording:</strong> Investigate models such as the number line to illustrate operations in ℤ.</p>
+    </section>
+
+    <section xml:id="lo-n-8">
+      <title>N.8: Fractions, Decimals, Percentages</title>
+      <p><strong>What this means:</strong> Convert between fractions, decimals, and percentages and use them interchangeably to compare proportions.</p>
+      <p><strong>Official wording:</strong> Use the equivalence of fractions, decimals, and percentages to compare proportions.</p>
+    </section>
+
+    <section xml:id="lo-n-9">
+      <title>N.9: Ratio and Proportion</title>
+      <p><strong>What this means:</strong> Understand and apply ratio and proportion to solve problems.</p>
+      <p><strong>Official wording:</strong> Consolidate the idea of a relationship between ratio and proportion.</p>
+    </section>
+
+    <section xml:id="lo-n-10">
+      <title>N.10: Percentages</title>
+      <p><strong>What this means:</strong> Calculate percentages of amounts, percentage increase, and percentage decrease.</p>
+      <p><strong>Official wording:</strong> Solve problems involving percentage.</p>
+    </section>
+
+    <section xml:id="lo-n-11">
+      <title>N.11: Profit, Loss, Discount, VAT</title>
+      <p><strong>What this means:</strong> Solve financial problems involving profit, loss, discount, and VAT.</p>
+      <p><strong>Official wording:</strong> Solve problems that involve finding profit or loss, discount, VAT.</p>
+    </section>
+
+    <section xml:id="lo-n-12">
+      <title>N.12: Compound Interest (HL)</title>
+      <p><strong>What this means:</strong> Calculate compound interest and solve related financial problems. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Solve problems involving compound interest.</p>
+    </section>
+
+    <section xml:id="lo-n-13">
+      <title>N.13: Index Notation</title>
+      <p><strong>What this means:</strong> Use and apply the rules of indices: <m>a^m \times a^n = a^{m+n}</m>, <m>a^m \div a^n = a^{m-n}</m>, <m>(a^m)^n = a^{mn}</m>.</p>
+      <p><strong>Official wording:</strong> Use and apply the rules of indices.</p>
+    </section>
+
+    <section xml:id="lo-n-14">
+      <title>N.14: Zero and Negative Indices</title>
+      <p><strong>What this means:</strong> Understand that <m>a^0 = 1</m> and that negative indices mean reciprocals.</p>
+      <p><strong>Official wording:</strong> Use and apply the rules of indices.</p>
+    </section>
+
+    <section xml:id="lo-n-15">
+      <title>N.15: Standard Form</title>
+      <p><strong>What this means:</strong> Write very large or very small numbers in the form <m>a \times 10^n</m> where <m>1 \leq a \lt 10</m>.</p>
+      <p><strong>Official wording:</strong> Express non-zero positive rational numbers in the form <m>a \times 10^n</m>.</p>
+    </section>
+
+    <section xml:id="lo-n-16">
+      <title>N.16: Calculations in Standard Form</title>
+      <p><strong>What this means:</strong> Multiply and divide numbers written in standard form.</p>
+      <p><strong>Official wording:</strong> Perform arithmetic operations on numbers in standard form.</p>
+    </section>
+
+    <section xml:id="lo-n-17">
+      <title>N.17: Rounding and Accuracy</title>
+      <p><strong>What this means:</strong> Round answers to the required number of decimal places or significant figures.</p>
+      <p><strong>Official wording:</strong> Present numerical answers to the degree of accuracy specified.</p>
+    </section>
+
+    <section xml:id="lo-n-18">
+      <title>N.18: Estimation</title>
+      <p><strong>What this means:</strong> Make sensible estimates and justify whether your answers are reasonable.</p>
+      <p><strong>Official wording:</strong> Make and justify estimates and approximations of calculations.</p>
+    </section>
+
+    <section xml:id="lo-n-19">
+      <title>N.19: Percentage Error (HL)</title>
+      <p><strong>What this means:</strong> Calculate the percentage error between an estimated and actual value. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Calculate percentage error.</p>
+    </section>
+
+    <section xml:id="lo-n-20">
+      <title>N.20: Units and Measurement</title>
+      <p><strong>What this means:</strong> Use appropriate units for measuring. Convert between units including time, length, mass, and capacity.</p>
+      <p><strong>Official wording:</strong> Calculate, interpret, and apply units of measure and time.</p>
+    </section>
+
+    <section xml:id="lo-n-21">
+      <title>N.21: Perimeter and Area</title>
+      <p><strong>What this means:</strong> Find the perimeter and area of rectangles, triangles, circles, and other plane shapes.</p>
+      <p><strong>Official wording:</strong> Find the perimeter and area of plane figures.</p>
+    </section>
+
+    <section xml:id="lo-n-22">
+      <title>N.22: Composite Areas</title>
+      <p><strong>What this means:</strong> Find the area of shapes made from combinations of simpler shapes.</p>
+      <p><strong>Official wording:</strong> Find the area of figures made from combinations of shapes.</p>
+    </section>
+
+    <section xml:id="lo-n-23">
+      <title>N.23: Volume and Surface Area</title>
+      <p><strong>What this means:</strong> Find the volume and surface area of rectangular solids, cylinders, and spheres.</p>
+      <p><strong>Official wording:</strong> Find the volume and surface area of rectangular solids, cylinders, and spheres.</p>
+    </section>
+
+    <section xml:id="lo-n-24">
+      <title>N.24: Scale Diagrams</title>
+      <p><strong>What this means:</strong> Draw and interpret diagrams drawn to scale.</p>
+      <p><strong>Official wording:</strong> Draw and interpret scaled diagrams.</p>
+    </section>
+
+  </chapter>
+
+  <!-- ============================================================ -->
+  <!-- GEOMETRY AND TRIGONOMETRY -->
+  <!-- ============================================================ -->
+  <chapter xml:id="lo-geometry">
+    <title>Geometry and Trigonometry</title>
+    <introduction>
+      <p>Geometry outcomes cover constructions, angle properties, triangles, coordinate geometry, trigonometry, and transformations.</p>
+    </introduction>
+
+    <section xml:id="lo-gt-1">
+      <title>GT.1: Construct a Line Segment</title>
+      <p><strong>What this means:</strong> Use a ruler and compass to construct a line segment of a given length.</p>
+      <p><strong>Official wording:</strong> Perform the constructions specified in the syllabus.</p>
+    </section>
+
+    <section xml:id="lo-gt-2">
+      <title>GT.2: Bisect an Angle</title>
+      <p><strong>What this means:</strong> Use a compass to bisect any angle accurately.</p>
+      <p><strong>Official wording:</strong> Perform the constructions specified in the syllabus.</p>
+    </section>
+
+    <section xml:id="lo-gt-3">
+      <title>GT.3: Perpendicular Bisector</title>
+      <p><strong>What this means:</strong> Construct the perpendicular bisector of a line segment using a compass.</p>
+      <p><strong>Official wording:</strong> Perform the constructions specified in the syllabus.</p>
+    </section>
+
+    <section xml:id="lo-gt-4">
+      <title>GT.4: Perpendicular Through a Point</title>
+      <p><strong>What this means:</strong> Construct a line perpendicular to a given line through a specified point.</p>
+      <p><strong>Official wording:</strong> Perform the constructions specified in the syllabus.</p>
+    </section>
+
+    <section xml:id="lo-gt-5">
+      <title>GT.5: Angles at a Point and on a Line</title>
+      <p><strong>What this means:</strong> Calculate angles at a point (360°), on a straight line (180°), and vertically opposite angles.</p>
+      <p><strong>Official wording:</strong> Investigate angle properties.</p>
+    </section>
+
+    <section xml:id="lo-gt-6">
+      <title>GT.6: Angle Sum in Triangles and Quadrilaterals</title>
+      <p><strong>What this means:</strong> The angles in a triangle add to 180°; in a quadrilateral, 360°.</p>
+      <p><strong>Official wording:</strong> Investigate angle properties of triangles and quadrilaterals.</p>
+    </section>
+
+    <section xml:id="lo-gt-7">
+      <title>GT.7: Parallel Lines and Transversals</title>
+      <p><strong>What this means:</strong> Find angles formed when a line crosses two parallel lines: alternate, co-interior, corresponding.</p>
+      <p><strong>Official wording:</strong> Investigate transversals and parallel lines.</p>
+    </section>
+
+    <section xml:id="lo-gt-8">
+      <title>GT.8: Isosceles and Equilateral Triangles</title>
+      <p><strong>What this means:</strong> Know and use the special angle and side properties of isosceles and equilateral triangles.</p>
+      <p><strong>Official wording:</strong> Investigate properties of triangles.</p>
+    </section>
+
+    <section xml:id="lo-gt-9">
+      <title>GT.9: Pythagoras' Theorem (HL)</title>
+      <p><strong>What this means:</strong> In a right-angled triangle, <m>a^2 + b^2 = c^2</m>. Use this to find missing sides. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Investigate the theorem of Pythagoras and its applications.</p>
+    </section>
+
+    <section xml:id="lo-gt-10">
+      <title>GT.10: Converse of Pythagoras (HL)</title>
+      <p><strong>What this means:</strong> If <m>a^2 + b^2 = c^2</m>, the triangle is right-angled. Use this to test triangles. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Investigate the converse of the theorem of Pythagoras.</p>
+    </section>
+
+    <section xml:id="lo-gt-11">
+      <title>GT.11: Circle Theorems (HL)</title>
+      <p><strong>What this means:</strong> Investigate and apply theorems about angles in circles. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Investigate theorems about angles in circles.</p>
+    </section>
+
+    <section xml:id="lo-gt-12">
+      <title>GT.12: Proof Vocabulary (HL)</title>
+      <p><strong>What this means:</strong> Use and understand the terms: theorem, proof, axiom, corollary, converse. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Use the following terms: theorem, proof, axiom, corollary, converse.</p>
+    </section>
+
+    <section xml:id="lo-gt-13">
+      <title>GT.13: The Coordinate Plane</title>
+      <p><strong>What this means:</strong> Plot and read points on the <m>(x, y)</m> coordinate plane.</p>
+      <p><strong>Official wording:</strong> Use co-ordinate geometry techniques.</p>
+    </section>
+
+    <section xml:id="lo-gt-14">
+      <title>GT.14: Midpoint of a Segment</title>
+      <p><strong>What this means:</strong> Find the midpoint of a line segment using the midpoint formula.</p>
+      <p><strong>Official wording:</strong> Find the midpoint of a line segment.</p>
+    </section>
+
+    <section xml:id="lo-gt-15">
+      <title>GT.15: Distance Between Two Points</title>
+      <p><strong>What this means:</strong> Calculate the distance between two points using the distance formula.</p>
+      <p><strong>Official wording:</strong> Calculate the distance between two points.</p>
+    </section>
+
+    <section xml:id="lo-gt-16">
+      <title>GT.16: Slope of a Line</title>
+      <p><strong>What this means:</strong> Calculate slope as rise over run and interpret what it means in a context.</p>
+      <p><strong>Official wording:</strong> Calculate and interpret slope.</p>
+    </section>
+
+    <section xml:id="lo-gt-17">
+      <title>GT.17: Trigonometric Ratios</title>
+      <p><strong>What this means:</strong> Use sin, cos, and tan to find missing sides and angles in right-angled triangles.</p>
+      <p><strong>Official wording:</strong> Use trigonometric ratios to solve right-angled triangle problems.</p>
+    </section>
+
+    <section xml:id="lo-gt-18">
+      <title>GT.18: Trigonometry Applications</title>
+      <p><strong>What this means:</strong> Apply trigonometric ratios to real-world problems such as heights and distances.</p>
+      <p><strong>Official wording:</strong> Apply trigonometric ratios to real-world contexts.</p>
+    </section>
+
+    <section xml:id="lo-gt-19">
+      <title>GT.19: Area Using Sine (HL)</title>
+      <p><strong>What this means:</strong> Find the area of any triangle using the formula <m>\frac{1}{2}ab\sin C</m>. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Find the area of a triangle using <m>\frac{1}{2}ab \sin C</m>.</p>
+    </section>
+
+    <section xml:id="lo-gt-20">
+      <title>GT.20: Transformations</title>
+      <p><strong>What this means:</strong> Recognise and perform translations, reflections, and rotations of shapes.</p>
+      <p><strong>Official wording:</strong> Recognise and perform transformations.</p>
+    </section>
+
+    <section xml:id="lo-gt-21">
+      <title>GT.21: Axes of Symmetry</title>
+      <p><strong>What this means:</strong> Find and draw the axes of symmetry in simple shapes.</p>
+      <p><strong>Official wording:</strong> Locate axes of symmetry in simple shapes.</p>
+    </section>
+
+    <section xml:id="lo-gt-22">
+      <title>GT.22: Enlargements</title>
+      <p><strong>What this means:</strong> Enlarge shapes by a given scale factor and understand what changes (and what does not).</p>
+      <p><strong>Official wording:</strong> Investigate enlargements.</p>
+    </section>
+
+    <section xml:id="lo-gt-23">
+      <title>GT.23: Enlargement and Area</title>
+      <p><strong>What this means:</strong> Understand how enlargement by scale factor <m>k</m> multiplies area by <m>k^2</m>.</p>
+      <p><strong>Official wording:</strong> Investigate enlargements and their effect on area.</p>
+    </section>
+
+  </chapter>
+
+  <!-- ============================================================ -->
+  <!-- ALGEBRA AND FUNCTIONS -->
+  <!-- ============================================================ -->
+  <chapter xml:id="lo-algebra">
+    <title>Algebra and Functions</title>
+    <introduction>
+      <p>Algebra outcomes cover expressions, equations, inequalities, sequences, functions, and graphing.</p>
+    </introduction>
+
+    <section xml:id="lo-af-1">
+      <title>AF.1: Variables</title>
+      <p><strong>What this means:</strong> Use letters to represent unknown quantities and variable values.</p>
+      <p><strong>Official wording:</strong> Use letter symbols for numeric quantities.</p>
+    </section>
+
+    <section xml:id="lo-af-2">
+      <title>AF.2: Evaluate Expressions</title>
+      <p><strong>What this means:</strong> Substitute given values into algebraic expressions and calculate the result.</p>
+      <p><strong>Official wording:</strong> Evaluate expressions given the value of the variables.</p>
+    </section>
+
+    <section xml:id="lo-af-3">
+      <title>AF.3: Simplify Expressions</title>
+      <p><strong>What this means:</strong> Collect like terms to simplify algebraic expressions.</p>
+      <p><strong>Official wording:</strong> Simplify expressions.</p>
+    </section>
+
+    <section xml:id="lo-af-4">
+      <title>AF.4: Expand Brackets</title>
+      <p><strong>What this means:</strong> Expand expressions of the form <m>a(b + c) = ab + ac</m>.</p>
+      <p><strong>Official wording:</strong> Expand and simplify expressions.</p>
+    </section>
+
+    <section xml:id="lo-af-5">
+      <title>AF.5: Expand Binomials</title>
+      <p><strong>What this means:</strong> Expand the product of two brackets, e.g. <m>(x + a)(x + b)</m>.</p>
+      <p><strong>Official wording:</strong> Expand products of binomials.</p>
+    </section>
+
+    <section xml:id="lo-af-6">
+      <title>AF.6: Factorise — Common Factor</title>
+      <p><strong>What this means:</strong> Take the highest common factor outside a bracket: <m>ab + ac = a(b + c)</m>.</p>
+      <p><strong>Official wording:</strong> Factorise expressions.</p>
+    </section>
+
+    <section xml:id="lo-af-7">
+      <title>AF.7: Factorise Quadratics (HL)</title>
+      <p><strong>What this means:</strong> Factorise expressions of the form <m>x^2 + bx + c</m> and <m>ax^2 + bx + c</m>. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Factorise expressions of order 2.</p>
+    </section>
+
+    <section xml:id="lo-af-8">
+      <title>AF.8: Rearrange Formulae</title>
+      <p><strong>What this means:</strong> Change the subject of a formula by rearranging it.</p>
+      <p><strong>Official wording:</strong> Rearrange formulae.</p>
+    </section>
+
+    <section xml:id="lo-af-9">
+      <title>AF.9: Solve Linear Equations</title>
+      <p><strong>What this means:</strong> Solve equations of the form <m>ax + b = c</m>.</p>
+      <p><strong>Official wording:</strong> Solve first-degree equations in one variable.</p>
+    </section>
+
+    <section xml:id="lo-af-10">
+      <title>AF.10: Equations with Unknown on Both Sides</title>
+      <p><strong>What this means:</strong> Solve equations where the unknown appears on both sides, e.g. <m>3x + 1 = x + 7</m>.</p>
+      <p><strong>Official wording:</strong> Solve first-degree equations with the unknown on both sides.</p>
+    </section>
+
+    <section xml:id="lo-af-11">
+      <title>AF.11: Equations with Brackets and Fractions</title>
+      <p><strong>What this means:</strong> Solve linear equations that involve brackets and/or fractions.</p>
+      <p><strong>Official wording:</strong> Solve equations involving brackets and fractions.</p>
+    </section>
+
+    <section xml:id="lo-af-12">
+      <title>AF.12: Form and Solve Equations</title>
+      <p><strong>What this means:</strong> Read a word problem, write it as an equation, and solve it.</p>
+      <p><strong>Official wording:</strong> Solve problems involving setting up and solving linear equations.</p>
+    </section>
+
+    <section xml:id="lo-af-13">
+      <title>AF.13: Simultaneous Equations</title>
+      <p><strong>What this means:</strong> Solve two equations in two unknowns, both graphically and algebraically.</p>
+      <p><strong>Official wording:</strong> Solve simultaneous linear equations with two unknowns.</p>
+    </section>
+
+    <section xml:id="lo-af-14">
+      <title>AF.14: Solve Quadratics by Factorising (HL)</title>
+      <p><strong>What this means:</strong> Solve quadratic equations by factorising and setting each factor equal to zero. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Solve quadratic equations by factorising.</p>
+    </section>
+
+    <section xml:id="lo-af-15">
+      <title>AF.15: Quadratic Formula (HL)</title>
+      <p><strong>What this means:</strong> Use the quadratic formula <m>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</m> to solve quadratic equations. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Solve quadratic equations using the quadratic formula.</p>
+    </section>
+
+    <section xml:id="lo-af-16">
+      <title>AF.16: Linear Inequalities</title>
+      <p><strong>What this means:</strong> Solve linear inequalities and show the solution set on a number line.</p>
+      <p><strong>Official wording:</strong> Solve linear inequalities.</p>
+    </section>
+
+    <section xml:id="lo-af-17">
+      <title>AF.17: Linear Patterns</title>
+      <p><strong>What this means:</strong> Continue and describe linear patterns using words, tables, and diagrams.</p>
+      <p><strong>Official wording:</strong> Investigate patterns and relationships.</p>
+    </section>
+
+    <section xml:id="lo-af-18">
+      <title>AF.18: Arithmetic Sequences — nth Term</title>
+      <p><strong>What this means:</strong> Find the general (nth) term of an arithmetic sequence.</p>
+      <p><strong>Official wording:</strong> Find the general term of an arithmetic sequence.</p>
+    </section>
+
+    <section xml:id="lo-af-19">
+      <title>AF.19: Quadratic and Geometric Sequences (HL)</title>
+      <p><strong>What this means:</strong> Recognise and work with quadratic and geometric sequences. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Recognise quadratic and geometric sequences.</p>
+    </section>
+
+    <section xml:id="lo-af-20">
+      <title>AF.20: Functions — Definition</title>
+      <p><strong>What this means:</strong> Understand that a function assigns exactly one output to each input.</p>
+      <p><strong>Official wording:</strong> Recognise that a function assigns a unique output to a given input.</p>
+    </section>
+
+    <section xml:id="lo-af-21">
+      <title>AF.21: Function Notation</title>
+      <p><strong>What this means:</strong> Use <m>f(x)</m> notation and evaluate functions for given inputs.</p>
+      <p><strong>Official wording:</strong> Use function notation.</p>
+    </section>
+
+    <section xml:id="lo-af-22">
+      <title>AF.22: Represent Functions</title>
+      <p><strong>What this means:</strong> Represent functions using tables, mapping diagrams, and graphs.</p>
+      <p><strong>Official wording:</strong> Represent functions in different ways.</p>
+    </section>
+
+    <section xml:id="lo-af-23">
+      <title>AF.23: Inputs and Outputs</title>
+      <p><strong>What this means:</strong> Given an input, find the output. Given an output, find the input.</p>
+      <p><strong>Official wording:</strong> Determine inputs and outputs of functions.</p>
+    </section>
+
+    <section xml:id="lo-af-24">
+      <title>AF.24: Graph Linear Functions</title>
+      <p><strong>What this means:</strong> Plot linear functions <m>y = mx + c</m> and read information from the graph.</p>
+      <p><strong>Official wording:</strong> Graph linear functions.</p>
+    </section>
+
+    <section xml:id="lo-af-25">
+      <title>AF.25: Slope and Intercept</title>
+      <p><strong>What this means:</strong> Interpret the slope as rate of change and the <m>y</m>-intercept as the starting value.</p>
+      <p><strong>Official wording:</strong> Interpret the slope and y-intercept of linear functions.</p>
+    </section>
+
+    <section xml:id="lo-af-26">
+      <title>AF.26: Graph Quadratic Functions (HL)</title>
+      <p><strong>What this means:</strong> Plot quadratic functions and identify the vertex, axis of symmetry, and roots. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Graph quadratic functions.</p>
+    </section>
+
+    <section xml:id="lo-af-27">
+      <title>AF.27: Use Graphs to Solve Equations</title>
+      <p><strong>What this means:</strong> Use graphical methods to solve equations of the form <m>f(x) = g(x)</m>.</p>
+      <p><strong>Official wording:</strong> Use graphical methods to solve equations.</p>
+    </section>
+
+    <section xml:id="lo-af-28">
+      <title>AF.28: Interpret Graphs</title>
+      <p><strong>What this means:</strong> Read and interpret graphs that represent real-world situations.</p>
+      <p><strong>Official wording:</strong> Interpret graphs in real-world contexts.</p>
+    </section>
+
+    <section xml:id="lo-af-29">
+      <title>AF.29: Graphs and Stories</title>
+      <p><strong>What this means:</strong> Match graphs to verbal descriptions of situations, and vice versa.</p>
+      <p><strong>Official wording:</strong> Connect graphs and real-world phenomena.</p>
+    </section>
+
+    <section xml:id="lo-af-30">
+      <title>AF.30: Quantity and Rate of Change</title>
+      <p><strong>What this means:</strong> Describe both the quantity and the rate of change shown in a graph.</p>
+      <p><strong>Official wording:</strong> Describe quantity and rate of change from graphs.</p>
+    </section>
+
+  </chapter>
+
+  <!-- ============================================================ -->
+  <!-- STATISTICS AND PROBABILITY -->
+  <!-- ============================================================ -->
+  <chapter xml:id="lo-statistics">
+    <title>Statistics and Probability</title>
+    <introduction>
+      <p>Statistics and probability outcomes cover listing outcomes, calculating probability, collecting data, representing data, and interpreting results.</p>
+    </introduction>
+
+    <section xml:id="lo-sp-1">
+      <title>SP.1: List Outcomes</title>
+      <p><strong>What this means:</strong> List all possible outcomes of an experiment systematically (e.g. using a table or tree diagram).</p>
+      <p><strong>Official wording:</strong> List all possible outcomes of an experiment.</p>
+    </section>
+
+    <section xml:id="lo-sp-2">
+      <title>SP.2: Probability Scale</title>
+      <p><strong>What this means:</strong> Understand that probability is a number between 0 (impossible) and 1 (certain).</p>
+      <p><strong>Official wording:</strong> Recognise that probability is a measure on a scale of 0–1.</p>
+    </section>
+
+    <section xml:id="lo-sp-3">
+      <title>SP.3: Experimental Probability</title>
+      <p><strong>What this means:</strong> Estimate probability by doing an experiment and recording relative frequencies.</p>
+      <p><strong>Official wording:</strong> Estimate probabilities from experimental data.</p>
+    </section>
+
+    <section xml:id="lo-sp-4">
+      <title>SP.4: Long-Run Relative Frequency</title>
+      <p><strong>What this means:</strong> Understand that as more trials are done, experimental probability gets closer to theoretical probability.</p>
+      <p><strong>Official wording:</strong> Associate probability with long-run relative frequency.</p>
+    </section>
+
+    <section xml:id="lo-sp-5">
+      <title>SP.5: Calculate Probability</title>
+      <p><strong>What this means:</strong> Use the formula: <m>P(\text{event}) = \frac{\text{favourable outcomes}}{\text{total outcomes}}</m>.</p>
+      <p><strong>Official wording:</strong> Apply the principle that probability = favourable outcomes / total outcomes.</p>
+    </section>
+
+    <section xml:id="lo-sp-6">
+      <title>SP.6: Probability in Practical Contexts</title>
+      <p><strong>What this means:</strong> Calculate probabilities in practical settings: coins, dice, spinners, cards.</p>
+      <p><strong>Official wording:</strong> Calculate probabilities in practical contexts.</p>
+    </section>
+
+    <section xml:id="lo-sp-7">
+      <title>SP.7: Sample Spaces for Two Events (HL)</title>
+      <p><strong>What this means:</strong> Construct a sample space (table or list) for two independent events. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Construct sample spaces for two independent events.</p>
+    </section>
+
+    <section xml:id="lo-sp-8">
+      <title>SP.8: Combined Events (HL)</title>
+      <p><strong>What this means:</strong> Find the probability of combined events using addition and multiplication rules. [Higher Level]</p>
+      <p><strong>Official wording:</strong> Find the probability of combined events.</p>
+    </section>
+
+    <section xml:id="lo-sp-9">
+      <title>SP.9: Statistical Questions</title>
+      <p><strong>What this means:</strong> Formulate a question that can be answered using data.</p>
+      <p><strong>Official wording:</strong> Formulate one or more questions that can be answered with data.</p>
+    </section>
+
+    <section xml:id="lo-sp-10">
+      <title>SP.10: Data Collection</title>
+      <p><strong>What this means:</strong> Plan and carry out a data collection using a Simple Random Sample.</p>
+      <p><strong>Official wording:</strong> Select a sample (Simple Random Sample).</p>
+    </section>
+
+    <section xml:id="lo-sp-11">
+      <title>SP.11: Avoiding Bias</title>
+      <p><strong>What this means:</strong> Understand why samples must be representative and how bias distorts conclusions.</p>
+      <p><strong>Official wording:</strong> Recognise the importance of representativeness so as to avoid biased samples.</p>
+    </section>
+
+    <section xml:id="lo-sp-12">
+      <title>SP.12: Generate or Source Data</title>
+      <p><strong>What this means:</strong> Collect your own data or find suitable data from external sources, including the internet.</p>
+      <p><strong>Official wording:</strong> Generate data, or source data from other sources including the internet.</p>
+    </section>
+
+    <section xml:id="lo-sp-13">
+      <title>SP.13: Choose Appropriate Displays</title>
+      <p><strong>What this means:</strong> Select the right type of graph or display for your data and purpose.</p>
+      <p><strong>Official wording:</strong> Select appropriate methods to represent and describe the sample.</p>
+    </section>
+
+    <section xml:id="lo-sp-14">
+      <title>SP.14: Draw Statistical Graphs</title>
+      <p><strong>What this means:</strong> Construct bar charts, pie charts, line plots, histograms, and stem-and-leaf plots.</p>
+      <p><strong>Official wording:</strong> Use pie charts, bar charts, line plots, histograms, stem and leaf plots.</p>
+    </section>
+
+    <section xml:id="lo-sp-15">
+      <title>SP.15: Mean, Median, Mode</title>
+      <p><strong>What this means:</strong> Calculate and interpret the mean, median, and mode of a data set.</p>
+      <p><strong>Official wording:</strong> Use mean, median, and mode to describe central tendency.</p>
+    </section>
+
+    <section xml:id="lo-sp-16">
+      <title>SP.16: Range</title>
+      <p><strong>What this means:</strong> Calculate the range of a data set as a measure of spread.</p>
+      <p><strong>Official wording:</strong> Use range to describe variability.</p>
+    </section>
+
+    <section xml:id="lo-sp-17">
+      <title>SP.17: Interpret Graphical Summaries</title>
+      <p><strong>What this means:</strong> Read and interpret graphs and charts to draw conclusions from data.</p>
+      <p><strong>Official wording:</strong> Interpret graphical summaries of data.</p>
+    </section>
+
+    <section xml:id="lo-sp-18">
+      <title>SP.18: Evaluate Displays</title>
+      <p><strong>What this means:</strong> Assess how effectively a particular display represents the data.</p>
+      <p><strong>Official wording:</strong> Evaluate the effectiveness of different displays.</p>
+    </section>
+
+    <section xml:id="lo-sp-19">
+      <title>SP.19: Sampling Variability</title>
+      <p><strong>What this means:</strong> Understand that different samples give different results, and that this affects conclusions.</p>
+      <p><strong>Official wording:</strong> Recognise how sampling variability influences the use of sample information.</p>
+    </section>
+
+    <section xml:id="lo-sp-20">
+      <title>SP.20: Misconceptions and Misuse</title>
+      <p><strong>What this means:</strong> Identify ways statistics can be misleading or misused, and critically evaluate statistical claims.</p>
+      <p><strong>Official wording:</strong> Recognise misconceptions and misuses of statistics.</p>
     </section>
 
   </chapter>

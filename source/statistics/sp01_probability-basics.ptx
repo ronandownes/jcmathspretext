@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sp-probability-basics">
+  <title>Probability Basics</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-sp-1" /> — List outcomes</li>
+      <li><xref ref="lo-sp-2" /> — Probability scale</li>
+      <li><xref ref="lo-sp-3" /> — Experimental probability</li>
+      <li><xref ref="lo-sp-4" /> — Long-run relative frequency</li>
+      <li><xref ref="lo-sp-5" /> — Calculate probability</li>
+      <li><xref ref="lo-sp-6" /> — Practical probability</li>
+    </ul>
+  </objectives>
+
+  <p>
+    The <term>probability</term> of an event is:
+    <me>P(\text{event}) = \frac{\text{number of favourable outcomes}}{\text{total number of equally likely outcomes}}</me>
+  </p>
+  <p>
+    <term>Experimental probability</term> is found by running an experiment:
+    <me>P(\text{event}) \approx \frac{\text{number of times event occurred}}{\text{total number of trials}}</me>
+    As the number of trials increases, the experimental probability approaches the theoretical probability.
+    This is the <term>long-run relative frequency</term>.
+  </p>
+
+  <exercises xml:id="exs-probability-basics">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-prob-dice">
+      <statement><p>A fair six-sided die is rolled. Find the probability of rolling: (a) a 4, (b) an even number, (c) a number greater than 4.</p></statement>
+      <answer><p>(a) <m>\frac{1}{6}</m>  (b) <m>\frac{1}{2}</m>  (c) <m>\frac{1}{3}</m></p></answer>
+      <solution>
+        <p>(a) One favourable outcome (4) out of 6: <m>P = \frac{1}{6}</m>.</p>
+        <p>(b) Favourable outcomes: 2, 4, 6. <m>P = \frac{3}{6} = \frac{1}{2}</m>.</p>
+        <p>(c) Favourable outcomes: 5, 6. <m>P = \frac{2}{6} = \frac{1}{3}</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-prob-cards">
+      <statement><p>A card is drawn at random from a standard deck of 52 cards. Find the probability that it is a heart.</p></statement>
+      <answer><p><m>\frac{1}{4}</m></p></answer>
+      <solution><p>There are 13 hearts in 52 cards: <m>P = \frac{13}{52} = \frac{1}{4}</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

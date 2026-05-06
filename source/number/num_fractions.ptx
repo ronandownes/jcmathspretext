@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-fractions">
+  <title>Fractions</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-8" /> — Fractions, decimals, percentages</li>
+      <li><xref ref="lo-n-6" /> — Properties of arithmetic</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A fraction <m>\frac{a}{b}</m> represents <m>a</m> parts out of <m>b</m> equal parts.
+    The number <m>a</m> is the <term>numerator</term>; <m>b</m> is the <term>denominator</term>.
+  </p>
+  <p>
+    Two fractions are <term>equivalent</term> if they represent the same value: <m>\frac{1}{2} = \frac{2}{4} = \frac{3}{6}</m>.
+  </p>
+  <p>
+    To add fractions, find a common denominator first: <m>\frac{1}{3} + \frac{1}{4} = \frac{4}{12} + \frac{3}{12} = \frac{7}{12}</m>.
+  </p>
+  <p>
+    To multiply fractions, multiply numerators and denominators: <m>\frac{2}{3} \times \frac{3}{4} = \frac{6}{12} = \frac{1}{2}</m>.
+  </p>
+  <p>
+    To divide by a fraction, multiply by its reciprocal: <m>\frac{2}{3} \div \frac{4}{5} = \frac{2}{3} \times \frac{5}{4} = \frac{10}{12} = \frac{5}{6}</m>.
+  </p>
+
+  <exercises xml:id="exs-fractions">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-frac-add">
+      <statement><p>Calculate: <m>\dfrac{2}{5} + \dfrac{1}{3}</m></p></statement>
+      <hint><p>Find the LCM of 5 and 3.</p></hint>
+      <answer><p><m>\dfrac{11}{15}</m></p></answer>
+      <solution><p><m>\dfrac{2}{5} + \dfrac{1}{3} = \dfrac{6}{15} + \dfrac{5}{15} = \dfrac{11}{15}</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-frac-multiply">
+      <statement><p>Calculate: <m>\dfrac{3}{4} \times \dfrac{8}{9}</m></p></statement>
+      <answer><p><m>\dfrac{2}{3}</m></p></answer>
+      <solution><p><m>\dfrac{3}{4} \times \dfrac{8}{9} = \dfrac{24}{36} = \dfrac{2}{3}</m></p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

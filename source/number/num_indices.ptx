@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-indices">
+  <title>Index Notation and Rules</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-13" /> — Rules of indices</li>
+      <li><xref ref="lo-n-14" /> — Zero and negative indices</li>
+      <li><xref ref="lo-n-4" /> — Prime factorisation</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Index notation: <m>a^n</m> means <m>a</m> multiplied by itself <m>n</m> times.
+    For example, <m>2^5 = 2 \times 2 \times 2 \times 2 \times 2 = 32</m>.
+  </p>
+
+  <p>The rules of indices:</p>
+  <ul>
+    <li><m>a^m \times a^n = a^{m+n}</m></li>
+    <li><m>a^m \div a^n = a^{m-n}</m></li>
+    <li><m>(a^m)^n = a^{mn}</m></li>
+    <li><m>a^0 = 1</m> (for <m>a \neq 0</m>)</li>
+    <li><m>a^{-n} = \dfrac{1}{a^n}</m></li>
+  </ul>
+
+  <exercises xml:id="exs-indices">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-indices-multiply">
+      <statement><p>Simplify: <m>3^4 \times 3^2</m></p></statement>
+      <answer><p><m>3^6 = 729</m></p></answer>
+      <solution><p><m>3^4 \times 3^2 = 3^{4+2} = 3^6 = 729</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-indices-negative">
+      <statement><p>Write <m>5^{-2}</m> as a fraction.</p></statement>
+      <answer><p><m>\dfrac{1}{25}</m></p></answer>
+      <solution><p><m>5^{-2} = \dfrac{1}{5^2} = \dfrac{1}{25}</m></p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

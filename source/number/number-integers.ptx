@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-integers" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Integers</title>
+
+  <introduction>
+    <p>
+      Integers extend the natural numbers by including zero and negative numbers: <m>\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots</m>
+    </p>
+    <p>
+      They allow us to represent quantities below zero — temperatures, debts, sea levels — and perform operations in both directions on the number line.
+    </p>
+  </introduction>
+
+  <xi:include href="num_integers-intro.ptx" />
+  <xi:include href="num_integers-operations.ptx" />
+
+</chapter>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-measurement" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Measurement, Area, and Volume</title>
+
+  <introduction>
+    <p>
+      Measurement connects number to the physical world. This chapter covers units of measurement, area and perimeter of 2D shapes, and volume and surface area of 3D solids.
+    </p>
+  </introduction>
+
+  <xi:include href="num_units.ptx" />
+  <xi:include href="num_area-perimeter.ptx" />
+  <xi:include href="num_volume.ptx" />
+
+</chapter>

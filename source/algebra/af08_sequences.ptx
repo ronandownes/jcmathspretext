@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-sequences">
+  <title>Sequences</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-17" /> — Linear patterns</li>
+      <li><xref ref="lo-af-18" /> — Arithmetic sequences — nth term</li>
+      <li><xref ref="lo-af-19" /> — Quadratic and geometric sequences (HL)</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A <term>sequence</term> is an ordered list of numbers following a rule.
+    An <term>arithmetic sequence</term> has a constant difference <m>d</m> between consecutive terms.
+  </p>
+  <p>
+    The <term>nth term</term> (general term) of an arithmetic sequence: <m>T_n = a + (n-1)d</m>
+    where <m>a</m> is the first term and <m>d</m> is the common difference.
+  </p>
+  <p>
+    <strong>Example:</strong> The sequence <m>3, 7, 11, 15, \ldots</m> has <m>a = 3</m>, <m>d = 4</m>.
+    So <m>T_n = 3 + (n-1)(4) = 4n - 1</m>.
+  </p>
+  <p>
+    A <term>geometric sequence</term> (HL) has a constant ratio <m>r</m>: <m>T_n = ar^{n-1}</m>.
+  </p>
+
+  <exercises xml:id="exs-sequences">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-sequence-nth-term">
+      <statement><p>Find the nth term of the sequence: <m>5, 9, 13, 17, \ldots</m></p></statement>
+      <answer><p><m>T_n = 4n + 1</m></p></answer>
+      <solution><p><m>a = 5</m>, <m>d = 4</m>. <m>T_n = 5 + (n-1)(4) = 5 + 4n - 4 = 4n + 1</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-sequence-term-value">
+      <statement><p>For the sequence with <m>T_n = 3n - 2</m>, find the 20th term and find which term equals 55.</p></statement>
+      <answer><p>20th term: 58; the 19th term equals 55.</p></answer>
+      <solution><p><m>T_{20} = 3(20) - 2 = 58</m>. For <m>3n - 2 = 55</m>: <m>3n = 57</m>, <m>n = 19</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

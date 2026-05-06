@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-inequalities">
+  <title>Linear Inequalities</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-16" /> — Linear inequalities</li>
+    </ul>
+  </objectives>
+
+  <p>
+    An <term>inequality</term> uses <m>\lt</m>, <m>\leq</m>, <m>\gt</m>, or <m>\geq</m> instead of <m>=</m>.
+    Solving it gives a <em>range</em> of values rather than a single solution.
+  </p>
+  <p>
+    Solve like an equation, with one exception: <strong>if you multiply or divide by a negative number, reverse the inequality sign</strong>.
+  </p>
+  <p>
+    <strong>Example:</strong> Solve <m>3x - 4 \gt 8</m>.
+    <me>3x \gt 12 \Rightarrow x \gt 4</me>
+  </p>
+  <p>
+    Show the solution on a number line: use an open circle for strict inequalities (<m>\lt</m>, <m>\gt</m>) and a closed circle for <m>\leq</m>, <m>\geq</m>.
+  </p>
+
+  <exercises xml:id="exs-inequalities">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-inequality-basic">
+      <statement><p>Solve: <m>2x + 1 \leq 9</m> and show the solution on a number line.</p></statement>
+      <answer><p><m>x \leq 4</m></p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-inequality-negative">
+      <statement><p>Solve: <m>-3x \gt 12</m></p></statement>
+      <answer><p><m>x \lt -4</m></p></answer>
+      <solution><p>Divide by <m>-3</m> and reverse the sign: <m>x \lt -4</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

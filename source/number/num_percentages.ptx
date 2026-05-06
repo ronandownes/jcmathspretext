@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-percentages">
+  <title>Percentages, Profit, Loss, and VAT</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-10" /> — Calculate percentages</li>
+      <li><xref ref="lo-n-11" /> — Profit, loss, discount, VAT</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A percentage is a fraction out of 100: <m>35\% = \dfrac{35}{100} = 0.35</m>.
+  </p>
+  <p>
+    To find a percentage of an amount: multiply by the decimal equivalent.
+    For example, <m>20\%</m> of <m>€80 = 0.20 \times 80 = €16</m>.
+  </p>
+
+  <subsection xml:id="num-percentage-change">
+    <title>Percentage Change</title>
+    <p>
+      <m>\text{Percentage change} = \dfrac{\text{change}}{\text{original}} \times 100</m>
+    </p>
+    <p>
+      If something increases from €50 to €60, the percentage increase is <m>\dfrac{10}{50} \times 100 = 20\%</m>.
+    </p>
+  </subsection>
+
+  <subsection xml:id="num-vat-profit-loss">
+    <title>VAT, Profit, and Loss</title>
+    <p>
+      <term>VAT</term> (Value Added Tax) is a percentage added to the price of goods.
+      If an item costs €100 before VAT and VAT is 23%, the final price is <m>€100 \times 1.23 = €123</m>.
+    </p>
+    <p>
+      <term>Profit</term> = Selling price − Cost price.
+      <term>Loss</term> = Cost price − Selling price (when selling price is lower).
+    </p>
+  </subsection>
+
+  <exercises xml:id="exs-percentages">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-percent-of">
+      <statement><p>Find 15% of €240.</p></statement>
+      <answer><p>€36</p></answer>
+      <solution><p><m>0.15 \times 240 = 36</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-percent-increase">
+      <statement><p>A phone costs €320. It is reduced by 25%. What is the sale price?</p></statement>
+      <answer><p>€240</p></answer>
+      <solution><p>Discount: <m>0.25 \times 320 = €80</m>. Sale price: <m>320 - 80 = €240</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

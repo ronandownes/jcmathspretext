@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-fractions-decimals-percentages" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fractions, Decimals, Percentages, and Ratio</title>
+
+  <introduction>
+    <p>
+      Fractions, decimals, and percentages are three ways of representing the same rational number.
+      Moving fluently between them — and using ratio and proportion — is essential for everyday mathematics and for all other strands.
+    </p>
+  </introduction>
+
+  <xi:include href="num_fractions.ptx" />
+  <xi:include href="num_decimals.ptx" />
+  <xi:include href="num_percentages.ptx" />
+  <xi:include href="num_ratio-proportion.ptx" />
+
+</chapter>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-standard-form">
+  <title>Standard Form</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-15" /> — Express numbers in standard form</li>
+      <li><xref ref="lo-n-16" /> — Calculations in standard form</li>
+    </ul>
+  </objectives>
+
+  <p>
+    <term>Standard form</term> (scientific notation) writes a number as <m>a \times 10^n</m>
+    where <m>1 \leq a \lt 10</m> and <m>n</m> is an integer.
+  </p>
+  <p>
+    Large numbers: <m>340\,000 = 3.4 \times 10^5</m>.
+    Small numbers: <m>0.000045 = 4.5 \times 10^{-5}</m>.
+  </p>
+  <p>
+    To multiply in standard form: <m>(3 \times 10^4) \times (2 \times 10^3) = 6 \times 10^7</m>.
+    To divide: <m>(6 \times 10^8) \div (3 \times 10^5) = 2 \times 10^3</m>.
+  </p>
+
+  <exercises xml:id="exs-standard-form">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-to-standard">
+      <statement><p>Write <m>0.000072</m> in standard form.</p></statement>
+      <answer><p><m>7.2 \times 10^{-5}</m></p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-standard-multiply">
+      <statement><p>Calculate: <m>(4 \times 10^3) \times (5 \times 10^4)</m>. Give your answer in standard form.</p></statement>
+      <answer><p><m>2 \times 10^8</m></p></answer>
+      <solution><p><m>4 \times 5 = 20</m> and <m>10^3 \times 10^4 = 10^7</m>, so <m>20 \times 10^7 = 2 \times 10^8</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

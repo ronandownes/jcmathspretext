@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-factorising">
+  <title>Factorising</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-6" /> — Factorise — common factor</li>
+      <li><xref ref="lo-af-7" /> — Factorise quadratics (HL)</li>
+    </ul>
+  </objectives>
+
+  <p>
+    <term>Factorising</term> is the reverse of expanding. We write an expression as a product of factors.
+  </p>
+  <p>
+    <strong>Common factor:</strong> Take the highest common factor outside a bracket.
+    <me>6x^2 + 9x = 3x(2x + 3)</me>
+  </p>
+  <p>
+    <strong>Difference of two squares:</strong>
+    <me>x^2 - a^2 = (x + a)(x - a)</me>
+  </p>
+  <p>
+    <strong>Quadratic trinomials (HL):</strong> For <m>x^2 + bx + c</m>, find two numbers that multiply to <m>c</m> and add to <m>b</m>.
+    <me>x^2 + 5x + 6 = (x + 2)(x + 3)</me>
+  </p>
+
+  <exercises xml:id="exs-factorising">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-factorise-common">
+      <statement><p>Factorise: <m>8x^2 - 12x</m></p></statement>
+      <answer><p><m>4x(2x - 3)</m></p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-factorise-quadratic">
+      <statement><p>Factorise: <m>x^2 - 7x + 12</m></p></statement>
+      <hint><p>Find two numbers that multiply to 12 and add to <m>-7</m>.</p></hint>
+      <answer><p><m>(x - 3)(x - 4)</m></p></answer>
+      <solution><p><m>-3 \times -4 = 12</m> and <m>-3 + (-4) = -7</m>. So <m>x^2 - 7x + 12 = (x - 3)(x - 4)</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

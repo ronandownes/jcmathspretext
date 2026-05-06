@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-algebra-expressions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algebraic Expressions</title>
+
+  <introduction>
+    <p>
+      Algebra begins with the idea that we can use letters to represent unknown or varying quantities.
+      This chapter covers evaluating, simplifying, expanding, and factorising algebraic expressions.
+    </p>
+  </introduction>
+
+  <xi:include href="af01_variables-expressions.ptx" />
+  <xi:include href="af02_expanding.ptx" />
+  <xi:include href="af03_factorising.ptx" />
+
+</chapter>

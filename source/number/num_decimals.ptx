@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-decimals">
+  <title>Decimals</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-8" /> — Fractions, decimals, percentages</li>
+      <li><xref ref="lo-n-17" /> — Rounding and accuracy</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Decimals are another way of writing fractions whose denominators are powers of 10.
+    The decimal point separates the whole number part from the fractional part.
+  </p>
+  <p>
+    For example: <m>0.375 = \dfrac{375}{1000} = \dfrac{3}{8}</m>.
+  </p>
+  <p>
+    To convert a fraction to a decimal, divide the numerator by the denominator.
+    To round a decimal to <m>n</m> decimal places, look at the <m>(n+1)</m>th digit: round up if it is 5 or more.
+  </p>
+
+  <exercises xml:id="exs-decimals">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-frac-to-decimal">
+      <statement><p>Convert <m>\dfrac{7}{8}</m> to a decimal.</p></statement>
+      <answer><p><m>0.875</m></p></answer>
+      <solution><p><m>7 \div 8 = 0.875</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-round-decimal">
+      <statement><p>Round <m>3.14159</m> to 2 decimal places.</p></statement>
+      <answer><p><m>3.14</m></p></answer>
+      <solution><p>The third decimal place is 1, which is less than 5, so we round down: <m>3.14</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

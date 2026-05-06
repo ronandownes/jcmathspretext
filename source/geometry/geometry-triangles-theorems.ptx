@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-triangles-theorems" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Triangles and Theorems</title>
+
+  <introduction>
+    <p>
+      Triangles are the simplest polygon, yet they underpin much of geometry and trigonometry.
+      This chapter covers triangle properties, Pythagoras' theorem, and circle theorems.
+    </p>
+  </introduction>
+
+  <xi:include href="gt05_triangles.ptx" />
+  <xi:include href="gt06_pythagoras.ptx" />
+
+</chapter>

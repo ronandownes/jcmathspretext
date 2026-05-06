@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-quadratic-equations">
+  <title>Quadratic Equations (HL)</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-14" /> — Solve quadratics by factorising (HL)</li>
+      <li><xref ref="lo-af-15" /> — Quadratic formula (HL)</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A <term>quadratic equation</term> has the form <m>ax^2 + bx + c = 0</m>.
+    It can have 0, 1, or 2 real solutions.
+  </p>
+  <p>
+    <strong>By factorising:</strong> Write the equation as a product of two brackets equal to zero, then solve each bracket.
+    <me>x^2 - 5x + 6 = 0 \Rightarrow (x-2)(x-3) = 0 \Rightarrow x = 2 \text{ or } x = 3</me>
+  </p>
+  <p>
+    <strong>Quadratic formula:</strong> For any <m>ax^2 + bx + c = 0</m>:
+    <me>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</me>
+    The expression <m>b^2 - 4ac</m> is the <term>discriminant</term>. If it is positive, there are two real solutions; if zero, one solution; if negative, no real solutions.
+  </p>
+
+  <exercises xml:id="exs-quadratic-equations">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-quad-factorise">
+      <statement><p>Solve by factorising: <m>x^2 + x - 12 = 0</m></p></statement>
+      <answer><p><m>x = 3</m> or <m>x = -4</m></p></answer>
+      <solution><p><m>(x+4)(x-3) = 0 \Rightarrow x = -4</m> or <m>x = 3</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-quad-formula">
+      <statement><p>Use the quadratic formula to solve: <m>2x^2 - 5x + 1 = 0</m>. Give answers correct to 2 decimal places.</p></statement>
+      <answer><p><m>x \approx 2.28</m> or <m>x \approx 0.22</m></p></answer>
+      <solution>
+        <p><m>a=2, b=-5, c=1</m>.</p>
+        <p><m>x = \dfrac{5 \pm \sqrt{25 - 8}}{4} = \dfrac{5 \pm \sqrt{17}}{4}</m></p>
+        <p><m>x \approx \dfrac{5 + 4.123}{4} \approx 2.28</m> or <m>x \approx \dfrac{5 - 4.123}{4} \approx 0.22</m></p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
+</section>

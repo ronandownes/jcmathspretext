@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-triangles">
+  <title>Triangle Properties</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-6" /> — Angle sum in triangles and quadrilaterals</li>
+      <li><xref ref="lo-gt-7" /> — Parallel lines and transversals</li>
+      <li><xref ref="lo-gt-8" /> — Isosceles and equilateral triangles</li>
+    </ul>
+  </objectives>
+
+  <p>
+    The angles in any triangle add up to 180°.
+    The angles in any quadrilateral add up to 360°.
+  </p>
+  <p>
+    An <term>isosceles triangle</term> has two equal sides and two equal base angles.
+    An <term>equilateral triangle</term> has three equal sides and three 60° angles.
+  </p>
+  <p>
+    When a <term>transversal</term> crosses two parallel lines:
+  </p>
+  <ul>
+    <li><term>Alternate angles</term> are equal (Z-angles)</li>
+    <li><term>Corresponding angles</term> are equal (F-angles)</li>
+    <li><term>Co-interior angles</term> are supplementary (add to 180°, C-angles)</li>
+  </ul>
+
+  <exercises xml:id="exs-triangles">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-triangle-angle">
+      <statement><p>A triangle has angles <m>47°</m> and <m>68°</m>. Find the third angle.</p></statement>
+      <answer><p><m>65°</m></p></answer>
+      <solution><p><m>180° - 47° - 68° = 65°</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-isosceles-angle">
+      <statement><p>An isosceles triangle has one angle of <m>40°</m> at the apex. Find the base angles.</p></statement>
+      <answer><p>Each base angle is <m>70°</m>.</p></answer>
+      <solution><p>The two base angles are equal. <m>180° - 40° = 140°</m>. Each base angle: <m>140° \div 2 = 70°</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-inequalities-sequences" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Inequalities and Sequences</title>
+
+  <introduction>
+    <p>
+      Inequalities extend equation-solving to ranges of solutions.
+      Sequences are ordered lists of numbers governed by a rule — understanding their structure connects arithmetic and algebra.
+    </p>
+  </introduction>
+
+  <xi:include href="af07_inequalities.ptx" />
+  <xi:include href="af08_sequences.ptx" />
+
+</chapter>
