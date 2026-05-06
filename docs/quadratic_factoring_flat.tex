@@ -1,0 +1,578 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage{geometry}
+\geometry{top=11mm, bottom=11mm, left=8mm, right=8mm}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{tasks}
+\usepackage{xparse}
+\usepackage{tikz}
+\setlength{\parindent}{0pt}
+\everymath{\displaystyle}
+\usetikzlibrary{matrix}
+
+% =========================================================
+% Printing helpers
+% =========================================================
+\NewDocumentCommand{\coefx}{m}{%
+  \ifnum#1=0\else\ifnum#1=1 x\else\ifnum#1=-1 -x%
+  \else\number#1 x\fi\fi\fi}
+
+\NewDocumentCommand{\signedint}{m}{%
+  \ifnum#1=0\else\ifnum#1>0 +\number#1\else\number#1\fi\fi}
+
+\NewDocumentCommand{\signedcoefx}{m}{%
+  \ifnum#1=0\else\ifnum#1=1 +x\else\ifnum#1=-1 -x%
+  \else\ifnum#1>0 +\number#1 x\else\number#1 x\fi\fi\fi\fi}
+
+% =========================================================
+% Core building blocks
+% =========================================================
+
+% Expanded quadratic expression from (ax+b)(cx+d).
+% This is an expression only: no =0.
+\NewDocumentCommand{\quadexp}{m m m m}{%
+  \ensuremath{%
+    \edef\qTA{\number\numexpr#1*#3\relax}%
+    \edef\qTB{\number\numexpr#1*#4+#2*#3\relax}%
+    \edef\qTC{\number\numexpr#2*#4\relax}%
+    \ifnum\qTA=1 x^{2}\else\ifnum\qTA=-1 -x^{2}%
+    \else\qTA x^{2}\fi\fi
+    \signedcoefx{\qTB}\signedint{\qTC}%
+  }%
+}
+
+% Unexpanded/factor form: (ax+b)(cx+d).
+\NewDocumentCommand{\pairform}{m m m m}{%
+  \ensuremath{(\coefx{#1}\signedint{#2})(\coefx{#3}\signedint{#4})}}
+
+\newcount\rfA\newcount\rfB\newcount\rfG\newcount\rfX\newcount\rfY\newcount\rfT
+\def\rfgcdloop{%
+  \ifnum\rfY>0\rfT=\rfX\divide\rfT\rfY\multiply\rfT\rfY
+  \advance\rfT-\rfX\rfT=-\rfT\rfX=\rfY\rfY=\rfT\expandafter\rfgcdloop\fi}
+\NewDocumentCommand{\rootfrac}{m m}{%
+  \rfA=\numexpr-(#1)\relax\rfB=\numexpr+(#2)\relax
+  \ifnum\rfB<0\rfA=-\rfA\rfB=-\rfB\fi
+  \rfX=\rfA\ifnum\rfX<0\rfX=-\rfX\fi\rfY=\rfB
+  \rfgcdloop\rfG=\rfX\ifnum\rfG=0\rfG=1\fi
+  \divide\rfA\rfG\divide\rfB\rfG
+  % integer root
+  \ifnum\rfB=1\the\rfA%
+  \else
+    % sign before fraction, absolute value in numerator
+    \ifnum\rfA<0 -\frac{\the\numexpr-\rfA\relax}{\the\rfB}%
+    \else\frac{\the\rfA}{\the\rfB}%
+    \fi
+  \fi}
+
+% =========================================================
+% SCAFFOLDED FAMILY
+% =========================================================
+
+% --- L1: bare expanded expression
+\NewDocumentCommand{\quadeqn}{m m m m}{%
+  \(\quadexp{#1}{#2}{#3}{#4}\)}
+
+% --- L2: expression + deeper X factoring frame, boxed bigger term
+\NewDocumentCommand{\quadframe}{m m m m}{%
+  \begingroup
+  \count0=#2\relax\ifnum\count0<0\count0=-\count0\fi
+  \count1=#4\relax\ifnum\count1<0\count1=-\count1\fi
+
+  \def\qSB{+}\ifnum#2<0\def\qSB{-}\fi
+  \def\qSD{+}\ifnum#4<0\def\qSD{-}\fi
+
+  \count2=\numexpr#1*\count1\relax
+  \count3=\numexpr#3*\count0\relax
+
+  \count4=\numexpr#1*#4+#2*#3\relax
+  \count5=\numexpr#2*#4\relax
+
+  \def\qOp{+}\ifnum\count5<0\def\qOp{-}\fi
+
+  \edef\qAbsB{\the\count0}%
+  \edef\qAbsD{\the\count1}%
+
+  \edef\qCPtop{\the\count3}%
+  \edef\qCPbot{\the\count2}%
+
+  \ifnum\count5<0
+    \ifnum\count3>\count2
+      \def\qMarkTop{1}\def\qMarkBot{0}%
+      \count6=\numexpr\count3-\count2\relax
+    \else
+      \def\qMarkTop{0}\def\qMarkBot{1}%
+      \count6=\numexpr\count2-\count3\relax
+    \fi
+  \else
+    \def\qMarkTop{0}\def\qMarkBot{0}%
+    \count6=\numexpr\count2+\count3\relax
+  \fi
+  \edef\qMagResult{\the\count6}%
+
+  \par\centering
+  \(\quadexp{#1}{#2}{#3}{#4}\)\\[5pt]%
+  \begin{tikzpicture}[scale=0.9]
+    \node[anchor=east] at (0.55, 0.90) {$\coefx{#1}$};
+    \node[anchor=east] at (0.55,-0.90) {$\coefx{#3}$};
+
+    \draw[thick] (0.70, 0.75)--(2.20,-0.75);
+    \draw[thick] (0.70,-0.75)--(2.20, 0.75);
+
+    \node at (1.55, 0.90) {$\qSB$};
+    \node at (1.55,-0.90) {$\qSD$};
+
+    \node[anchor=west] at (2.35, 0.90) {$\qAbsB$};
+    \node[anchor=west] at (2.35,-0.90) {$\qAbsD$};
+
+    \draw[thick] (3.55, 1.15)--(3.55,-1.25);
+
+    % operation beside pipe, no circle
+    \node at (3.95,0.00) {$\qOp$};
+
+    \ifnum\qMarkTop=1
+      \node[draw,rectangle,inner sep=2pt,anchor=east] at (6.55,0.55)
+        {$\ifnum\qCPtop=1 x\else\qCPtop x\fi$};
+    \else
+      \node[anchor=east] at (6.55,0.55)
+        {$\ifnum\qCPtop=1 x\else\qCPtop x\fi$};
+    \fi
+
+    \ifnum\qMarkBot=1
+      \node[draw,rectangle,inner sep=2pt,anchor=east] at (6.55,-0.35)
+        {$\ifnum\qCPbot=1 x\else\qCPbot x\fi$};
+    \else
+      \node[anchor=east] at (6.55,-0.35)
+        {$\ifnum\qCPbot=1 x\else\qCPbot x\fi$};
+    \fi
+
+    \draw[thick] (5.05,-0.68)--(6.70,-0.68);
+
+    \node[anchor=east] at (6.55,-1.05)
+      {$\ifnum\qMagResult=1 x\else\qMagResult x\fi$};
+
+    \node[anchor=west] at (6.67,-1.05) {$\checkmark$};
+  \end{tikzpicture}\par
+  \endgroup}
+
+% --- L0: bare factoring frame (no working on right)
+\NewDocumentCommand{\quadframebare}{m m m m}{%
+  \begingroup
+
+  % absolute constants
+  \count0=#2\relax\ifnum\count0<0\count0=-\count0\fi
+  \count1=#4\relax\ifnum\count1<0\count1=-\count1\fi
+
+  % signs inside the frame
+  \def\qSB{+}\ifnum#2<0\def\qSB{-}\fi
+  \def\qSD{+}\ifnum#4<0\def\qSD{-}\fi
+
+  \edef\qAbsB{\the\count0}%
+  \edef\qAbsD{\the\count1}%
+
+  \par\centering
+  \(\quadexp{#1}{#2}{#3}{#4}\)\\[5pt]%
+
+  \begin{tikzpicture}[scale=0.9]
+    % left x-terms
+    \node[anchor=east] at (0.55, 0.90) {$\coefx{#1}$};
+    \node[anchor=east] at (0.55,-0.90) {$\coefx{#3}$};
+
+    % X crossing
+    \draw[thick] (0.70, 0.75)--(2.20,-0.75);
+    \draw[thick] (0.70,-0.75)--(2.20, 0.75);
+
+    % signs in the frame
+    \node at (1.55, 0.90) {$\qSB$};
+    \node at (1.55,-0.90) {$\qSD$};
+
+    % constants (absolute values)
+    \node[anchor=west] at (2.35, 0.90) {$\qAbsB$};
+    \node[anchor=west] at (2.35,-0.90) {$\qAbsD$};
+  \end{tikzpicture}\par
+
+  \endgroup}
+
+% --- L2: factoring frame with automatic sign mapping + constant→operation cue
+\NewDocumentCommand{\quadframesign}{m m m m}{%
+  \begingroup
+  \count0=#2\relax\ifnum\count0<0\count0=-\count0\fi
+  \count1=#4\relax\ifnum\count1<0\count1=-\count1\fi
+
+  \def\qSB{+}\ifnum#2<0\def\qSB{-}\fi
+  \def\qSD{+}\ifnum#4<0\def\qSD{-}\fi
+
+  % cross-products
+  \count2=\numexpr#1*\count1\relax
+  \count3=\numexpr#3*\count0\relax
+
+  % middle coefficient
+  \count4=\numexpr#1*#4+#2*#3\relax
+  \def\qMidSign{+}%
+  \ifnum\count4<0
+    \def\qMidSign{-}%
+    \count7=\numexpr-\count4\relax
+  \else
+    \count7=\numexpr\count4\relax
+  \fi
+
+  % constant
+  \count5=\numexpr#2*#4\relax
+  \count8=\count5
+  \ifnum\count8<0\count8=-\count8\fi
+
+  \edef\qAbsB{\the\count0}%
+  \edef\qAbsD{\the\count1}%
+  \edef\qAbsMid{\the\count7}%
+  \edef\qAbsC{\the\count8}%
+
+  % cross-products in X order
+  \edef\qCPtop{\the\count3}%
+  \edef\qCPbot{\the\count2}%
+
+  % SAME vs MIXED detection
+  \def\qSame{0}%
+  \def\qTargetTop{0}%
+  \def\qTargetBot{0}%
+
+  \ifnum\count5>0
+    % SAME
+    \def\qSame{1}%
+    \def\qTargetTop{1}%
+    \def\qTargetBot{1}%
+    \count6=\numexpr\count2+\count3\relax
+    \def\qOp{+}%
+  \else
+    % MIXED
+    \def\qOp{-}%
+    \ifnum\count3>\count2
+      \def\qTargetTop{1}%
+      \count6=\numexpr\count3-\count2\relax
+    \else
+      \def\qTargetBot{1}%
+      \count6=\numexpr\count2-\count3\relax
+    \fi
+  \fi
+
+  \edef\qMagResult{\the\count6}%
+
+  \par\centering
+  \begin{tikzpicture}[scale=0.9]
+
+    % expression (middle sign circled)
+    \node[anchor=east] at (2.45,1.75) {$\quadexp{#1}{0}{#3}{0}$};
+    \node[draw,circle,inner sep=1.3pt] (midsign) at (2.75,1.75) {$\qMidSign$};
+    \node[anchor=west] at (2.98,1.75) {$\qAbsMid x$};
+
+    % constant sign (named)
+    \node (constsign) at (4.05,1.75)
+      {$\ifnum\count5<0-\else+\fi$};
+    \node[anchor=west] at (4.18,1.75) {$\qAbsC$};
+
+    % frame
+    \node[anchor=east] at (0.55, 0.90) {$\coefx{#1}$};
+    \node[anchor=east] at (0.55,-0.90) {$\coefx{#3}$};
+
+    \draw[thick] (0.70, 0.75)--(2.20,-0.75);
+    \draw[thick] (0.70,-0.75)--(2.20, 0.75);
+
+    \node (topsign) at (1.55, 0.90) {$\qSB$};
+    \node (botsign) at (1.55,-0.90) {$\qSD$};
+
+    \node[anchor=west] at (2.35, 0.90) {$\qAbsB$};
+    \node[anchor=west] at (2.35,-0.90) {$\qAbsD$};
+
+    % middle sign mapping arrows
+    \ifnum\qSame=1
+      \draw[->,thick] (midsign.west) to[out=180,in=70] (topsign.north);
+      \draw[->,thick] (midsign.south west) to[out=210,in=20] (botsign.east);
+    \else
+      \ifnum\qTargetTop=1
+        \draw[->,thick] (midsign.west) to[out=180,in=70] (topsign.north);
+      \fi
+      \ifnum\qTargetBot=1
+        \draw[->,thick] (midsign.south west) to[out=210,in=20] (botsign.east);
+      \fi
+    \fi
+
+    % pipe
+    \draw[thick] (3.55, 1.15)--(3.55,-1.25);
+
+    % operation node (named)
+    \node (opnode) at (3.92,0.00) {$\qOp$};
+
+    % NEW: constant → operation arrow (thin)
+    \draw[->,thin] (constsign.south)
+      to[out=-90,in=90] (opnode.north);
+
+    % cross-products
+    \ifnum\qSame=0
+      \ifnum\qTargetTop=1
+        \node[draw,rectangle,inner sep=2pt,anchor=east] at (6.15,0.55)
+          {$\ifnum\qCPtop=1 x\else\qCPtop x\fi$};
+      \else
+        \node[anchor=east] at (6.15,0.55)
+          {$\ifnum\qCPtop=1 x\else\qCPtop x\fi$};
+      \fi
+
+      \ifnum\qTargetBot=1
+        \node[draw,rectangle,inner sep=2pt,anchor=east] at (6.15,-0.35)
+          {$\ifnum\qCPbot=1 x\else\qCPbot x\fi$};
+      \else
+        \node[anchor=east] at (6.15,-0.35)
+          {$\ifnum\qCPbot=1 x\else\qCPbot x\fi$};
+      \fi
+    \else
+      \node[anchor=east] at (6.15,0.55)
+        {$\ifnum\qCPtop=1 x\else\qCPtop x\fi$};
+
+      \node[anchor=east] at (6.15,-0.35)
+        {$\ifnum\qCPbot=1 x\else\qCPbot x\fi$};
+    \fi
+
+    % rule and result
+    \draw[thick] (4.85,-0.68)--(6.30,-0.68);
+
+    \node[anchor=east] at (6.15,-1.05)
+      {$\ifnum\qMagResult=1 x\else\qMagResult x\fi$};
+
+    \node[anchor=west] at (6.27,-1.05) {$\checkmark$};
+
+  \end{tikzpicture}\par
+  \endgroup}
+
+% --- L3: expanded expression + factor form
+\NewDocumentCommand{\quadfactors}{m m m m}{%
+  \(\quadexp{#1}{#2}{#3}{#4}\)\\[2pt]%
+  \(\pairform{#1}{#2}{#3}{#4}\)}
+
+% --- L4: expression + factored = 0 + roots
+\NewDocumentCommand{\quadroots}{m m m m}{%
+  \(\quadexp{#1}{#2}{#3}{#4}\)\\[2pt]%
+  \(\pairform{#1}{#2}{#3}{#4}=0\)\\[2pt]%
+  \(x=\rootfrac{#2}{#1}\text{ or }x=\rootfrac{#4}{#3}\)}
+
+% --- L5: all + plot/sketch placeholder; TikZ parabola to be added
+\NewDocumentCommand{\quadplot}{m m m m}{%
+  \quadroots{#1}{#2}{#3}{#4}%
+}
+
+% Backward-compatible alias while old documents still contain \quadsketch.
+% Remove this later when everything has moved to \quadplot.
+\NewDocumentCommand{\quadsketch}{m m m m}{\quadplot{#1}{#2}{#3}{#4}}
+
+% =========================================================
+\settasks{
+  label={},label-format={},label-width=0pt,label-offset=0pt,
+  item-indent=1em,
+  column-sep=.4em,after-item-skip=8mm,after-skip=8mm}
+
+\begin{document}
+\begin{center}\Large\bfseries Factor each expression.\end{center}
+\vspace{1mm}
+\begin{questions}
+\Large
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{1}{1}{2}
+  \task \quadeqn{1}{1}{1}{3}
+  \task \quadeqn{1}{1}{1}{5}
+  \task \quadeqn{1}{1}{1}{7}
+\end{tasks}
+
+\Large
+\question
+
+
+% Version 3: #2 = -1, last = 2,5,7,11
+\begin{tasks}(4)
+  \task \quadeqn{1}{-1}{1}{2}
+  \task \quadeqn{1}{-1}{1}{5}
+  \task \quadeqn{1}{-1}{1}{7}
+  \task \quadeqn{1}{-1}{1}{11}
+\end{tasks}
+
+\Large
+
+
+\question
+% Version 4: #2 = -1, last = 3,11,5,7
+\begin{tasks}(4)
+  \task \quadeqn{1}{-1}{1}{3}
+  \task \quadeqn{1}{-1}{1}{11}
+  \task \quadeqn{1}{-1}{1}{5}
+  \task \quadeqn{1}{-1}{1}{7}
+\end{tasks}
+
+\question
+% Version 5: all ones except last = negative small prime
+\begin{tasks}(4)
+  \task \quadeqn{1}{1}{1}{-2}
+  \task \quadeqn{1}{1}{1}{-3}
+  \task \quadeqn{1}{1}{1}{-5}
+  \task \quadeqn{1}{1}{1}{-7}
+\end{tasks}
+
+\question
+% Version 6: #2 = -1, last = negative prime
+\begin{tasks}(4)
+  \task \quadeqn{1}{-1}{1}{-2}
+  \task \quadeqn{1}{-1}{1}{-3}
+  \task \quadeqn{1}{-1}{1}{-5}
+  \task \quadeqn{1}{-1}{1}{-7}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{2}{1}{11}
+  \task \quadeqn{1}{2}{1}{5}
+  \task \quadeqn{1}{2}{1}{31}
+  \task \quadeqn{1}{3}{1}{23}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{-6}{1}{11}
+  \task \quadeqn{1}{10}{1}{-13}
+  \task \quadeqn{1}{-22}{1}{5}
+  \task \quadeqn{1}{15}{1}{-7}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{-6}{1}{5}
+  \task \quadeqn{1}{-7}{1}{6}
+  \task \quadeqn{1}{-8}{1}{7}
+  \task \quadeqn{1}{-9}{1}{8}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{-7}{1}{5}
+  \task \quadeqn{1}{-9}{1}{7}
+  \task \quadeqn{1}{-11}{1}{9}
+  \task \quadeqn{1}{-13}{1}{11}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{-8}{1}{5}
+  \task \quadeqn{1}{-10}{1}{7}
+  \task \quadeqn{1}{-12}{1}{9}
+  \task \quadeqn{1}{-14}{1}{11}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{1}{-10}{1}{5}
+  \task \quadeqn{1}{-15}{1}{10}
+  \task \quadeqn{1}{-20}{1}{15}
+  \task \quadeqn{1}{-25}{1}{20}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{1}{1}{3}
+  \task \quadeqn{5}{1}{1}{7}
+  \task \quadeqn{3}{1}{1}{11}
+  \task \quadeqn{7}{1}{1}{2}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{3}{1}{7}{1}
+  \task \quadeqn{2}{1}{5}{1}
+  \task \quadeqn{3}{1}{11}{1}
+  \task \quadeqn{5}{1}{13}{1}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{3}{1}{1}
+  \task \quadeqn{5}{7}{1}{1}
+  \task \quadeqn{3}{11}{1}{1}
+  \task \quadeqn{7}{2}{1}{1}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{-1}{1}{3}
+  \task \quadeqn{5}{1}{1}{-7}
+  \task \quadeqn{3}{-1}{1}{11}
+  \task \quadeqn{7}{1}{1}{-2}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{-3}{1}{1}
+  \task \quadeqn{5}{7}{1}{-1}
+  \task \quadeqn{3}{-11}{1}{1}
+  \task \quadeqn{7}{2}{1}{-1}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{3}{1}{5}
+  \task \quadeqn{3}{5}{1}{7}
+  \task \quadeqn{5}{7}{1}{11}
+  \task \quadeqn{7}{11}{1}{13}
+\end{tasks}
+
+\question
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tasks}(4)
+  \task \quadeqn{2}{-3}{1}{5}
+  \task \quadeqn{3}{5}{1}{-7}
+  \task \quadeqn{5}{-7}{1}{11}
+  \task \quadeqn{7}{11}{1}{-13}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{3}{1}{9}
+  \task \quadeqn{1}{2}{3}{4}
+  \task \quadeqn{1}{5}{3}{25}
+  \task \quadeqn{1}{5}{8}{3}
+\end{tasks}
+
+\question
+\begin{tasks}(4)
+  \task \quadeqn{2}{-3}{1}{9}
+  \task \quadeqn{1}{2}{3}{-4}
+  \task \quadeqn{1}{4}{3}{-16}
+  \task \quadeqn{1}{5}{8}{3}
+\end{tasks}
+
+% -- quadframe demo ----------------------------------------
+
+\begin{center}\Large\bfseries Factoring frame --- worked examples\end{center}
+\vspace{2mm}
+\Large
+
+\question
+\begin{tasks}[after-item-skip=42mm](2)
+  \task  \quadframesign{2}{3}{1}{11}
+  \task \quadframesign{2}{-3}{1}{-11}
+  \task \quadframesign{2}{11}{1}{-5}
+  \task  \quadframesign{3}{-5}{1}{2}
+    \task \quadframesign{2}{11}{1}{5}
+  \task  \quadframesign{3}{5}{1}{2}
+  \task \quadframe{23}{11}{19}{59}
+    \task \quadframebare{2}{3}{1}{11}
+  \task \quadframebare{3}{-5}{1}{-2}
+\end{tasks}
+
+\end{questions}
+\end{document}

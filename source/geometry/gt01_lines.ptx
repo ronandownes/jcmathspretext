@@ -72,4 +72,136 @@
     </statement>
   </definition>
 
+  <figure xml:id="fig-line">
+    <caption>A line through points <m>A</m> and <m>B</m>, extending forever in both directions</caption>
+    <image width="70%">
+      <description>A straight line with arrows on both ends passing through labelled points A and B</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[latex-latex, thick] (-1.5,0) -- (4.5,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (3,0) circle (2pt) node[below] {$B$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <figure xml:id="fig-segment">
+    <caption>The line segment <m>[AB]</m> has two endpoints</caption>
+    <image width="55%">
+      <description>A line segment with endpoints A and B</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (3,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (3,0) circle (2pt) node[below] {$B$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <figure xml:id="fig-ray">
+    <caption>The ray <m>[AB</m> starts at <m>A</m> and extends forever through <m>B</m></caption>
+    <image width="60%">
+      <description>A ray starting at A, passing through B, with an arrow continuing to the right</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[-latex, thick] (0,0) -- (4,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (2,0) circle (2pt) node[below] {$B$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <figure xml:id="fig-triangle">
+    <caption>Triangle <m>\triangle ABC</m> with sides <m>[AB]</m>, <m>[BC]</m>, <m>[CA]</m></caption>
+    <image width="45%">
+      <description>A triangle with vertices A at bottom left, B at bottom right, C at top</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (3,0) -- (1.5,2.5) -- cycle;
+          \filldraw (0,0)   circle (2pt) node[below left]  {$A$};
+          \filldraw (3,0)   circle (2pt) node[below right] {$B$};
+          \filldraw (1.5,2.5) circle (2pt) node[above]    {$C$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <exercises xml:id="exs-lines">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-lines-axiom">
+      <statement>
+        <p>How many straight lines can be drawn through two given points <m>A</m> and <m>B</m>?</p>
+      </statement>
+      <hint>
+        <p>Think about the Two Points Axiom.</p>
+      </hint>
+      <answer>
+        <p>Exactly one.</p>
+      </answer>
+      <solution>
+        <p>By the Two Points Axiom, there is exactly one line through any two given points.
+        So there is exactly one line through <m>A</m> and <m>B</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-lines-collinear">
+      <statement>
+        <p>Points <m>P</m>, <m>Q</m>, and <m>R</m> all lie on the line <m>m</m>.
+        Are they collinear?</p>
+      </statement>
+<hint>
+  <p>See <xref ref="def-collinear"/>.</p>
+</hint>
+      <answer>
+        <p>Yes.</p>
+      </answer>
+      <solution>
+        <p>Three or more points are collinear if they all lie on a single line.
+        Since <m>P</m>, <m>Q</m>, and <m>R</m> all lie on line <m>m</m>, they are collinear.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-lines-segment-vs-ray">
+      <statement>
+        <p>Explain the difference between the line segment <m>[AB]</m> and the ray <m>[AB</m>.</p>
+      </statement>
+      <hint>
+        <p>Think about which one has two endpoints, which has one, and which continues forever.</p>
+      </hint>
+      <answer>
+        <p>The segment <m>[AB]</m> is the finite part of line <m>AB</m> between <m>A</m>
+        and <m>B</m>. The ray <m>[AB</m> starts at <m>A</m> and continues forever through
+        and beyond <m>B</m>.</p>
+      </answer>
+      <solution>
+        <p>The line segment <m>[AB]</m> is the part of line <m>AB</m> between <m>A</m> and
+        <m>B</m>, including both endpoints. It has a definite finite length <m>|AB|</m>.
+        The ray <m>[AB</m> starts at point <m>A</m> and passes through <m>B</m>, continuing
+        forever in that direction. A ray has one starting point but no endpoint.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-lines-triangle-sides">
+      <statement>
+        <p>Triangle <m>\triangle ABC</m> has vertices <m>A</m>, <m>B</m>, and <m>C</m>.
+        Name its three sides.</p>
+      </statement>
+      <hint>
+        <p>Each side is a line segment connecting two of the three vertices.</p>
+      </hint>
+      <answer>
+        <p>The three sides are <m>[AB]</m>, <m>[BC]</m>, and <m>[CA]</m>.</p>
+      </answer>
+      <solution>
+        <p>By definition, triangle <m>\triangle ABC</m> is enclosed by the three line
+        segments <m>[AB]</m>, <m>[BC]</m>, and <m>[CA]</m>. These segments are its three sides.</p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
 </section>

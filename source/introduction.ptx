@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction</title>
+
+  <section xml:id="sec-welcome">
+    <title>Welcome</title>
+    <p>
+      This book is written for you — a Junior Cycle mathematics student in Ireland. It
+      brings the NCCA curriculum to life in an interactive, online format. You'll work
+      through five mathematical strands: <term>Geometry</term>, <term>Number</term>,
+      <term>Algebra</term>, and <term>Statistics</term>. Throughout, you'll apply
+      cross-cutting skills in the <term>Unifying Strand</term> — problem-solving,
+      reasoning, representation, and communication that tie everything together.
+    </p>
+  </section>
+
+  <section xml:id="sec-udl-aal">
+    <title>How This Book Works: Universal Design for Learning (UDL) and Assessment as Learning (AAL)</title>
+    <p>
+      This book is designed so that every student can learn in ways that suit them:
+    </p>
+    <ul>
+      <li><p><term>Multiple ways to engage</term> — text, diagrams, interactive tools,
+        and examples let you choose what works best for you.</p></li>
+      <li><p><term>Multiple ways to represent ideas</term> — we use words, algebra,
+        diagrams, and concrete examples so you see the same concept in different ways.</p></li>
+      <li><p><term>Multiple ways to show what you know</term> — exercises range from
+        simple checks to complex problem-solving, so you can demonstrate understanding
+        at your level.</p></li>
+      <li><p><term>Assessment as Learning (AAL)</term> — this isn't just about marks or grades.
+        Every exercise helps you understand where you are, what you need to work on, and how you're
+        growing. When you see hints, answers, and solutions, use them to learn from your thinking,
+        not just to check if you're right.</p></li>
+    </ul>
+  </section>
+
+  <section xml:id="sec-structure">
+    <title>How This Book Is Organised</title>
+    <p>
+      Each of the five strands is a chapter. Within each chapter, sections focus on
+      specific learning outcomes — the skills and knowledge you need to master. At the
+      start of each section, you'll see the learning outcome clearly stated, and you can
+      click it to understand what you're aiming for.
+    </p>
+    <p>
+      Throughout the book, the <term>Unifying Strand</term> runs through everything.
+      It's not a separate chapter — it's woven into every section. You'll be building
+      blocks (understanding fundamentals), representing problems in different ways,
+      making connections, solving problems, and communicating your mathematical thinking.
+    </p>
+  </section>
+
+  <section xml:id="sec-assessment">
+    <title>Assessment: How You're Evaluated</title>
+    <p>
+      Your Junior Cycle mathematics is assessed in three ways:
+    </p>
+    <ul>
+      <li><p><term>School-based assessment (Year 2)</term> — a practical investigation
+        task where you apply mathematics to a real problem.</p></li>
+      <li><p><term>School-based assessment (Year 3)</term> — a statistics investigation
+        where you collect data and analyse it using statistical methods.</p></li>
+      <li><p><term>Terminal examination (End of Year 3)</term> — a written exam covering
+        all five strands and the Unifying Strand.</p></li>
+    </ul>
+    <p>
+      This book prepares you for all three. Every exercise helps you build the
+      understanding and skills you need.
+    </p>
+  </section>
+
+  <section xml:id="sec-learning-to-learn">
+    <title>Learning to Learn</title>
+    <p>
+      One of the most important things you'll develop in Junior Cycle is not just mathematics
+      knowledge — it's the ability to learn. This means:
+    </p>
+    <ul>
+      <li><p><strong>Knowing how you learn best.</strong> Do you learn by doing? By visualising?
+        By discussing? This book offers all three.</p></li>
+      <li><p><strong>Asking good questions.</strong> "Why?" and "What if?" are more valuable
+        than memorising rules.</p></li>
+      <li><p><strong>Learning from mistakes.</strong> Errors are information, not failure.
+        When you get something wrong, use it to understand better.</p></li>
+      <li><p><strong>Reflecting on your progress.</strong> After each section, ask yourself:
+        Can I do what the learning outcome says? Do I understand why, not just how?</p></li>
+    </ul>
+    <p>
+      These skills — self-awareness, curiosity, persistence, reflection — will serve you
+      far beyond mathematics.
+    </p>
+  </section>
+
+  <section xml:id="sec-for-students">
+    <title>For Students: How to Use This Book</title>
+    <p>
+      <ul>
+        <li><p><strong>Start with the learning outcome.</strong> Each section begins with
+          what you should be able to do by the end. Keep it in mind.</p></li>
+        <li><p><strong>Work through examples and exercises.</strong> Don't just read them —
+          actually solve them. The hints, answers, and solutions are there to help, not to
+          skip ahead.</p></li>
+        <li><p><strong>Use the diagrams.</strong> Mathematics is visual. Sketch things,
+          draw on paper, use the interactive tools.</p></li>
+        <li><p><strong>Make connections.</strong> The Unifying Strand outcomes remind you
+          to link ideas within and between strands. When you see a connection, that's
+          deep learning.</p></li>
+        <li><p><strong>Ask yourself why.</strong> Don't memorise. Understand why a definition
+          is written that way, why a theorem is true, why a method works.</p></li>
+        <li><p><strong>Return to the intro.</strong> When you see a learning outcome referenced,
+          click it. You'll jump back here to the big picture. Mathematics is not isolated
+          facts — it's connected.</p></li>
+      </ul>
+    </p>
+  </section>
+
+  <section xml:id="sec-for-parents">
+    <title>For Parents and Guardians: How to Support Your Child</title>
+    <p>
+      Your child is learning Junior Cycle mathematics — a shift towards reasoning,
+      problem-solving, and real-world thinking, not just calculations.
+    </p>
+    <p>
+      <ul>
+        <li><p><strong>Encourage struggle.</strong> It's okay if your child finds
+          something hard. Struggling builds understanding. Ask, "Why does that work?"
+          not "Did you get the right answer?"</p></li>
+        <li><p><strong>Celebrate connections.</strong> When your child links maths to
+          something real — a recipe, a building, a sport — that's deep learning.</p></li>
+        <li><p><strong>Support the investigations.</strong> The two school-based assessments
+          are practical tasks. Help your child understand the problem and think through
+          their approach, but let them do the mathematics.</p></li>
+        <li><p><strong>This book is available online.</strong> Your child can access it
+          anytime, anywhere — it's not confined to the classroom.</p></li>
+      </ul>
+    </p>
+  </section>
+
+</chapter>

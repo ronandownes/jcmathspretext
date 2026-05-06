@@ -50,6 +50,23 @@
     </statement>
   </definition>
 
+  <figure xml:id="fig-ordinary-angle">
+    <caption>An ordinary angle <m>\angle BAC</m> with vertex <m>A</m></caption>
+    <image width="40%">
+      <description>Two rays from vertex A forming an ordinary angle, with arms towards B and C and the interior shaded</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \fill[gray!20] (0,0) -- (3,0) arc[start angle=0, end angle=50, radius=3] -- cycle;
+          \draw[-latex, thick] (0,0) -- (3,0)   node[right] {$B$};
+          \draw[-latex, thick] (0,0) -- (1.93,2.3) node[above] {$C$};
+          \filldraw (0,0) circle (2pt) node[below left] {$A$};
+          \draw (0.6,0) arc[start angle=0, end angle=50, radius=0.6];
+          \node at (0.85,0.3) {$\alpha$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
   <definition xml:id="def-straight-angle">
     <statement>
       <p>
@@ -59,6 +76,24 @@
     </statement>
   </definition>
 
+  <figure xml:id="fig-straight-angle">
+    <caption>A straight angle at <m>A</m>: the arms point in opposite directions along a line</caption>
+    <image width="55%">
+      <description>Two opposite rays from A forming a straight angle, with the upper half-plane shaded as the interior</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \fill[gray!20] (-3,0) rectangle (3,1.8);
+          \draw[latex-latex, thick] (-3,0) -- (3,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \node[right] at (3,0)  {$B$};
+          \node[left]  at (-3,0) {$C$};
+          \draw (0.7,0) arc[start angle=0, end angle=180, radius=0.7];
+          \node[above] at (0,0.7) {$180^\circ$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
   <definition xml:id="def-reflex-angle">
     <statement>
       <p>
@@ -67,6 +102,23 @@
       </p>
     </statement>
   </definition>
+
+  <figure xml:id="fig-reflex-angle">
+    <caption>A reflex angle at <m>A</m>: the interior is the larger region (more than <m>180^\circ</m>)</caption>
+    <image width="40%">
+      <description>Two rays from A with the large reflex interior shaded, showing more than 180 degrees</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \fill[gray!20] (0,0) -- (3,0) arc[start angle=0, end angle=310, radius=3] -- cycle;
+          \draw[-latex, thick] (0,0) -- (3,0)    node[right] {$B$};
+          \draw[-latex, thick] (0,0) -- (1.93,-2.3) node[below] {$C$};
+          \filldraw (0,0) circle (2pt) node[above left] {$A$};
+          \draw[->] (1.5,0) arc[start angle=0, end angle=310, radius=1.5];
+          \node at (-0.8, 0.5) {reflex};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
 
   <definition xml:id="def-full-angle">
     <statement>
@@ -93,5 +145,96 @@
       </p>
     </statement>
   </definition>
+
+  <figure xml:id="fig-angle-notation">
+    <caption>The angle <m>\angle BAC</m> with vertex <m>A</m> and arms <m>[AB</m> and <m>[AC</m></caption>
+    <image width="40%">
+      <description>Angle BAC labelled with vertex A at the bottom, ray AB pointing right and ray AC pointing upper-left</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[-latex, thick] (0,0) -- (3,0)     node[right] {$B$};
+          \draw[-latex, thick] (0,0) -- (-1.5,2.5) node[above] {$C$};
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \draw (0.55,0) arc[start angle=0, end angle=121, radius=0.55];
+          \node at (0.1,0.75) {$\angle BAC$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <exercises xml:id="exs-angles">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-angles-null">
+      <statement>
+        <p>An angle has arms that coincide with one another and its inside is the empty set.
+        What type of angle is it?</p>
+      </statement>
+      <hint>
+        <p>Review the definitions of the five types of angle.</p>
+      </hint>
+      <answer>
+        <p>A null angle.</p>
+      </answer>
+      <solution>
+        <p>By definition, a null angle is one whose arms coincide with one another and
+        whose inside is the empty set. This matches the description exactly.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-angles-vertex-arms">
+      <statement>
+        <p>For the angle <m>\angle BAC</m>, identify the vertex and the two arms.</p>
+      </statement>
+      <hint>
+        <p>The vertex is the unique point associated with the angle — the common starting
+        point of the two rays.</p>
+      </hint>
+      <answer>
+        <p>Vertex: <m>A</m>. Arms: <m>[AB</m> and <m>[AC</m>.</p>
+      </answer>
+      <solution>
+        <p>The angle <m>\angle BAC</m> has vertex <m>A</m>. The two arms are the rays
+        <m>[AB</m> and <m>[AC</m>, both starting at <m>A</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-angles-convex">
+      <statement>
+        <p>Is a line segment <m>[AB]</m> a convex set? Explain your answer.</p>
+      </statement>
+      <hint>
+        <p>Pick any two points on the segment. Does the segment connecting them stay
+        inside <m>[AB]</m>?</p>
+      </hint>
+      <answer>
+        <p>Yes, a line segment is a convex set.</p>
+      </answer>
+      <solution>
+        <p>A set is convex if it contains the whole segment connecting any two of its
+        points. If we pick any two points on <m>[AB]</m>, the segment between them lies
+        entirely within <m>[AB]</m>. So <m>[AB]</m> is a convex set.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-angles-ordinary-vs-straight">
+      <statement>
+        <p>What is the key difference between an ordinary angle and a straight angle?</p>
+      </statement>
+      <hint>
+        <p>Think about the position of the arms in each case.</p>
+      </hint>
+      <answer>
+        <p>In an ordinary angle the arms are not on one line; in a straight angle the
+        arms are the two halves of one line.</p>
+      </answer>
+      <solution>
+        <p>An ordinary angle has arms that are not on one line, and its inside is a convex
+        set. A straight angle has arms that form the two halves of a single line (pointing
+        in opposite directions), and its inside is one of the sides of that line.</p>
+      </solution>
+    </exercise>
+
+  </exercises>
 
 </section>

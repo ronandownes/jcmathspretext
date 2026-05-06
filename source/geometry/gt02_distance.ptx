@@ -22,6 +22,24 @@
     </statement>
   </definition>
 
+  <figure xml:id="fig-triangle-sides">
+    <caption>Triangle <m>\triangle ABC</m> with side lengths <m>a = |BC|</m>, <m>b = |CA|</m>, <m>c = |AB|</m></caption>
+    <image width="45%">
+      <description>A triangle with vertices A, B, C and side lengths labelled a, b, c opposite the respective vertices</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (3,0) -- (1.5,2.5) -- cycle;
+          \filldraw (0,0)     circle (2pt) node[below left]  {$A$};
+          \filldraw (3,0)     circle (2pt) node[below right] {$B$};
+          \filldraw (1.5,2.5) circle (2pt) node[above]       {$C$};
+          \node at (1.5,-0.35) {$c = |AB|$};
+          \node at (2.55,1.35) {$a = |BC|$};
+          \node at (0.45,1.35) {$b = |CA|$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
   <axiom xml:id="ax-ruler">
     <title>Ruler Axiom</title>
     <statement>
@@ -47,5 +65,87 @@
       </p>
     </statement>
   </definition>
+
+  <figure xml:id="fig-midpoint">
+    <caption>The midpoint <m>M</m> of segment <m>[AB]</m>, with <m>|AM| = |MB|</m></caption>
+    <image width="60%">
+      <description>A line segment from A to B with midpoint M marked at the centre, with tick marks showing the two halves are equal</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (4,0);
+          \filldraw (0,0) circle (2pt) node[below] {$A$};
+          \filldraw (2,0) circle (2pt) node[below] {$M$};
+          \filldraw (4,0) circle (2pt) node[below] {$B$};
+          \draw (0.9,0.12) -- (1.1,-0.12);
+          \draw (2.9,0.12) -- (3.1,-0.12);
+          \node[above] at (1,0.1) {$|AM|$};
+          \node[above] at (3,0.1) {$|MB|$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <exercises xml:id="exs-distance">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-dist-midpoint">
+      <statement>
+        <p>
+          The segment <m>[AB]</m> has length <m>|AB| = 10</m> cm. The point <m>M</m>
+          is the midpoint. Find <m>|AM|</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>The midpoint divides the segment into two equal halves.</p>
+      </hint>
+      <answer>
+        <p><m>|AM| = 5</m> cm.</p>
+      </answer>
+      <solution>
+        <p>By the definition of midpoint,
+        <m>|AM| = \frac{|AB|}{2} = \frac{10}{2} = 5</m> cm.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-dist-ruler">
+      <statement>
+        <p>
+          Points <m>A</m>, <m>C</m>, <m>B</m> lie on a line in that order, with
+          <m>C</m> between <m>A</m> and <m>B</m>. If <m>|AC| = 4</m> and
+          <m>|CB| = 7</m>, find <m>|AB|</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>Use property (iii) of the <xref ref="ax-ruler"/>.</p>
+      </hint>
+      <answer>
+        <p><m>|AB| = 11</m>.</p>
+      </answer>
+      <solution>
+        <p>Since <m>C</m> lies between <m>A</m> and <m>B</m>, the Ruler Axiom gives
+        <m>|AB| = |AC| + |CB| = 4 + 7 = 11</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-dist-sides">
+      <statement>
+        <p>
+          In triangle <m>\triangle ABC</m>, use the standard notation to write the
+          length of each side in terms of <m>a</m>, <m>b</m>, <m>c</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>Each lowercase letter names the side opposite the matching uppercase vertex.</p>
+      </hint>
+      <answer>
+        <p><m>a = |BC|</m>, <m>b = |CA|</m>, <m>c = |AB|</m>.</p>
+      </answer>
+      <solution>
+        <p>By convention, <m>a = |BC|</m> is the side opposite <m>A</m>,
+        <m>b = |CA|</m> is opposite <m>B</m>, and <m>c = |AB|</m> is opposite <m>C</m>.</p>
+      </solution>
+    </exercise>
+
+  </exercises>
 
 </section>
