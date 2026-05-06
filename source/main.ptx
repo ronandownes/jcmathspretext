@@ -10,6 +10,10 @@
 
     <xi:include href="./introduction.ptx" />
 
+    <xi:include href="./curriculum/curriculum-guide.ptx" />
+
+    <xi:include href="./number/number-natural-numbers.ptx" />
+
     <xi:include href="./geometry/ch_geometry1.ptx" />
 
     <xi:include href="./backmatter.ptx" />

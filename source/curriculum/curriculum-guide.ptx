@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xml:id="curriculum-guide" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Learning Map</title>
+
+  <introduction>
+    <p>
+      This section shows all the learning outcomes for Junior Cycle Mathematics.
+      Throughout the book, you'll see coloured badges linking to outcomes.
+      Click any badge to see what it means and where else it appears.
+    </p>
+    <p>
+      As you work through sections, track which outcomes you've mastered.
+      This helps you see your progress across the entire subject.
+    </p>
+  </introduction>
+
+  <!-- UNIFYING STRAND -->
+  <chapter xml:id="unifying-outcomes">
+    <title>Unifying Strand</title>
+    <introduction>
+      <p>
+        These outcomes apply across all strands.
+        They are about how you think mathematically, solve problems, and communicate ideas.
+      </p>
+    </introduction>
+
+    <section xml:id="lo-u-1">
+      <title>U.1: Understand Concepts and Procedures</title>
+      <p><strong>What this means:</strong> Know and understand the key ideas and methods in each strand of mathematics.</p>
+      <p><strong>Official wording:</strong> Recall and demonstrate understanding of the fundamental concepts and procedures that underpin each strand.</p>
+    </section>
+
+    <section xml:id="lo-u-2">
+      <title>U.2: Apply Procedures</title>
+      <p><strong>What this means:</strong> Use the methods and procedures from each strand accurately, effectively, and in the right way.</p>
+      <p><strong>Official wording:</strong> Apply the procedures associated with each strand accurately, effectively, and appropriately.</p>
+    </section>
+
+    <section xml:id="lo-u-3">
+      <title>U.3: Understand Equality</title>
+      <p><strong>What this means:</strong> Understand that equality means two mathematical expressions have the same value.</p>
+      <p><strong>Official wording:</strong> Recognise that equality is a relationship in which two mathematical expressions have the same value.</p>
+    </section>
+
+    <section xml:id="lo-u-4">
+      <title>U.4: Multiple Representations</title>
+      <p><strong>What this means:</strong> Show a mathematical idea using numbers, algebra, graphs, pictures, or words. Then compare and analyse these different ways.</p>
+      <p><strong>Official wording:</strong> Represent a mathematical situation in a variety of different ways, including: numerically, algebraically, graphically, physically, in words; and interpret, analyse, and compare such representations.</p>
+    </section>
+
+    <section xml:id="lo-u-5">
+      <title>U.5: Connections Within and Between Strands</title>
+      <p><strong>What this means:</strong> See how ideas within one strand connect to each other, and how different strands connect to each other.</p>
+      <p><strong>Official wording:</strong> Make connections within and between strands.</p>
+    </section>
+
+    <section xml:id="lo-u-6">
+      <title>U.6: Connections to the Real World</title>
+      <p><strong>What this means:</strong> See how mathematics connects to real situations and the world around you.</p>
+      <p><strong>Official wording:</strong> Make connections between mathematics and the real world.</p>
+    </section>
+
+    <section xml:id="lo-u-7">
+      <title>U.7: Understand the Problem</title>
+      <p><strong>What this means:</strong> Understand what a problem is asking. If needed, turn the situation into mathematical language.</p>
+      <p><strong>Official wording:</strong> Make sense of a given problem, and if necessary mathematise a situation.</p>
+    </section>
+
+    <section xml:id="lo-u-8">
+      <title>U.8: Solve the Problem</title>
+      <p><strong>What this means:</strong> Use what you know to solve the problem. Break it into smaller parts if needed, or simplify it sensibly.</p>
+      <p><strong>Official wording:</strong> Apply knowledge and skills to solve a problem, including decomposing it into manageable parts and/or simplifying it using appropriate assumptions.</p>
+    </section>
+
+    <section xml:id="lo-u-9">
+      <title>U.9: Interpret Solutions</title>
+      <p><strong>What this means:</strong> Take your answer and explain what it means in the context of the original problem.</p>
+      <p><strong>Official wording:</strong> Interpret solutions to a problem in terms of the original question.</p>
+    </section>
+
+    <section xml:id="lo-u-10">
+      <title>U.10: Evaluate Solutions</title>
+      <p><strong>What this means:</strong> Look at your answer. Does it make sense? Are there other ways to solve it? What are the limits?</p>
+      <p><strong>Official wording:</strong> Evaluate different possible solutions to a problem, including evaluating the reasonableness of the solutions, and exploring possible improvements and/or limitations of the solutions.</p>
+    </section>
+
+    <section xml:id="lo-u-11">
+      <title>U.11: Find Patterns</title>
+      <p><strong>What this means:</strong> Look at specific examples and find a general pattern or rule. Then test it.</p>
+      <p><strong>Official wording:</strong> Generate general mathematical statements or conjectures based on specific instances.</p>
+    </section>
+
+    <section xml:id="lo-u-12">
+      <title>U.12: Build Arguments</title>
+      <p><strong>What this means:</strong> Build mathematical arguments and proofs using facts you already know.</p>
+      <p><strong>Official wording:</strong> Generate and evaluate mathematical arguments and proofs.</p>
+    </section>
+
+    <section xml:id="lo-u-13">
+      <title>U.13: Explain Your Thinking</title>
+      <p><strong>What this means:</strong> Explain your reasoning clearly. Use the correct mathematical words and symbols.</p>
+      <p><strong>Official wording:</strong> Communicate mathematics effectively: justify reasoning, interpret results, explain conclusions, and use the language and notation of mathematics to express mathematical ideas precisely.</p>
+    </section>
+
+  </chapter>
+
+  <!-- NUMBER STRAND OUTCOMES -->
+  <chapter xml:id="number-outcomes">
+    <title>Number Strand</title>
+
+    <section xml:id="lo-n-1-a">
+      <title>N.1(a): Represent Operations</title>
+      <p><strong>What this means:</strong> Use number lines, pictures, and grouping to show addition, subtraction, multiplication, and division with natural numbers, integers, and fractions.</p>
+      <p><strong>Official wording:</strong> Represent the operations of addition, subtraction, multiplication, and division in ℕ, ℤ, and ℚ using models including the number line, decomposition, and accumulating groups of equal size.</p>
+    </section>
+
+    <section xml:id="lo-n-1-b">
+      <title>N.1(b): Perform Operations and Understand Properties</title>
+      <p><strong>What this means:</strong> Add, subtract, multiply, and divide. Understand why the commutative, associative, and distributive properties work.</p>
+      <p><strong>Official wording:</strong> Perform operations of addition, subtraction, multiplication, and division and understand the relationship between these operations and the properties: commutative, associative and distributive.</p>
+    </section>
+
+    <section xml:id="lo-n-1-c">
+      <title>N.1(c): Index Form and Powers</title>
+      <p><strong>What this means:</strong> Understand and use index notation. Apply the rules of indices (powers) flexibly.</p>
+      <p><strong>Official wording:</strong> Explore numbers written in index form, including using and applying generalisations such as <m>a^p \times a^q = a^{p+q}</m>.</p>
+    </section>
+
+    <section xml:id="lo-n-1-d">
+      <title>N.1(d): Factors, Multiples, Primes</title>
+      <p><strong>What this means:</strong> Find factors and multiples. Identify prime numbers. Find the highest common factor and lowest common multiple.</p>
+      <p><strong>Official wording:</strong> Calculate and interpret factors (including the highest common factor), multiples (including the lowest common multiple), and prime numbers.</p>
+    </section>
+
+    <section xml:id="lo-n-2">
+      <title>N.2: Fractions, Decimals, Percentages</title>
+      <p><strong>What this means:</strong> Convert fluently between fractions, decimals, and percentages. Understand and use ratio and proportion. Solve money problems.</p>
+      <p><strong>Official wording:</strong> Investigate equivalent representations of rational numbers and use ratio and proportion in solving problems.</p>
+    </section>
+
+    <section xml:id="lo-n-3">
+      <title>N.3: Patterns and Sequences</title>
+      <p><strong>What this means:</strong> Find patterns in numbers. Describe them using tables and graphs. Continue sequences.</p>
+      <p><strong>Official wording:</strong> Analyse numerical patterns in different ways, including making tables and graphs, and continue such patterns.</p>
+    </section>
+
+  </chapter>
+
+</part>

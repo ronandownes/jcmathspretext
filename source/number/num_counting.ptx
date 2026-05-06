@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-counting">
+  <title>Counting and Natural Numbers</title>
+
+  <p>
+    Natural numbers are the numbers we use for counting: 1, 2, 3, 4, 5, ...
+  </p>
+  <p>
+    The question of whether 0 is a natural number is interesting.
+    Historically, counting started at 1. But in modern mathematics, including 0 is often convenient.
+  </p>
+  <p>
+    Some mathematicians write: <m>\mathbb{N} = \{1, 2, 3, \ldots\}</m>
+  </p>
+  <p>
+    Others write: <m>\mathbb{N} = \{0, 1, 2, 3, \ldots\}</m>
+  </p>
+  <p>
+    Both are used. In this book, we will use the second version because 0 appears naturally in many situations.
+  </p>
+</section>

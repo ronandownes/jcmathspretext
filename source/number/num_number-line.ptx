@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-number-line">
+  <title>The Number Line</title>
+
+  <p>
+    A number line is a visual tool for understanding numbers and operations.
+  </p>
+  <p>
+    Numbers are arranged in order from left (smaller) to right (larger).
+  </p>
+
+  <figure xml:id="fig-number-line">
+    <caption>A number line showing natural numbers 0 to 10</caption>
+    <image width="80%">
+      <description>A horizontal line with points marked at 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[-latex] (-0.5,0) -- (10.5,0);
+          \foreach \x in {0,1,2,3,4,5,6,7,8,9,10} {
+            \draw (\x,-0.1) -- (\x,0.1);
+            \node[below] at (\x,-0.3) {\x};
+          }
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <p>
+    The number line helps us:
+  </p>
+  <ul>
+    <li>Compare numbers (which is larger?)</li>
+    <li>Show distance between numbers</li>
+    <li>Visualize addition (jump right) and subtraction (jump left)</li>
+    <li>Understand ordering and consecutive numbers</li>
+  </ul>
+</section>
