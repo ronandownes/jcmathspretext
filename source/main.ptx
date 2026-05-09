@@ -8,9 +8,15 @@
 
     <xi:include href="./frontmatter.ptx" />
 
-    <xi:include href="./introduction.ptx" />
+    <xi:include href="./curriculum/curriculum-guide.ptx" />
 
-    <xi:include href="./geometry/ch_geometry1.ptx" />
+    <xi:include href="./number/number-strand.ptx" />
+
+    <xi:include href="./geometry/geometry-strand.ptx" />
+
+    <xi:include href="./algebra/algebra-strand.ptx" />
+
+    <xi:include href="./statistics/statistics-strand.ptx" />
 
     <xi:include href="./backmatter.ptx" />
 

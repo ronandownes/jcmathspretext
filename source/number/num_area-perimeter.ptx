@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-area-perimeter">
+  <title>Perimeter and Area</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-21" /> — Perimeter and area of plane figures</li>
+      <li><xref ref="lo-n-22" /> — Composite areas</li>
+    </ul>
+  </objectives>
+
+  <p>The key formulae for area and perimeter:</p>
+  <ul>
+    <li>Rectangle: Area <m>= lw</m>, Perimeter <m>= 2(l+w)</m></li>
+    <li>Triangle: Area <m>= \frac{1}{2}bh</m></li>
+    <li>Circle: Area <m>= \pi r^2</m>, Circumference <m>= 2\pi r</m></li>
+    <li>Parallelogram: Area <m>= bh</m></li>
+    <li>Trapezium: Area <m>= \frac{1}{2}(a+b)h</m></li>
+  </ul>
+  <p>
+    For <term>composite shapes</term>, divide the shape into simpler parts, find each area, then add (or subtract).
+  </p>
+
+  <exercises xml:id="exs-area-perimeter">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-circle-area">
+      <statement><p>Find the area of a circle with radius 7 cm. Give your answer correct to 1 decimal place.</p></statement>
+      <answer><p><m>153.9</m> cm²</p></answer>
+      <solution><p><m>A = \pi r^2 = \pi \times 49 \approx 153.9</m> cm²</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-composite-area">
+      <statement><p>An L-shaped room consists of a 6 m × 4 m rectangle and a 3 m × 2 m rectangle attached to one corner. Find the total area.</p></statement>
+      <answer><p>30 m²</p></answer>
+      <solution><p><m>6 \times 4 + 3 \times 2 = 24 + 6 = 30</m> m²</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

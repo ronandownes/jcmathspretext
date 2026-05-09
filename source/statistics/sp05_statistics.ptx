@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sp-statistics">
+  <title>Measures of Central Tendency and Spread</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-sp-15" /> — Mean, median, mode</li>
+      <li><xref ref="lo-sp-16" /> — Range</li>
+      <li><xref ref="lo-sp-19" /> — Sampling variability</li>
+      <li><xref ref="lo-sp-20" /> — Misconceptions and misuse</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Three measures of <term>central tendency</term>:
+  </p>
+  <ul>
+    <li><term>Mean</term>: sum of all values divided by the count. Sensitive to outliers.</li>
+    <li><term>Median</term>: the middle value when data is ordered. More resistant to outliers.</li>
+    <li><term>Mode</term>: the most frequent value. Can be used for categorical data.</li>
+  </ul>
+  <p>
+    The <term>range</term> = largest value − smallest value. It measures spread but is sensitive to extreme values.
+  </p>
+  <p>
+    <term>Sampling variability</term>: different samples from the same population give different results.
+    Larger samples give more reliable estimates.
+  </p>
+  <p>
+    Statistics can mislead: a mean can be distorted by outliers, a graph with a truncated axis can exaggerate differences, and a biased sample gives unrepresentative results.
+    Always read statistical claims critically.
+  </p>
+
+  <exercises xml:id="exs-statistics">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-mean-median-mode">
+      <statement><p>Find the mean, median, mode, and range of: <m>4, 7, 3, 7, 9, 2, 7, 5</m>.</p></statement>
+      <answer><p>Mean: 5.5; Median: 6; Mode: 7; Range: 7.</p></answer>
+      <solution>
+        <p>Sorted: 2, 3, 4, 5, 7, 7, 7, 9.</p>
+        <p>Mean: <m>\frac{2+3+4+5+7+7+7+9}{8} = \frac{44}{8} = 5.5</m>.</p>
+        <p>Median: average of 4th and 5th values: <m>\frac{5+7}{2} = 6</m>.</p>
+        <p>Mode: 7 (appears 3 times). Range: <m>9 - 2 = 7</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-misleading-stats">
+      <statement><p>A news headline claims "Average salary at TechCorp is €90,000." The actual salaries are: €30k, €32k, €35k, €38k, €35k, €40k, €500k. Explain why the headline could be misleading.</p></statement>
+      <answer><p>The mean is distorted by the one very high salary (€500k). The median (€35k) is more representative of a typical worker's salary.</p></answer>
+    </exercise>
+
+  </exercises>
+
+</section>

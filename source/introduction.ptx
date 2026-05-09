@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch-introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+<preface xml:id="preface-introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction</title>
 
   <section xml:id="sec-welcome">
@@ -137,4 +137,4 @@
     </p>
   </section>
 
-</chapter>
+</preface>

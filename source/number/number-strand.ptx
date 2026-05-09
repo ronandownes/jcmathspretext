@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xml:id="num-strand" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Number</title>
+
+  <introduction>
+    <p>
+      Number is the foundation of all mathematics. This strand covers the number systems used in Junior Cycle — natural numbers, integers, and rationals — along with the operations, properties, and applications built on them.
+    </p>
+    <p>
+      Topics include place value, operations, factors and primes, fractions, decimals, percentages, ratio, indices, standard form, estimation, measurement, and financial mathematics.
+    </p>
+  </introduction>
+
+  <xi:include href="number-natural-numbers.ptx" />
+  <xi:include href="number-integers.ptx" />
+  <xi:include href="number-fractions-decimals-percentages.ptx" />
+  <xi:include href="number-indices-standard-form.ptx" />
+  <xi:include href="number-measurement.ptx" />
+
+</part>

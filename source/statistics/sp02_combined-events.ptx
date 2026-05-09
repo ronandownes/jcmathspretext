@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sp-combined-events">
+  <title>Combined Events (HL)</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-sp-7" /> — Sample spaces for two events (HL)</li>
+      <li><xref ref="lo-sp-8" /> — Combined events (HL)</li>
+    </ul>
+  </objectives>
+
+  <p>
+    For two independent events, construct a <term>sample space</term> — a systematic list or table of all possible outcomes.
+  </p>
+  <p>
+    <strong>Example:</strong> Rolling two dice. The sample space has <m>6 \times 6 = 36</m> equally likely outcomes.
+  </p>
+  <p>
+    For independent events <m>A</m> and <m>B</m>:
+    <me>P(A \text{ and } B) = P(A) \times P(B)</me>
+  </p>
+  <p>
+    For mutually exclusive events (cannot both happen):
+    <me>P(A \text{ or } B) = P(A) + P(B)</me>
+  </p>
+
+  <exercises xml:id="exs-combined-events">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-two-dice">
+      <statement><p>Two fair dice are rolled. Find the probability that the sum equals 7.</p></statement>
+      <answer><p><m>\frac{1}{6}</m></p></answer>
+      <solution><p>Outcomes giving sum 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) — that's 6 outcomes out of 36. <m>P = \frac{6}{36} = \frac{1}{6}</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-coin-die">
+      <statement><p>A coin is flipped and a die is rolled. Find the probability of getting heads and a 6.</p></statement>
+      <answer><p><m>\frac{1}{12}</m></p></answer>
+      <solution><p><m>P(\text{heads}) \times P(6) = \frac{1}{2} \times \frac{1}{6} = \frac{1}{12}</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

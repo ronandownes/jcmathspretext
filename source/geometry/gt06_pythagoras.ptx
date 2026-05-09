@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-pythagoras">
+  <title>Pythagoras' Theorem (HL)</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-9" /> — Pythagoras' theorem</li>
+      <li><xref ref="lo-gt-10" /> — Converse of Pythagoras</li>
+    </ul>
+  </objectives>
+
+  <p>
+    In a right-angled triangle with hypotenuse <m>c</m> and legs <m>a</m> and <m>b</m>:
+    <me>a^2 + b^2 = c^2</me>
+  </p>
+  <p>
+    The <term>hypotenuse</term> is always the longest side, opposite the right angle.
+  </p>
+  <p>
+    <strong>Converse:</strong> If <m>a^2 + b^2 = c^2</m>, then the triangle is right-angled.
+    This lets us <em>test</em> whether a triangle is right-angled.
+  </p>
+
+  <figure xml:id="fig-pythagoras">
+    <caption>Pythagoras' theorem: <m>a^2 + b^2 = c^2</m></caption>
+    <image width="40%">
+      <description>A right-angled triangle with legs a and b and hypotenuse c</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw[thick] (0,0) -- (4,0) -- (4,3) -- cycle;
+          \draw (3.7,0) -- (3.7,0.3) -- (4,0.3);
+          \node[below] at (2,0) {$a = 4$};
+          \node[right] at (4,1.5) {$b = 3$};
+          \node[above left] at (2,1.5) {$c = 5$};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <exercises xml:id="exs-pythagoras">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-pyth-hypotenuse">
+      <statement><p>A right-angled triangle has legs of length 6 cm and 8 cm. Find the hypotenuse.</p></statement>
+      <answer><p>10 cm</p></answer>
+      <solution><p><m>c^2 = 6^2 + 8^2 = 36 + 64 = 100</m>, so <m>c = 10</m> cm.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-pyth-leg">
+      <statement><p>A right-angled triangle has hypotenuse 13 cm and one leg of 5 cm. Find the other leg.</p></statement>
+      <answer><p>12 cm</p></answer>
+      <solution><p><m>b^2 = 13^2 - 5^2 = 169 - 25 = 144</m>, so <m>b = 12</m> cm.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

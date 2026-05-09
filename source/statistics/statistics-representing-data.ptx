@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-representing-data" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Representing and Analysing Data</title>
+
+  <introduction>
+    <p>
+      Once data is collected, we represent it graphically and summarise it numerically.
+      This chapter covers choosing appropriate displays, calculating averages and spread, and critically interpreting statistics.
+    </p>
+  </introduction>
+
+  <xi:include href="sp04_graphs-charts.ptx" />
+  <xi:include href="sp05_statistics.ptx" />
+
+</chapter>

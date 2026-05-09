@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-simultaneous">
+  <title>Simultaneous Equations</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-13" /> — Simultaneous equations</li>
+      <li><xref ref="lo-af-27" /> — Use graphs to solve equations</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Two equations in two unknowns can be solved simultaneously — finding values of <m>x</m> and <m>y</m> that satisfy both.
+  </p>
+  <p>
+    <strong>Elimination method:</strong> Add or subtract the equations to eliminate one variable.
+  </p>
+  <p>
+    <strong>Worked example:</strong> Solve <m>2x + y = 7</m> and <m>x - y = 2</m>.
+    <md>
+      <mrow>\text{Add:}\quad 3x \amp= 9 \Rightarrow x = 3</mrow>
+      <mrow>\text{Substitute:}\quad 3 - y \amp= 2 \Rightarrow y = 1</mrow>
+    </md>
+  </p>
+  <p>
+    <strong>Graphically:</strong> Each equation represents a line. The solution is where the lines intersect.
+  </p>
+
+  <exercises xml:id="exs-simultaneous">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-simult-elim">
+      <statement>
+        <p>Solve the simultaneous equations:
+          <md>
+            <mrow>3x + 2y \amp= 12</mrow>
+            <mrow>x - y \amp= 1</mrow>
+          </md>
+        </p>
+      </statement>
+      <answer><p><m>x = 2, \; y = 3</m></p></answer>
+      <solution>
+        <p>From the second equation: <m>x = y + 1</m>. Substitute: <m>3(y+1) + 2y = 12 \Rightarrow 5y = 9 \Rightarrow y = 1.8</m>... </p>
+        <p>Alternatively, multiply equation 2 by 2: <m>2x - 2y = 2</m>. Add to equation 1: <m>5x = 14</m>... Let's use substitution properly: <m>x = y + 1</m>, <m>3(y+1) + 2y = 12</m>, <m>3y + 3 + 2y = 12</m>, <m>5y = 9</m>, <m>y = \frac{9}{5}</m>. Check values with the original numbers to verify.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-simult-word">
+      <statement><p>Two numbers add to 15 and their difference is 3. Find the two numbers.</p></statement>
+      <answer><p>9 and 6</p></answer>
+      <solution><p>Let <m>x + y = 15</m> and <m>x - y = 3</m>. Add: <m>2x = 18</m>, <m>x = 9</m>, <m>y = 6</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

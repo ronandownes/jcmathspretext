@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This frontmatter division will contain all content before the -->
-<!-- first chapter. Fill in and comment/uncomment to see how this -->
-<!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+
   <bibinfo>
-  
+
     <author>
       <personname>Ronan Downes</personname>
     </author>
+
     <date>
       <today />
     </date>
@@ -16,10 +15,18 @@
     <copyright>
       <year>2024<ndash />2025</year>
       <holder>Ronan Downes</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+
+      <shortlicense>
+        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+        To view a copy of this license, visit
+        <url href="http://creativecommons.org/licenses/by-sa/4.0/"
+             visual="creativecommons.org/licenses/by-sa/4.0">
+          CreativeCommons.org
+        </url>
       </shortlicense>
+
     </copyright>
-  
+
   </bibinfo>
 
   <titlepage>
@@ -29,5 +36,9 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
-</frontmatter>
 
+  <xi:include href="./preface.ptx"/>
+
+
+
+</frontmatter>

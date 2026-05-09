@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-data-collection" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Data Collection</title>
+
+  <introduction>
+    <p>
+      Before you can analyse data, you need to collect it well.
+      This chapter covers how to formulate statistical questions, select samples, and avoid bias.
+    </p>
+  </introduction>
+
+  <xi:include href="sp03_data-collection.ptx" />
+
+</chapter>

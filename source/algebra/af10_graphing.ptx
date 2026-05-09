@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-graphing">
+  <title>Graphing Functions</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-24" /> — Graph linear functions</li>
+      <li><xref ref="lo-af-25" /> — Slope and intercept</li>
+      <li><xref ref="lo-af-26" /> — Graph quadratic functions (HL)</li>
+      <li><xref ref="lo-af-28" /> — Interpret graphs</li>
+      <li><xref ref="lo-af-29" /> — Graphs and stories</li>
+      <li><xref ref="lo-af-30" /> — Quantity and rate of change</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A <term>linear function</term> has the form <m>y = mx + c</m>.
+    The <term>slope</term> <m>m</m> gives the rate of change (steepness).
+    The <term><m>y</m>-intercept</term> <m>c</m> is where the line crosses the <m>y</m>-axis.
+  </p>
+  <p>
+    To graph a linear function, make a table of values, plot the points, and draw the line.
+  </p>
+  <p>
+    A <term>quadratic function</term> (HL) has the form <m>y = ax^2 + bx + c</m> and graphs as a <term>parabola</term>.
+    The lowest (or highest) point is the <term>vertex</term>. The parabola is symmetric about the <term>axis of symmetry</term>.
+  </p>
+
+  <exercises xml:id="exs-graphing">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-graph-linear">
+      <statement><p>For <m>y = 2x - 1</m>, complete a table of values for <m>x = -2, -1, 0, 1, 2</m>, and state the slope and <m>y</m>-intercept.</p></statement>
+      <answer><p>Slope: 2. <m>y</m>-intercept: <m>-1</m>. Values: <m>y = -5, -3, -1, 1, 3</m>.</p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-interpret-graph">
+      <statement><p>A graph shows distance (km) versus time (hours) for a car journey. The line starts at the origin and has slope 80. What does the slope represent?</p></statement>
+      <answer><p>The car travels at 80 km/h.</p></answer>
+    </exercise>
+
+  </exercises>
+
+</section>

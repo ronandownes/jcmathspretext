@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Functions and Graphing</title>
+
+  <introduction>
+    <p>
+      A function is a rule that assigns exactly one output to each input.
+      Representing functions graphically connects algebra to geometry and opens up a powerful way to analyse real-world relationships.
+    </p>
+  </introduction>
+
+  <xi:include href="af09_functions.ptx" />
+  <xi:include href="af10_graphing.ptx" />
+
+</chapter>

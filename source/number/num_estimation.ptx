@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-estimation">
+  <title>Rounding and Estimation</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-17" /> — Rounding and accuracy</li>
+      <li><xref ref="lo-n-18" /> — Estimation</li>
+      <li><xref ref="lo-u-4" /> — Use estimation to predict or check results</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Rounding means approximating a number to a given degree of accuracy.
+    Round to <m>n</m> decimal places by looking at the <m>(n+1)</m>th decimal: round up if 5 or more, round down otherwise.
+  </p>
+  <p>
+    <term>Significant figures</term> count from the first non-zero digit.
+    For example, <m>0.003\mathbf{4}2 = 3.42 \times 10^{-3}</m> has 3 significant figures.
+  </p>
+  <p>
+    <term>Estimation</term> replaces numbers with convenient approximations to give a quick check.
+    For example: <m>48.7 \times 19.3 \approx 50 \times 20 = 1000</m>.
+  </p>
+
+  <exercises xml:id="exs-estimation">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-round-sig-figs">
+      <statement><p>Round <m>0.08417</m> to 2 significant figures.</p></statement>
+      <answer><p><m>0.084</m></p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-estimate-calc">
+      <statement><p>Estimate <m>\dfrac{61.3 \times 8.9}{2.1}</m>.</p></statement>
+      <hint><p>Round each number to 1 significant figure first.</p></hint>
+      <answer><p>Approximately <m>\dfrac{60 \times 9}{2} = 270</m></p></answer>
+    </exercise>
+
+  </exercises>
+
+</section>

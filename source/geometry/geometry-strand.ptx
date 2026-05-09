@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xml:id="gt-strand" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Geometry and Trigonometry</title>
+
+  <introduction>
+    <p>
+      Geometry is the study of shape, size, position, and the properties of space.
+      This strand covers constructions, angle properties, triangles, coordinate geometry, trigonometry, and transformations.
+    </p>
+  </introduction>
+
+  <xi:include href="ch_geometry1.ptx" />
+  <xi:include href="geometry-triangles-theorems.ptx" />
+  <xi:include href="geometry-coordinate-geometry.ptx" />
+  <xi:include href="geometry-trigonometry.ptx" />
+  <xi:include href="geometry-transformations.ptx" />
+
+</part>

@@ -1,0 +1,105 @@
+<preface xml:id="preface">
+<title>Preface</title>
+
+<p>
+<em>JCMaths</em> was written with several goals in mind: to present mathematics as something understandable, connected, visual, and ultimately learnable by every student. The text is designed around the belief that mathematical skill develops through structured thinking, guided practice, reflection, and gradual independence.
+</p>
+
+<p>
+The book is organised into the major strands of post-primary mathematics, including Algebra, Geometry, Trigonometry, Coordinate Geometry, Functions, Statistics, and Probability. Geometry topics follow the natural progression of constructions and theorems as students encounter them in the curriculum, with strong emphasis placed on visual reasoning, careful layout, and mathematical communication.
+</p>
+
+<p>
+Throughout the text, mathematical ideas are introduced using multiple representations: verbal explanation, symbolic manipulation, diagrams, graphs, tables, constructions, and technology. Students are encouraged to see mathematics as a connected subject rather than a collection of isolated procedures.
+</p>
+
+<p>
+A central principle of the book is that students should gradually become independent learners. Worked examples and guided exercises are therefore designed not merely to provide answers, but to model mathematical thinking itself. Students are encouraged continually to create their own examples and questions:
+</p>
+
+<ul>
+<li>Expand two binomials and then attempt to factorise the result.</li>
+<li>Create their own angle before constructing its bisector.</li>
+<li>Modify graphs and investigate what changes.</li>
+<li>Experiment with constructions, equations, and functions beyond the textbook examples.</li>
+</ul>
+
+<p>
+The text includes a number of features intended to support participation, understanding, and independence:
+</p>
+
+<ul>
+<li>
+Many graphing exercises include pre-scaled axes and partially prepared grids so that students can focus initially on interpretation, relationships, and algebraic structure rather than spending excessive time constructing axes.
+</li>
+
+<li>
+Construction questions frequently provide the same style of starting diagrams used in state examinations, allowing students to focus first on the reasoning and process involved in the construction itself.
+</li>
+
+<li>
+Worked examples are heavily scaffolded through the use of process descriptors. These describe not only what to do, but why a particular step is being taken.
+</li>
+
+<li>
+During guided exercises, process prompts often act as the student’s “first hint” before any further support is revealed.
+</li>
+
+<li>
+Scaffolding is gradually reduced throughout exercises so that students move naturally from supported examples toward independent problem solving.
+</li>
+
+<li>
+Strong emphasis is placed on mathematical processing and communication. In examinations, students often earn substantial partial credit through correct reasoning and structured work, even when a final answer is incomplete. Students are therefore encouraged to develop habits of clear mathematical layout and explanation from the very beginning.
+</li>
+
+<li>
+Technology is integrated throughout the text through links to Desmos, GeoGebra, YouTube, and other interactive resources.
+</li>
+
+<li>
+Many video explanations are provided directly by the author, Mr. Ronan Downs, modelling mathematics in the same way it is explored in the classroom: through questioning, experimentation, estimation, reflection, and continuous explanation of thought processes.
+</li>
+
+<li>
+At other times, explanations intentionally become quieter or more minimal. Students are sometimes encouraged simply to observe patterns, diagrams, or algebraic processes carefully before formal explanation is given. This “look and learn” approach can help students devote more attention and working memory to the mathematical logic itself.
+</li>
+</ul>
+
+<p>
+The overall teaching philosophy behind the text may be summarised by the following principles:
+</p>
+
+<ul>
+<li>Mathematics should be understood visually as well as symbolically.</li>
+
+<li>Students learn mathematics best by actively doing mathematics.</li>
+
+<li>Carefully structured scaffolding helps students access difficult ideas.</li>
+
+<li>Independent learning should be developed gradually and deliberately.</li>
+
+<li>Technology should support understanding rather than replace thinking.</li>
+
+<li>Students should continually be encouraged to ask questions, create examples, and explore patterns for themselves.</li>
+
+<li>Process and reasoning matter as much as final answers.</li>
+
+<li>Connections between topics should be emphasised whenever possible.</li>
+</ul>
+
+<p>
+This text is provided completely free of charge and is designed to work across phones, tablets, laptops, desktops, and interactive classroom displays. The goal is to make high-quality mathematical resources accessible, flexible, interactive, and easy to use both inside and outside the classroom.
+</p>
+
+<p>
+I hope this book helps students not only to succeed in mathematics, but also to see mathematics as something understandable, creative, logical, and even enjoyable.
+</p>
+
+<p>
+<author>
+<personname>Ronan Downs</personname>
+</author>
+</p>
+
+</preface>

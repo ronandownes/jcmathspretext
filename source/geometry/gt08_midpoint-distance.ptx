@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-midpoint-distance">
+  <title>Midpoint and Distance</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-14" /> — Midpoint of a segment</li>
+      <li><xref ref="lo-gt-15" /> — Distance between two points</li>
+    </ul>
+  </objectives>
+
+  <p>
+    The <term>midpoint</term> of the segment from <m>A(x_1, y_1)</m> to <m>B(x_2, y_2)</m> is:
+    <me>M = \left(\frac{x_1 + x_2}{2},\ \frac{y_1 + y_2}{2}\right)</me>
+  </p>
+  <p>
+    The <term>distance</term> between <m>A</m> and <m>B</m> is:
+    <me>|AB| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</me>
+  </p>
+
+  <exercises xml:id="exs-midpoint-distance">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-midpoint">
+      <statement><p>Find the midpoint of the segment from <m>A(2, -3)</m> to <m>B(8, 5)</m>.</p></statement>
+      <answer><p><m>(5, 1)</m></p></answer>
+      <solution><p><m>M = \left(\frac{2+8}{2}, \frac{-3+5}{2}\right) = (5, 1)</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-distance">
+      <statement><p>Find the distance between <m>P(1, 2)</m> and <m>Q(4, 6)</m>.</p></statement>
+      <answer><p>5</p></answer>
+      <solution><p><m>|PQ| = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5</m></p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

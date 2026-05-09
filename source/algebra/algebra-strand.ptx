@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xml:id="af-strand" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algebra and Functions</title>
+
+  <introduction>
+    <p>
+      Algebra provides the language for expressing relationships and solving problems precisely.
+      This strand covers algebraic expressions, equations, inequalities, sequences, functions, and graphing.
+    </p>
+  </introduction>
+
+  <xi:include href="algebra-expressions.ptx" />
+  <xi:include href="algebra-equations.ptx" />
+  <xi:include href="algebra-inequalities-sequences.ptx" />
+  <xi:include href="algebra-functions.ptx" />
+
+</part>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-transformations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Transformations</title>
+
+  <introduction>
+    <p>
+      A transformation moves or resizes a shape. This chapter covers translations, reflections, rotations, symmetry, and enlargements.
+    </p>
+  </introduction>
+
+  <xi:include href="gt12_transformations.ptx" />
+
+</chapter>

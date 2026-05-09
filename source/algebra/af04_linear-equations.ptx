@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-linear-equations">
+  <title>Linear Equations</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-9" /> — Solve linear equations</li>
+      <li><xref ref="lo-af-10" /> — Unknown on both sides</li>
+      <li><xref ref="lo-af-11" /> — Brackets and fractions</li>
+      <li><xref ref="lo-af-12" /> — Form and solve equations</li>
+    </ul>
+  </objectives>
+
+  <p>
+    To solve a linear equation, perform the same operation on both sides to isolate the unknown.
+    The goal is to get the variable alone on one side.
+  </p>
+  <p>
+    <strong>Worked example:</strong> Solve <m>3x - 7 = 2x + 5</m>.
+    <md>
+      <mrow>3x - 2x \amp= 5 + 7</mrow>
+      <mrow>x \amp= 12</mrow>
+    </md>
+  </p>
+  <p>
+    For equations with brackets, expand first.
+    For equations with fractions, multiply every term by the LCM of denominators first.
+  </p>
+
+  <exercises xml:id="exs-linear-equations">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-linear-basic">
+      <statement><p>Solve: <m>5x + 3 = 18</m></p></statement>
+      <answer><p><m>x = 3</m></p></answer>
+      <solution><p><m>5x = 15</m>, so <m>x = 3</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-linear-fractions">
+      <statement><p>Solve: <m>\dfrac{x}{3} + \dfrac{x}{4} = 7</m></p></statement>
+      <answer><p><m>x = 12</m></p></answer>
+      <solution><p>Multiply by 12: <m>4x + 3x = 84</m>, so <m>7x = 84</m>, <m>x = 12</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-linear-word">
+      <statement><p>A number is doubled and then 5 is added. The result is 23. Find the number.</p></statement>
+      <answer><p>9</p></answer>
+      <solution><p>Let the number be <m>x</m>. Then <m>2x + 5 = 23</m>, so <m>2x = 18</m>, <m>x = 9</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

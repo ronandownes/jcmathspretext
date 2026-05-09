@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-indices-standard-form" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Indices, Standard Form, and Estimation</title>
+
+  <introduction>
+    <p>
+      Index notation is a compact way to write repeated multiplication.
+      Standard form extends this to represent very large and very small numbers.
+      Estimation gives us the ability to work efficiently and check that answers are sensible.
+    </p>
+  </introduction>
+
+  <xi:include href="num_indices.ptx" />
+  <xi:include href="num_standard-form.ptx" />
+  <xi:include href="num_estimation.ptx" />
+
+</chapter>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-place-value">
+  <title>Place Value and Representation</title>
+
+  <p>
+    The Hindu–Arabic numeral system uses 10 digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+  </p>
+  <p>
+    In the number 365, each digit has a different value depending on its position:
+  </p>
+  <ul>
+    <li>3 represents 3 hundreds = 300</li>
+    <li>6 represents 6 tens = 60</li>
+    <li>5 represents 5 ones = 5</li>
+  </ul>
+  <p>
+    So: <m>365 = 3 \times 100 + 6 \times 10 + 5 \times 1</m>
+  </p>
+  <p>
+    This is why our system is called positional notation.
+    The position of a digit tells us its value.
+  </p>
+</section>

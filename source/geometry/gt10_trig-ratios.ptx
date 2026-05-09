@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-trig-ratios">
+  <title>Trigonometric Ratios</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-17" /> — Trigonometric ratios</li>
+    </ul>
+  </objectives>
+
+  <p>
+    In a right-angled triangle, label the sides relative to angle <m>\theta</m>:
+    the <term>opposite</term> side faces <m>\theta</m>, the <term>adjacent</term> side is next to <m>\theta</m>, and the <term>hypotenuse</term> is always opposite the right angle.
+  </p>
+  <p>
+    The three trigonometric ratios (remember SOH-CAH-TOA):
+    <me>\sin\theta = \frac{\text{opposite}}{\text{hypotenuse}}, \qquad \cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}}, \qquad \tan\theta = \frac{\text{opposite}}{\text{adjacent}}</me>
+  </p>
+  <p>
+    To find a missing side: identify which ratio links the known side and the unknown, then solve.
+    To find a missing angle: use the inverse ratio, e.g. <m>\theta = \sin^{-1}\!\left(\frac{\text{opp}}{\text{hyp}}\right)</m>.
+  </p>
+
+  <exercises xml:id="exs-trig-ratios">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-trig-find-side">
+      <statement><p>In a right-angled triangle, the hypotenuse is 10 cm and one angle is 35°. Find the side opposite the 35° angle. Give your answer correct to 2 decimal places.</p></statement>
+      <answer><p>5.74 cm</p></answer>
+      <solution><p><m>\sin 35° = \dfrac{\text{opp}}{10}</m>, so <m>\text{opp} = 10 \sin 35° \approx 5.74</m> cm.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-trig-find-angle">
+      <statement><p>In a right-angled triangle, the opposite side is 6 cm and the adjacent side is 8 cm. Find the angle correct to 1 decimal place.</p></statement>
+      <answer><p>36.9°</p></answer>
+      <solution><p><m>\tan\theta = \dfrac{6}{8} = 0.75</m>, so <m>\theta = \tan^{-1}(0.75) \approx 36.9°</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

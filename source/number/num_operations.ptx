@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-operations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Operations with Natural Numbers</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-2" /> — Represent operations on a number line</li>
+      <li><xref ref="lo-n-6" /> — Properties of arithmetic</li>
+      <li><xref ref="lo-u-3" /> — Select appropriate methods</li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      The four basic operations — addition, subtraction, multiplication, and division — are the foundation of all arithmetic.
+      Each one has a different meaning and can be shown in different ways.
+    </p>
+  </introduction>
+
+  <subsection xml:id="num-addition">
+    <title>Addition</title>
+    <p>
+      Addition means putting groups together or accumulating.
+    </p>
+    <p>
+      <strong>Example:</strong> If you have 3 apples and someone gives you 2 more, you now have <m>3 + 2 = 5</m> apples.
+    </p>
+    <p>
+      We can show addition on a number line by jumping to the right:
+    </p>
+    <figure xml:id="fig-addition-number-line">
+      <caption>Addition on a number line: 3 + 2</caption>
+      <image width="70%">
+        <description>A number line from 0 to 6, with arrows showing a jump from 0 to 3, then from 3 to 5</description>
+        <latex-image>
+          \begin{tikzpicture}
+            \draw[-latex] (-0.5,0) -- (6.5,0);
+            \foreach \x in {0,1,2,3,4,5,6} {
+              \draw (\x,-0.1) -- (\x,0.1);
+              \node[below] at (\x,-0.2) {\x};
+            }
+            \draw[->, thick, blue] (0,0.5) -- (3,0.5);
+            \node[above, blue] at (1.5,0.5) {+3};
+            \draw[->, thick, red] (3,0.5) -- (5,0.5);
+            \node[above, red] at (4,0.5) {+2};
+            \fill (0,0) circle (3pt);
+            \fill (5,0) circle (3pt) node[above right] {5};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </subsection>
+
+  <subsection xml:id="num-subtraction">
+    <title>Subtraction</title>
+    <p>
+      Subtraction can mean taking away or finding the difference between two numbers.
+    </p>
+    <p>
+      <strong>Example:</strong> If you have 7 euros and spend 3 euros, you have <m>7 - 3 = 4</m> euros left.
+    </p>
+  </subsection>
+
+  <subsection xml:id="num-multiplication">
+    <title>Multiplication</title>
+    <p>
+      Multiplication means repeated addition or making equal groups.
+    </p>
+    <p>
+      <strong>Example:</strong> If you have 4 bags with 3 apples in each bag, you have <m>4 \times 3 = 12</m> apples total.
+    </p>
+  </subsection>
+
+  <subsection xml:id="num-division">
+    <title>Division</title>
+    <p>
+      Division can mean sharing equally or grouping.
+    </p>
+    <p>
+      <strong>Example:</strong> If you have 12 apples and want to share them equally among 4 people, each person gets <m>12 \div 4 = 3</m> apples.
+    </p>
+  </subsection>
+
+  <exercises xml:id="exs-operations">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-add-basic">
+      <statement>
+        <p>
+          Calculate: <m>5 + 7</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Start at 5 on a number line. Jump 7 spaces to the right.
+        </p>
+      </hint>
+      <answer>
+        <p>12</p>
+      </answer>
+      <solution>
+        <p>
+          <m>5 + 7 = 12</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-multiply-basic">
+      <statement>
+        <p>
+          Calculate: <m>6 \times 4</m>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          This means 6 groups of 4. Add them up: <m>4 + 4 + 4 + 4 + 4 + 4</m>.
+        </p>
+      </hint>
+      <answer>
+        <p>24</p>
+      </answer>
+      <solution>
+        <p>
+          <m>6 \times 4 = 4 + 4 + 4 + 4 + 4 + 4 = 24</m>
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<part xml:id="sp-strand" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statistics and Probability</title>
+
+  <introduction>
+    <p>
+      Statistics and probability help us understand uncertainty, make predictions, and draw conclusions from data.
+      This strand covers probability, data collection, graphical representations, and statistical analysis.
+    </p>
+  </introduction>
+
+  <xi:include href="statistics-probability.ptx" />
+  <xi:include href="statistics-data-collection.ptx" />
+  <xi:include href="statistics-representing-data.ptx" />
+
+</part>

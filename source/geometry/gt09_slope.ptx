@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-slope">
+  <title>Slope of a Line</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-16" /> — Slope of a line</li>
+      <li><xref ref="lo-af-25" /> — Slope as rate of change</li>
+    </ul>
+  </objectives>
+
+  <p>
+    The <term>slope</term> (or gradient) of a line measures its steepness:
+    <me>m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\text{rise}}{\text{run}}</me>
+  </p>
+  <p>
+    Positive slope: line goes up left-to-right.
+    Negative slope: line goes down left-to-right.
+    Zero slope: horizontal line.
+    Undefined slope: vertical line.
+  </p>
+  <p>
+    Two lines are <term>parallel</term> if they have equal slopes: <m>m_1 = m_2</m>.
+    Two lines are <term>perpendicular</term> if their slopes multiply to <m>-1</m>: <m>m_1 \times m_2 = -1</m>.
+  </p>
+
+  <exercises xml:id="exs-slope">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-slope-two-points">
+      <statement><p>Find the slope of the line through <m>A(1, 3)</m> and <m>B(5, 11)</m>.</p></statement>
+      <answer><p><m>m = 2</m></p></answer>
+      <solution><p><m>m = \dfrac{11-3}{5-1} = \dfrac{8}{4} = 2</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-perpendicular-slope">
+      <statement><p>A line has slope <m>\frac{3}{4}</m>. What is the slope of a perpendicular line?</p></statement>
+      <answer><p><m>-\dfrac{4}{3}</m></p></answer>
+      <solution><p>Perpendicular slope: <m>-\dfrac{1}{3/4} = -\dfrac{4}{3}</m></p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

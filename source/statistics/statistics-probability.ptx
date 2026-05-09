@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-probability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Probability</title>
+
+  <introduction>
+    <p>
+      Probability measures how likely an event is to occur.
+      It is a number between 0 (impossible) and 1 (certain).
+      This chapter covers experimental and theoretical probability, and combined events.
+    </p>
+  </introduction>
+
+  <xi:include href="sp01_probability-basics.ptx" />
+  <xi:include href="sp02_combined-events.ptx" />
+
+</chapter>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-natural-numbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Natural Numbers</title>
+
+  <introduction>
+    <p>
+      How many students are in your class? How many days are in a year? How many cards are in a deck?
+    </p>
+    <p>
+      Humans invented numbers to count, organise, compare, and describe the world around them.
+      Natural numbers are the counting numbers: 1, 2, 3, 4, ...
+    </p>
+    <p>
+      In this chapter we investigate natural numbers, their patterns, operations, and properties.
+      We explore how to represent numbers in different ways, how operations work, and why certain properties matter.
+    </p>
+  </introduction>
+
+  <xi:include href="num_counting.ptx" />
+  <xi:include href="num_place-value.ptx" />
+  <xi:include href="num_number-line.ptx" />
+  <xi:include href="num_operations.ptx" />
+
+</chapter>

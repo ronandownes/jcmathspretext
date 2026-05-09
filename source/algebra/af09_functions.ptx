@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="af-functions">
+  <title>Functions</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-af-20" /> — Functions — definition</li>
+      <li><xref ref="lo-af-21" /> — Function notation</li>
+      <li><xref ref="lo-af-22" /> — Represent functions</li>
+      <li><xref ref="lo-af-23" /> — Inputs and outputs</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A <term>function</term> is a rule that assigns exactly one output to each input.
+    We write <m>f(x)</m> to mean the output of function <m>f</m> when the input is <m>x</m>.
+  </p>
+  <p>
+    For example: if <m>f(x) = 2x + 3</m>, then <m>f(4) = 2(4) + 3 = 11</m>.
+  </p>
+  <p>
+    A function can be represented in four ways:
+  </p>
+  <ul>
+    <li>A formula: <m>f(x) = x^2 - 1</m></li>
+    <li>A table: list inputs and corresponding outputs</li>
+    <li>A mapping diagram: arrows from domain to range</li>
+    <li>A graph: plot output against input</li>
+  </ul>
+
+  <exercises xml:id="exs-functions">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-function-evaluate">
+      <statement><p>If <m>f(x) = 3x^2 - x + 2</m>, find <m>f(0)</m>, <m>f(2)</m>, and <m>f(-1)</m>.</p></statement>
+      <answer><p><m>f(0) = 2</m>, <m>f(2) = 12</m>, <m>f(-1) = 6</m></p></answer>
+      <solution>
+        <p><m>f(0) = 0 - 0 + 2 = 2</m></p>
+        <p><m>f(2) = 3(4) - 2 + 2 = 12</m></p>
+        <p><m>f(-1) = 3(1) - (-1) + 2 = 3 + 1 + 2 = 6</m></p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-function-inverse">
+      <statement><p>If <m>g(x) = 4x - 5</m>, find the value of <m>x</m> when <m>g(x) = 11</m>.</p></statement>
+      <answer><p><m>x = 4</m></p></answer>
+      <solution><p><m>4x - 5 = 11 \Rightarrow 4x = 16 \Rightarrow x = 4</m></p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

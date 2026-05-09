@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-coordinates">
+  <title>The Coordinate Plane</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-13" /> — The coordinate plane</li>
+    </ul>
+  </objectives>
+
+  <p>
+    The coordinate plane uses two perpendicular axes: the horizontal <m>x</m>-axis and the vertical <m>y</m>-axis.
+    They intersect at the <term>origin</term> <m>(0, 0)</m>.
+  </p>
+  <p>
+    Every point is given by an <term>ordered pair</term> <m>(x, y)</m> where <m>x</m> is the horizontal distance from the origin and <m>y</m> is the vertical distance.
+  </p>
+  <p>
+    The axes divide the plane into four <term>quadrants</term>.
+    In Quadrant 1 both coordinates are positive; in Quadrant 2, <m>x</m> is negative and <m>y</m> is positive; and so on.
+  </p>
+
+  <exercises xml:id="exs-coordinates">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-plot-points">
+      <statement><p>State the quadrant in which each point lies: <m>A(3, -2)</m>, <m>B(-1, 4)</m>, <m>C(-5, -3)</m>.</p></statement>
+      <answer><p><m>A</m>: Quadrant 4; <m>B</m>: Quadrant 2; <m>C</m>: Quadrant 3.</p></answer>
+    </exercise>
+
+  </exercises>
+
+</section>

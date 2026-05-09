@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-integers-operations">
+  <title>Operations with Integers</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-7" /> — Operations with integers</li>
+      <li><xref ref="lo-n-6" /> — Properties of arithmetic</li>
+    </ul>
+  </objectives>
+
+  <p>
+    Adding a negative number is the same as subtracting a positive: <m>5 + (-3) = 5 - 3 = 2</m>.
+  </p>
+  <p>
+    Subtracting a negative number is the same as adding: <m>5 - (-3) = 5 + 3 = 8</m>.
+  </p>
+  <p>
+    For multiplication and division, the sign rules are:
+  </p>
+  <ul>
+    <li>positive × positive = positive: <m>3 \times 4 = 12</m></li>
+    <li>negative × negative = positive: <m>(-3) \times (-4) = 12</m></li>
+    <li>positive × negative = negative: <m>3 \times (-4) = -12</m></li>
+    <li>negative × positive = negative: <m>(-3) \times 4 = -12</m></li>
+  </ul>
+
+  <exercises xml:id="exs-integers-ops">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-int-add">
+      <statement><p>Calculate: <m>-8 + 3</m></p></statement>
+      <answer><p><m>-5</m></p></answer>
+      <solution><p>Starting at <m>-8</m>, move 3 steps right: <m>-8 + 3 = -5</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-int-subtract-neg">
+      <statement><p>Calculate: <m>4 - (-6)</m></p></statement>
+      <answer><p><m>10</m></p></answer>
+      <solution><p><m>4 - (-6) = 4 + 6 = 10</m></p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-int-multiply">
+      <statement><p>Calculate: <m>(-5) \times (-3)</m></p></statement>
+      <answer><p><m>15</m></p></answer>
+      <solution><p>Negative times negative gives positive: <m>(-5) \times (-3) = 15</m>.</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-int-divide">
+      <statement><p>Calculate: <m>-24 \div 6</m></p></statement>
+      <answer><p><m>-4</m></p></answer>
+      <solution><p>Negative divided by positive gives negative: <m>-24 \div 6 = -4</m>.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="gt-transformations">
+  <title>Translations, Reflections, Rotations, and Enlargements</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-gt-20" /> — Transformations</li>
+      <li><xref ref="lo-gt-21" /> — Axes of symmetry</li>
+      <li><xref ref="lo-gt-22" /> — Enlargements</li>
+      <li><xref ref="lo-gt-23" /> — Enlargement and area</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A <term>translation</term> slides every point by the same vector <m>\binom{a}{b}</m>.
+  </p>
+  <p>
+    A <term>reflection</term> flips a shape across a mirror line (axis of symmetry).
+    Every point and its image are the same distance from the mirror line.
+  </p>
+  <p>
+    A <term>rotation</term> turns a shape through an angle about a fixed centre point.
+  </p>
+  <p>
+    An <term>enlargement</term> with scale factor <m>k</m> and centre <m>O</m> maps every point <m>P</m> to a point <m>P'</m> such that <m>OP' = k \cdot OP</m>.
+    Areas scale by <m>k^2</m>: if a shape has area <m>A</m>, its image has area <m>k^2 A</m>.
+  </p>
+
+  <exercises xml:id="exs-transformations">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-enlargement-area">
+      <statement><p>A triangle has area 12 cm². It is enlarged with scale factor 3. Find the area of the image.</p></statement>
+      <answer><p>108 cm²</p></answer>
+      <solution><p>Area scales by <m>k^2 = 9</m>. New area: <m>12 \times 9 = 108</m> cm².</p></solution>
+    </exercise>
+
+    <exercise xml:id="ex-reflection-axes">
+      <statement><p>How many axes of symmetry does a regular hexagon have?</p></statement>
+      <answer><p>6</p></answer>
+    </exercise>
+
+  </exercises>
+
+</section>

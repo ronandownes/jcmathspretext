@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="num-units">
+  <title>Units of Measurement</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-n-20" /> — Units and measurement</li>
+      <li><xref ref="lo-n-24" /> — Scale diagrams</li>
+    </ul>
+  </objectives>
+
+  <p>
+    The metric system uses base units: metres (length), kilograms (mass), litres (capacity), seconds (time).
+    Prefixes indicate powers of ten: kilo- (×1000), centi- (×0.01), milli- (×0.001).
+  </p>
+  <p>
+    Common conversions:
+  </p>
+  <ul>
+    <li>1 km = 1000 m = 100 000 cm</li>
+    <li>1 kg = 1000 g</li>
+    <li>1 litre = 1000 ml</li>
+    <li>1 hour = 60 minutes = 3600 seconds</li>
+  </ul>
+  <p>
+    A <term>scale diagram</term> uses a ratio to represent a real object.
+    If the scale is 1:50, then 1 cm on the diagram = 50 cm in reality.
+  </p>
+
+  <exercises xml:id="exs-units">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-unit-convert">
+      <statement><p>Convert 4.5 km to metres.</p></statement>
+      <answer><p>4500 m</p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-scale-diagram">
+      <statement><p>A map has scale 1:20000. A road measures 6 cm on the map. How long is the actual road in kilometres?</p></statement>
+      <answer><p>1.2 km</p></answer>
+      <solution><p>Actual length = <m>6 \times 20000 = 120000</m> cm <m>= 1200</m> m <m>= 1.2</m> km.</p></solution>
+    </exercise>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sp-data-collection">
+  <title>Statistical Questions and Sampling</title>
+
+  <objectives>
+    <title>Learning Outcomes</title>
+    <ul>
+      <li><xref ref="lo-sp-9" /> — Statistical questions</li>
+      <li><xref ref="lo-sp-10" /> — Data collection</li>
+      <li><xref ref="lo-sp-11" /> — Avoiding bias</li>
+      <li><xref ref="lo-sp-12" /> — Generate or source data</li>
+    </ul>
+  </objectives>
+
+  <p>
+    A <term>statistical question</term> anticipates variability in the answer: "How tall are the students in this class?" is statistical; "How tall is Ronan?" is not.
+  </p>
+  <p>
+    To investigate a question, we usually study a <term>sample</term> rather than the entire <term>population</term>.
+    A <term>Simple Random Sample (SRS)</term> gives every member of the population an equal chance of being chosen.
+  </p>
+  <p>
+    A sample is <term>biased</term> if some members of the population are more likely to be chosen than others, which can lead to misleading conclusions.
+  </p>
+  <p>
+    Data can be:
+  </p>
+  <ul>
+    <li><term>Primary data</term>: collected by you (surveys, experiments)</li>
+    <li><term>Secondary data</term>: sourced from existing records, databases, or the internet</li>
+  </ul>
+
+  <exercises xml:id="exs-data-collection">
+    <title>Exercises</title>
+
+    <exercise xml:id="ex-stat-question">
+      <statement><p>State whether each question is a statistical question: (a) "What is the average height of Junior Cycle students?" (b) "How many legs does a spider have?"</p></statement>
+      <answer><p>(a) Yes — heights vary. (b) No — the answer is always 8.</p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-identify-bias">
+      <statement><p>A survey about school lunches is conducted by asking students at the tuck shop during break. Identify a source of bias.</p></statement>
+      <answer><p>Students at the tuck shop are more likely to buy food at school, so the sample over-represents students who like the current food options.</p></answer>
+    </exercise>
+
+  </exercises>
+
+</section>
