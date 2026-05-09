@@ -3,3 +3,13 @@ output/
 generated-assets/
 logs/
 *.log
+
+.vscode/
+docs/
+
+.error_schema.log
+
+*.aux
+*.out
+*.toc
+*.synctex.gz
