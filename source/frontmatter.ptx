@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<<<<<<< HEAD
-<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
-=======
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
 
->>>>>>> c23dc65 (Added preface and updated frontmatter)
   <bibinfo>
 
     <author>
@@ -40,8 +36,9 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
+
   <xi:include href="./preface.ptx"/>
 
-  <xi:include href="./introduction.ptx" />
+
 
 </frontmatter>
